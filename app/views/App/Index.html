@@ -1,24 +1,249 @@
 {{set . "title" "Home"}}
 {{template "header.html" .}}
-
-<header class="hero-unit" style="background-color:#A9F16C">
-  <div class="container">
-    <div class="row">
-      <div class="hero-text">
-        <h1>It works!</h1>
-        <p></p>
-        <button class="btn btn-sm btn-success">OK</button>
+<!-- %header.hero-unit{style: "background-color:#A9F16C"} -->
+<!-- .container -->
+<!-- .row -->
+<!-- .hero-text -->
+<!-- %h1 It works! :D -->
+<!-- %p -->
+<!-- %button.btn.btn-sm.btn-success OK -->
+<div id='background'>
+  <div>
+    <button class='btn btn-default'>Download PDF</button>
+  </div>
+</div>
+<div id='main-content'>
+  <h1>Clovis Kyndt</h1>
+  <h3>
+    <img src='/public/img/user.png'>
+    Knowledges
+  </h3>
+  <table class='table table-condensed'>
+    <tr>
+      <th>Langages</th>
+      <th>Web Developement</th>
+      <th>BDD</th>
+    </tr>
+    <tr>
+      <td>C/C++</td>
+      <td>Ruby on Rails</td>
+      <td>MySQL</td>
+    </tr>
+    <tr>
+      <td>Go</td>
+      <td>PHP - CodeIgnter</td>
+      <td>PostgreSQL</td>
+    </tr>
+    <tr>
+      <td>Ruby / Python</td>
+      <td>HTML, CSS, JavaScript</td>
+      <td>MongoDB</td>
+    </tr>
+    <tr>
+      <td>Shell script</td>
+      <td>prepocessing (HAML/SASS/CoffeScript)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C#</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <table class='table table-condensed'>
+    <tr>
+      <th>Systeme d'exploitation</th>
+      <th colspan='2'>Outils</th>
+      <th>Other</th>
+    </tr>
+    <tr>
+      <td>Unix/Linux</td>
+      <td>Git</td>
+      <td>Subversion</td>
+      <td>Applicate Algorithm</td>
+    </tr>
+    <tr>
+      <td>Windows</td>
+      <td>Heroku</td>
+      <td>dedicated server</td>
+      <td>Design pattern</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>VS2013</td>
+      <td>vim / SublimeText</td>
+      <td>Haskell</td>
+    </tr>
+  </table>
+  <h3>
+    <img src='/public/img/university.png'>
+    Education
+  </h3>
+  <div class='container-fluid'>
+    <div class='row'>
+      <div class='col-lg-2'>
+        <h4>
+          <b>Jiaotong</b>
+          <br>
+          <i style='font-size:12px'>2014 - 2015</i>
+        </h4>
+      </div>
+      <div class='col-lg-10' style='padding-top:11px'>
+        Beijing Jiaotong University
+        <br>
+        Beijing, Beijing Municipality, China
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-2'>
+        <h4>
+          <b>EPITECH</b>
+          <br>
+          <i style='font-size:12px'>2011 - 2016</i>
+        </h4>
+      </div>
+      <div class='col-lg-10' style='padding-top:11px'>
+        EPITECH, Ecole pour l'informatique et les nouvelles technologies
+        <br>
+        Lille, France
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-2'>
+        <h4>
+          <b>High school</b>
+          <br>
+          <i style='font-size:12px'>2008 - 2011</i>
+        </h4>
+      </div>
+      <div class='col-lg-10' style='padding-top:11px'>
+        Baccalaureat Scientifique
+        <br>
+        Lycee Yves Kernanec, Marcq-en-Baroeul, France
       </div>
     </div>
   </div>
-</header>
-
-<div class="container">
-  <div class="row">
-    <div class="span6">
-      {{template "flash.html" .}}
+  <h3>
+    <img src='/public/img/experiment.png'>
+    Experience
+  </h3>
+  <div class='container-fluid'>
+    <div class='row'>
+      <div class='col-lg-2'>
+        <h4>
+          <b>Libertrip</b>
+          <br>
+          <i style='font-size:12px'>2014</i>
+          <br>
+          <i style='font-size:12px'>Euratechnologie, Lille, France</i>
+        </h4>
+      </div>
+      <div class='col-lg-10' style='padding-top:11px'>
+        "Libertrip looks for a way to improve the researches needed when planning holidays and and specially make the process a lot more easier"
+        <br>
+        My task was to create an interface between Hotels Managers and Libertrip.
+        <br>
+        #RubyOnRails #Backbone #PostgreSQL #MongoDB
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-2'>
+        <h4>
+          <b>Freelance</b>
+          <br>
+          <i style='font-size:12px'>2012</i>
+          <br>
+          <i style='font-size:12px'>Edimburgh, Scotland, United Kingdom</i>
+        </h4>
+      </div>
+      <div class='col-lg-10' style='padding-top:11px'>
+        Web development
+        <br>
+        #CodeIgniter #JQuery #MySQL
+      </div>
+    </div>
+    <div class='row'>
+      <div class='col-lg-2'>
+        <h4>
+          <b>Kitchen Porter</b>
+          <br>
+          <i style='font-size:12px'>2012</i>
+          <br>
+          <i style='font-size:12px'>Edimburgh, Scotland, United Kingdom</i>
+        </h4>
+      </div>
+      <div class='col-lg-10' style='padding-top:11px'>
+        I lived in Edimburgh during 5 months to train my english. I worked as kitchen porter in restaurant in august.
+        <br>
+        #english
+      </div>
     </div>
   </div>
+  <h3>
+    <img src='/public/img/speak.png'>
+    Languages
+  </h3>
+  <table class='table table-condensed'>
+    <tr>
+      <th>French</th>
+      <th>English</th>
+      <th>Chinese</th>
+    </tr>
+    <tr>
+      <td>Native tongue</td>
+      <td>Intermediate level & Lived 5 months in Edimburgh</td>
+      <td>Basic</td>
+    </tr>
+  </table>
+  <h3>
+    <img src='/public/img/info.png'>
+    Hobbies and interests
+  </h3>
+  <div style='margin-left:20px'>
+    <h4>
+      <img src='/public/img/sport.png'>
+      Sport
+    </h4>
+    I like practice footing or swimming regularly
+    <br>
+    <h4>
+      <img src='/public/img/reading.png'>
+      Reading
+    </h4>
+    <table class='table table-condensed'>
+      <tr>
+        <th>Technical</th>
+        <th>Other</th>
+      </tr>
+      <tr>
+        <td>
+          <ul>
+            <li>
+              Machine Learning: The Art and Science of Algorithms that Make Sense of Data
+              <span class='label label-info label-xs'>on going</span>
+            </li>
+            <li>Essential Algorithms: A Practical Approach to Computer Algorithms</li>
+            <li>Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement</li>
+            <li>MongoDB Applied Design Patterns</li>
+          </ul>
+        </td>
+        <td>
+          <lu>
+            <li>The Art of War (Sun Tzu)</li>
+            <li>Books or Films (Specialy S.King)</li>
+            <li>Mangas</li>
+          </lu>
+        </td>
+      </tr>
+    </table>
+    <h4>
+      <img src='/public/img/fly.png'>
+      Trip
+    </h4>
+  </div>
 </div>
-
+<!-- .container -->
+<!-- .row -->
+<!-- .span6 -->
+<!-- {{template "flash.html" .}} -->
 <!-- {{template "footer.html" .}} -->
