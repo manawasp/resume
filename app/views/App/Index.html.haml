@@ -7,189 +7,195 @@
 /         %h1 It works! :D
 /         %p
 /         %button.btn.btn-sm.btn-success OK
+.container-fluide
 
-#background
-  %div
-    %button.btn.btn-default Download PDF
+  #background.col-lg-4.col-md-3.col-sm-12.col-xs-12
+    #top-info
+      %button.btn.btn-warning.btn-sm Download PDF
+  #cv-content.col-lg-8.col-md-9.col-sm-12.col-xs-12
+    %h1 Clovis Kyndt
 
-#main-content
-  %h1 Clovis Kyndt
-
-  %h3
-    %img{src: '/public/img/user.png'} 
-    Knowledges
-  %table.table.table-condensed
-    %tr
-      %th Langages
-      %th Web Developement
-      %th BDD
-    %tr
-      %td C/C++
-      %td Ruby on Rails
-      %td MySQL
-    %tr
-      %td Go
-      %td PHP - CodeIgnter
-      %td PostgreSQL
-    %tr
-      %td Ruby / Python
-      %td HTML, CSS, JavaScript
-      %td MongoDB
-    %tr
-      %td Shell script
-      %td prepocessing (HAML/SASS/CoffeScript) 
-      %td
-    %tr
-      %td C#
-      %td
-      %td
-
-  %table.table.table-condensed
-    %tr
-      %th Systeme d'exploitation
-      %th{colspan: 2} Outils
-      %th Other
-    %tr
-      %td Unix/Linux
-      %td Git
-      %td Subversion
-      %td Applicate Algorithm
-    %tr
-      %td Windows
-      %td Heroku
-      %td dedicated server
-      %td Design pattern
-    %tr
-      %td
-      %td VS2013
-      %td vim / SublimeText
-      %td Haskell
-
-  %h3
-    %img{src: '/public/img/university.png'} 
-    Education
-  .container-fluid
-    .row
-      .col-lg-2
-        %h4
-          %b Jiaotong
-          %br
-          %i{style: 'font-size:12px'} 2014 - 2015
-      .col-lg-10{style: 'padding-top:11px'}
-        Beijing Jiaotong University
-        %br
-        Beijing, Beijing Municipality, China
-    .row
-      .col-lg-2
-        %h4
-          %b EPITECH
-          %br
-          %i{style: 'font-size:12px'} 2011 - 2016
-      .col-lg-10{style: 'padding-top:11px'}
-        EPITECH, Ecole pour l'informatique et les nouvelles technologies
-        %br
-        Lille, France
-    .row
-      .col-lg-2
-        %h4
-          %b High school
-          %br
-          %i{style: 'font-size:12px'} 2008 - 2011
-      .col-lg-10{style: 'padding-top:11px'}
-        Baccalaureat Scientifique
-        %br
-        Lycee Yves Kernanec, Marcq-en-Baroeul, France
-    
-
-  %h3
-    %img{src: '/public/img/experiment.png'} 
-    Experience
-  .container-fluid
-    .row
-      .col-lg-2
-        %h4
-          %b Libertrip
-          %br
-          %i{style: 'font-size:12px'} 2014
-          %br
-          %i{style: 'font-size:12px'}Euratechnologie, Lille, France
-      .col-lg-10{style: 'padding-top:11px'}
-        "Libertrip looks for a way to improve the researches needed when planning holidays and and specially make the process a lot more easier"
-        %br
-        My task was to create an interface between Hotels Managers and Libertrip.
-        %br
-        \#RubyOnRails #Backbone #PostgreSQL #MongoDB
-    .row
-      .col-lg-2
-        %h4
-          %b Freelance
-          %br
-          %i{style: 'font-size:12px'} 2012
-          %br
-          %i{style: 'font-size:12px'}Edimburgh, Scotland, United Kingdom
-      .col-lg-10{style: 'padding-top:11px'}
-        Web development
-        %br
-        \#CodeIgniter #JQuery #MySQL
-    .row
-      .col-lg-2
-        %h4
-          %b Kitchen Porter
-          %br
-          %i{style: 'font-size:12px'} 2012
-          %br
-          %i{style: 'font-size:12px'}Edimburgh, Scotland, United Kingdom
-      .col-lg-10{style: 'padding-top:11px'}
-        I lived in Edimburgh during 5 months to train my english. I worked as kitchen porter in restaurant in august. 
-        %br
-        \#english
-
-  %h3
-    %img{src: '/public/img/speak.png'} 
-    Languages
-  %table.table.table-condensed
-    %tr
-      %th French
-      %th English
-      %th Chinese
-    %tr
-      %td Native tongue
-      %td Intermediate level & Lived 5 months in Edimburgh
-      %td Basic
-
-  %h3
-    %img{src: '/public/img/info.png'} 
-    Hobbies and interests
-  %div{style: 'margin-left:20px'}
-    %h4
-      %img{src: '/public/img/sport.png'} 
-      Sport
-    I like practice footing or swimming regularly
-    %br
-    %h4
-      %img{src: '/public/img/reading.png'} 
-      Reading
+    %h3
+      %img{src: '/public/img/user.png'} 
+      Knowledges
     %table.table.table-condensed
       %tr
-        %th Technical
+        %th Langages
+        %th Web Developement
+        %th BDD
+      %tr
+        %td C/C++
+        %td Ruby on Rails
+        %td MySQL
+      %tr
+        %td Go
+        %td PHP - CodeIgnter
+        %td PostgreSQL
+      %tr
+        %td Ruby / Python
+        %td HTML, CSS, JavaScript
+        %td MongoDB
+      %tr
+        %td Shell script
+        %td prepocessing (HAML/SASS/CoffeScript) 
+        %td
+      %tr
+        %td C#
+        %td
+        %td
+
+    %table.table.table-condensed
+      %tr
+        %th Systeme d'exploitation
+        %th{colspan: 2} Outils
         %th Other
       %tr
+        %td Unix/Linux
+        %td Git
+        %td Subversion
+        %td Applicate Algorithm
+      %tr
+        %td Windows
+        %td Heroku
+        %td dedicated server
+        %td Design pattern
+      %tr
         %td
-          %ul
-            %li
-              Machine Learning: The Art and Science of Algorithms that Make Sense of Data
-              %span.label.label-info.label-xs on going
-            %li Essential Algorithms: A Practical Approach to Computer Algorithms
-            %li Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement
-            %li MongoDB Applied Design Patterns
-        %td
-          %lu
-            %li The Art of War (Sun Tzu)
-            %li Books or Films (Specialy S.King)
-            %li Mangas
-    %h4
-      %img{src: '/public/img/fly.png'}
-      Trip
+        %td VS2013
+        %td vim / SublimeText
+        %td Haskell
+    %h3
+      %img{src: '/public/img/university.png'} 
+      Education
+    .container-fluid
+      .row
+        .col-lg-2
+          %h4
+            %b Jiaotong
+            %br
+            %i{style: 'font-size:12px'} 2014 - 2015
+        .col-lg-10{style: 'padding-top:11px'}
+          Beijing Jiaotong University
+          %br
+          Beijing, Beijing Municipality, China
+      .row
+        .col-lg-2
+          %h4
+            %b EPITECH
+            %br
+            %i{style: 'font-size:12px'} 2011 - 2016
+        .col-lg-10{style: 'padding-top:11px'}
+          EPITECH, Ecole pour l'informatique et les nouvelles technologies
+          %br
+          Lille, France
+      .row
+        .col-lg-2
+          %h4
+            %b High school
+            %br
+            %i{style: 'font-size:12px'} 2008 - 2011
+        .col-lg-10{style: 'padding-top:11px'}
+          Baccalaureat Scientifique
+          %br
+          Lycee Yves Kernanec, Marcq-en-Baroeul, France
+
+    %h3
+      %img{src: '/public/img/experiment.png'} 
+      Experience
+    .container-fluid
+      .row
+        .col-lg-2
+          %h4
+            %b Libertrip
+            %br
+            %i{style: 'font-size:12px'} 2014
+            %br
+            %i{style: 'font-size:12px'}Euratechnologie, Lille, France
+        .col-lg-10{style: 'padding-top:11px'}
+          "Libertrip looks for a way to improve the researches needed when planning holidays and and specially make the process a lot more easier"
+          %br
+          My task was to create an interface between Hotels Managers and Libertrip.
+          %br
+          \#RubyOnRails #Backbone #PostgreSQL #MongoDB
+      .row
+        .col-lg-2
+          %h4
+            %b Freelance
+            %br
+            %i{style: 'font-size:12px'} 2012
+            %br
+            %i{style: 'font-size:12px'}Edimburgh, Scotland, United Kingdom
+        .col-lg-10{style: 'padding-top:11px'}
+          Web development
+          %br
+          \#CodeIgniter #JQuery #MySQL
+      .row
+        .col-lg-2
+          %h4
+            %b Kitchen Porter
+            %br
+            %i{style: 'font-size:12px'} 2012
+            %br
+            %i{style: 'font-size:12px'}Edimburgh, Scotland, United Kingdom
+        .col-lg-10{style: 'padding-top:11px'}
+          I lived in Edimburgh during 5 months to train my english. I worked as kitchen porter in restaurant in august. 
+          %br
+          \#english
+
+    %h3
+      %img{src: '/public/img/speak.png'} 
+      Languages
+    %table.table.table-condensed
+      %tr
+        %th French
+        %th English
+        %th Chinese
+      %tr
+        %td Native tongue
+        %td Intermediate level & Lived 5 months in Edimburgh
+        %td Basic
+
+    %h3
+      %img{src: '/public/img/info.png'} 
+      Hobbies and interests
+    %div{style: 'margin-left:20px'}
+      %h4
+        %img{src: '/public/img/sport.png'} 
+        Sport
+      I like practice footing or swimming regularly
+      %br
+      %h4
+        %img{src: '/public/img/reading.png'} 
+        Reading
+      %table.table.table-condensed
+        %tr
+          %th Technical
+          %th Other
+        %tr
+          %td
+            %ul
+              %li
+                Machine Learning: The Art and Science of Algorithms that Make Sense of Data
+                %span.label.label-info.label-xs on going
+              %li Essential Algorithms: A Practical Approach to Computer Algorithms
+              %li Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement
+              %li MongoDB Applied Design Patterns
+          %td
+            %lu
+              %li The Art of War (Sun Tzu)
+              %li Books or Films (Specialy S.King)
+              %li Mangas
+      %h4
+        %img{src: '/public/img/fly.png'}
+        Trip
+
+    
+/ #background
+/   %div
+/     %button.btn.btn-default Download PDF
+
+
+
 
 / .container
 /    .row
