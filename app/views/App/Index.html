@@ -235,10 +235,16 @@
     <h4>
       <img src='/public/img/fly.png'>
         Trip
+        <div id='world-map' style='max-width: 800px; height: 400px'></div>
       </img>
     </h4>
   </div>
 </div>
+<script>
+  $(function(){
+    $('#world-map').vectorMap();
+  });
+</script>
 <!-- .container -->
 <!-- .row -->
 <!-- .span6 -->

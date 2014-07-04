@@ -184,6 +184,12 @@
     %h4
       %img{src: '/public/img/fly.png'}
         Trip
+        #world-map{style: "max-width: 800px; height: 400px"}
+
+:javascript
+  $(function(){
+    $('#world-map').vectorMap();
+  });
 
 / .container
 /    .row
