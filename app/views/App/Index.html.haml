@@ -1,12 +1,5 @@
 {{set . "title" "Home"}}
 {{template "header.html" .}}
-/ %header.hero-unit{style: "background-color:#A9F16C"}
-/   .container
-/     .row
-/       .hero-text
-/         %h1 It works! :D
-/         %p
-/         %button.btn.btn-sm.btn-success OK
 .container-fluide
 
   #background.col-lg-4.col-md-3.col-sm-12.col-xs-12
@@ -184,13 +177,6 @@
     %h4
       %img{src: '/public/img/fly.png'}
         Trip
-        #world-map{style: "max-width: 800px; height: 400px"}
-
-:javascript
-  $(function(){
-    $('#world-map').vectorMap();
-  });
-
 / .container
 /    .row
 /     .span6
