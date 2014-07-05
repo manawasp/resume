@@ -109,7 +109,10 @@
           %br
           Tasks: Create an interface between Hotels Managers and Libertrip.
           %br
-          \#RubyOnRails #Backbone #PostgreSQL #MongoDB
+          %span.label.label-primary RubyOnRails
+          %span.label.label-primary Backbone
+          %span.label.label-primary PostgreSQL
+          %span.label.label-primary MongoDB
       .row
         .col-lg-2
           %h4
@@ -121,7 +124,9 @@
         .col-lg-10{style: 'padding-top:11px'}
           Web development
           %br
-          \#CodeIgniter #JQuery #MySQL
+          %span.label.label-primary CodeIgniter
+          %span.label.label-primary JQuery
+          %span.label.label-primary MySQL
       .row
         .col-lg-2
           %h4
@@ -131,9 +136,11 @@
             %br
             %i{style: 'font-size:12px'}Edimburgh, Scotland, United Kingdom
         .col-lg-10{style: 'padding-top:11px'}
-          I lived in Edinburgh for 5 months in order to improve my english. I worked as a kitchen porter in  a restaurant throughout august.
+          I lived in Edinburgh for 5 months in order to improve my english.
           %br
-          \#english
+          I worked as a kitchen porter in  a restaurant throughout august.
+          %br
+          %span.label.label-primary english
 
     %h3
       %img{src: '/public/img/speak.png'}
@@ -174,11 +181,109 @@
             %li The Art of War (Sun Tzu)
             %li Books or Films (Specialy S.King)
             %li Mangas
-    %h4
-      %img{src: '/public/img/fly.png'}
-        Trip
-/ .container
-/    .row
-/     .span6
+    %h3
+      %img{src: '/public/img/package.png'}
+      Projects
+    .row
+      .col-md-9
+        .row
+          .col-sm-2{style: 'text-align:right'}
+            .row
+              %img{src: '/public/img/wombat.jpg', style: 'height: 50px;margin:10px'}
+              %table.table.table-condensed
+                %tr
+                  %td Go
+                %tr
+                  %td AngularJS
+                %tr
+                  %td PostreSQL
+                %tr
+                  %td MongoDB
+                %tr
+                  %td
+          .col-sm-9
+            %h5.bold Wombat
+            %p Presentation : Plateforme web permettant de gerer une compagnie et de manager via des groupes ses taches/objectifs.
+            %p 
+              Objectif : obtenir une plateforme fluide, user friendly, avec de fonctionnalites avancees comme la creation de Gantt, la gestion de l'Agenda (connection aux API externe), etc...
+              %br Approfondire l'utilisation du Go et d'AngularJS.
+            %p
+              Collaborators : ZackDibe
+
+
+      .col-md-9
+        .row
+          .col-sm-2{style: 'text-align:right'}
+            .row
+              %img{src: '/public/img/haskell.png', style: 'height: 50px;margin:10px'}
+              %table.table.table-condensed
+                %tr
+                  %td Haskell
+                %tr
+                  %td Algorithm
+                %tr
+                  %td
+          .col-sm-9
+            %h5.bold Bistromatique
+            %p
+              Presentation : La bistromatique est un projet qui permet de realiser le calculs de d'expressions avec de tres grands nombres dans une base B.
+            %p
+              Objectif : Realiser sous forme de challenge, ce projet a pour but de minitie a la programmation functionnel en praticant l'Haskell. Il me permet aussi d'implementer des pattern/algorithmes, comme la division de Knuth
+            %p
+              Challenger : LucienZagabe
+
+      .col-md-9
+        .row
+          .col-sm-2{style: 'text-align:right'}
+            .row
+              %img{src: '/public/img/cluster.png', style: 'height: 50px;margin:10px'}
+              %table.table.table-condensed
+                %tr
+                  %td Algorithm
+                %tr
+                  %td Python
+                %tr
+                  %td
+          .col-sm-9
+            %h5.bold Clustering
+            %p
+              Presentation : Le projet Clustering est un projet ou un fichier de points compris dans un repere cartesiens nous est donne, nous devons trier ces points dans K groupes en fonction de la distance par rapport aux autres points.
+            %p
+              Object : L'objectif est de trouver et d'appliquer un algorithme permettant de regrouper les points dans K cluster, K etant fournie. L'application doit se faire dans un temps minimum et avec justesse. Application de K-means++ (initialisation par barycentre et non par statistiques).
+              %br
+              Pour aller plus loin, je compte renouvelle ce projet mais avec X cluster, X etant inconnue. (Application de X-means).
+
+
+      .col-md-9
+        .row
+          .col-sm-2{style: 'text-align:right'}
+            .row
+              %img{src: '/public/img/hexatyla.png', style: 'height: 50px;margin:10px'}
+              %table.table.table-condensed
+                %tr
+                  %td C++
+                %tr
+                  %td Unix
+                %tr
+                  %td Ogre3D
+                %tr
+                  %td JavaScript
+                %tr
+                  %td
+          .col-sm-9
+            %h5.bold Hexatyla
+            %p
+              Presentation : Hexatyla est un projet construit dans un temps limite (2 mois et demi). C'est un jeu de gestion/STR en 3D (Warcraft3).
+              %br
+              Les Maps sont entierement modulable que ce soit le terrain ou l'arbre technologique.
+              %i Ce projet fut un tres gros challenge
+            %p
+              Objectif : Chaque partie depend d'une map, cette map contient le terrain de jeu mais aussi tout l'arbre technologie ce qui permet d'avoir une tres grande modularite. Nous avons donc 3 rendus :
+              %ul
+                %li un Client en C++ base sur Ogre3d (moteur 3D).
+                %li un Serveur en C++ multi threade, permettant de gerer plusieurs parties (Une partie peut avoir jusqu'a 6 joueurs)
+                %li un editeur de map et de l'arbre technologique en JavaScript
+              C'est un projet ambitieux realiser en 2 mois et demi, nous avons du choisir la finalite au depend de la maintabilite.
+            %p
+              Collaborators : GeoffreyBauduin, YannickBriffa, AnthonyDeleme, GautierLefebvre
 / {{template "flash.html" .}}
-/ {{template "footer.html" .}}
