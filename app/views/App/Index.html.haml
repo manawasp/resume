@@ -4,13 +4,20 @@
 
   #background.col-lg-4.col-md-3.col-sm-12.col-xs-12
     #top-info
-      %a{href: 'public/files/ClovisKyndt-CV-EN.pdf', target: '_blank'}
-        %button.btn.btn-warning.btn-sm Download PDF
+      %a{href: 'public/files/ClovisKyndt-CV-EN.pdf', target: '_blank', style: 'position:fixed;margin-left:-110px;'}
+        %button.btn.btn-success.btn-sm Download as PDF
+      %div{style: 'float:left;position:fixed'}
+        %a{href: 'https://plus.google.com/u/0/+ClovisKyndt/posts', target: '_blank'}
+          %img{src: 'public/img/googleplus.png'}
+        %a{href: 'https://www.linkedin.com/profile/view?id=328739321', target: '_blank'}
+          %img{src: 'public/img/linkedin.png'}
+        %a{href: 'https://github.com/Manawasp', target: '_blank'}
+          %img{src: 'public/img/github.png'}
   #cv-content.col-lg-8.col-md-9.col-sm-12.col-xs-12
     %div{style: 'float:right;margin:30px 30px 0 0;'}
       %div
         %img{src: '/public/img/mail.png', style: 'width:12px'}
-        %a{href: 'mailto:clovis.kyndt@gmail.com'} clovis.kyndt@gmail.com
+        %a{href: 'mailto:clovis.kyndt@gmail.com', target: '_blank'} clovis.kyndt@gmail.com
       %div
         %img{src: '/public/img/phone.png', style: 'width:12px'}
         (+33 6 57 40 37 87)
