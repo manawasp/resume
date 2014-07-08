@@ -34,3 +34,43 @@ h3 img, h4 img {
 }
 
 .bold {font-weight: bold}
+
+h4.title {
+  background : #f0f0f0;
+  display: inline-block;
+  padding: 10px;
+  color: #555;
+  font-size: 22px;
+  width: 50px;
+  text-align: center;
+}
+
+h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-top: 40px;
+  background: #fafafa;
+  color: #555;
+  text-align: center;
+}
+
+h3.title {
+  padding: 0 0 0 10px;
+  text-align: left;
+  color: #1D5774;
+  margin-top:23px;
+  background-color:transparent;
+}
+
+.content-info {
+  border-left: 4px solid #f9f9f9;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.label.label-primary,  .label.label-info {
+  color: #95ACB3;
+  background-color: transparent;
+  padding: 0;
+}
