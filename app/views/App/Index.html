@@ -3,11 +3,26 @@
 <div class='container-fluide'>
   <div class='col-lg-4 col-md-3 col-sm-12 col-xs-12' id='background'>
     <div id='top-info'>
-      <button class='btn btn-warning btn-sm'>Download PDF</button>
+      <a href='public/files/ClovisKyndt-CV-EN.pdf' target='_blank'>
+        <button class='btn btn-warning btn-sm'>Download PDF</button>
+      </a>
     </div>
   </div>
   <div class='col-lg-8 col-md-9 col-sm-12 col-xs-12' id='cv-content'>
-    <h1>Clovis Kyndt</h1>
+    <div style='float:right;margin:30px 30px 0 0;'>
+      <div>
+        <img src='/public/img/mail.png' style='width:12px'>
+        <a href='mailto:clovis.kyndt@gmail.com'>clovis.kyndt@gmail.com</a>
+      </div>
+      <div>
+        <img src='/public/img/phone.png' style='width:12px'>
+        (+33 6 57 40 37 87)
+      </div>
+    </div>
+    <h1>
+      Clovis Kyndt
+      <div style='font-size:18px;letter-spacing:2px;color:#888'>SOFTWARE ENGINEER</div>
+    </h1>
     {{template "partials/knowledges.html" .}}
     {{template "partials/education.html" .}}
     {{template "partials/workexperience.html" .}}
