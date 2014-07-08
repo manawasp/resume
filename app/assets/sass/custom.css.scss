@@ -87,21 +87,9 @@ h3.title {
   background-color: #eee;
 }
 
-.rotate {
-
-/* Safari */
--webkit-transform: rotate(-90deg);
-
-/* Firefox */
--moz-transform: rotate(-90deg);
-
-/* IE */
--ms-transform: rotate(-90deg);
-
-/* Opera */
--o-transform: rotate(-90deg);
-
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-
+#footer {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
