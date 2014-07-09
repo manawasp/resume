@@ -99,7 +99,7 @@ h3 {
     padding: 10px 0 0 0;
     text-align: left;
     color: #1D5774;
-    margin-top:25px;
+    margin-top:28px;
     line-height: 18px;
     height: 30px;
     background-color:transparent;
@@ -108,9 +108,12 @@ h3 {
 
 
 .label.label-primary,  .label.label-info {
-  color: #95ACB3;
-  background-color: transparent;
-  padding: 0;
+  color: #61696E;
+  background-color: #eee;
+  padding: 3px 5px;
+  margin-left: 1px;
+  margin-right: 3px;
+  font-weight: normal;
 }
 
 .btn.btn-default {
