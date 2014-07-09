@@ -4,6 +4,20 @@ body {
     background: url('/public/img/bg2.jpg') 0px 30px no-repeat #f6f3ea fixed;
 }
 
+.georgia {
+  font-family: Georgia;
+}
+
+h1 {
+  @extend .georgia;
+  font-size: 48px;
+}
+
+tr th {
+  @extend .georgia;
+  font-size: 14px;
+}
+
 // #background {
 //   position: fixed;
 //   height: 100%;
@@ -24,11 +38,8 @@ a, a:hover {text-decoration: none}
   text-align: right;
 }
 
-#background {
-  min-height: 50px;
-}
-
 h3 img, h4 img {
+  @extend .georgia;
   height: 24px;
   vertical-align: center;
   padding-bottom: 3px;
@@ -37,44 +48,64 @@ h3 img, h4 img {
 .bold {font-weight: bold}
 
 h4.title {
+  @extend .georgia;
   background: #f4f4f4;
   display: inline-block;
-  padding: 8px 20px 8px 40px;
+  padding: 8px 20px 8px 30px;
   margin-top: 30px;
   margin-left: -15px;
   color: #555;
-  font-size: 18px;
+  font-size: 24px;
   width: 350px;
+
+  img{
+    opacity: 0.8;
+  }
 }
 
-h4.title img{
-  opacity: 0.8;
+.subtitle {
+  @extend .georgia;
+
+  float: right;
+  width: 50px;
+  height: 50px;
+  margin: 20px 0 10px 0;
+  background-color: #f5f5f5;
+
+  text-align: center;
+  line-height: 50px;
+  font-size:18px;
+  color: #555;
+}
+
+h4 b {
+  @extend .georgia;
 }
 
 h3 {
-  padding-bottom: 0px;
-  height:45px;
-  padding-left: 0px;
-  margin-top: 10px;
-  background: #f9f9f9;
   display: inline-block;
+  height:45px;
+  background: #f9f9f9;
+
+  margin-top: 10px;
   padding: 0 20px 0 20px;
+
   color: #555;
   text-align: center;
   font-size:18px;
   line-height: 45px;
+
+  &.title {
+    padding: 10px 0 0 0;
+    text-align: left;
+    color: #1D5774;
+    margin-top:25px;
+    line-height: 18px;
+    height: 30px;
+    background-color:transparent;
+  }
 }
 
-h3.title {
-  padding: 0 0 0 10px;
-  text-align: left;
-  color: #1D5774;
-  margin-top:23px;
-  background-color:transparent;
-}
-
-.content-info {
-}
 
 .label.label-primary,  .label.label-info {
   color: #95ACB3;
