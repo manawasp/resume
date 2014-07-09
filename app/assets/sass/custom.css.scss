@@ -66,16 +66,19 @@ h4.title {
 .subtitle {
   @extend .georgia;
 
-  float: right;
-  width: 50px;
   height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
   margin: 20px 0 10px 0;
   background-color: #f5f5f5;
 
-  text-align: center;
   line-height: 50px;
   font-size:18px;
   color: #555;
+}
+
+.contact {
+  color:#4FA0D6;
 }
 
 h4 b {
@@ -106,6 +109,11 @@ h3 {
   }
 }
 
+.define {
+  @extend .georgia;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
 .label.label-primary,  .label.label-info {
   color: #61696E;
