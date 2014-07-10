@@ -1,20 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Not found</title>
-	</head>
-	<body>
-{{if eq .RunMode "dev"}}
-{{template "errors/404-dev.html" .}}
-{{else}}
-	{{with .Error}}
-	<h1>
-		{{.Title}}
-	</h1>
-	<p>
-		{{.Description}}
-	</p>
-	{{end}}
-{{end}}
-	</body>
+<html lang='en'>
+  <head>
+    <title>Clovis Kyndt | 404</title>
+    <link href='/public/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <link href='/public/img/favicon.png' rel='shortcut icon' type='image/png'>
+    <link href='/public/css/custom.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body class='t404'>
+    {{if eq .RunMode "dev"}}
+    {{template "errors/404-dev.html" .}}
+    {{else}}
+    {{with .Error}}
+    <div class='container'>
+      <div class='row' style='margin-top:90px'>
+        <div class='col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2' style='text-align:center'>
+          <div class='bs-callout bs-callout-info'>
+            <h1 style='font-size:96px'>404</h1>
+            <br>
+            <p>
+              <span class='define' style='font-size:18px;'>Clovis Kyndt</span>
+              : Sorry the page you requested may have been moved or deleted.
+            </p>
+            <p>
+              <span class='define' style='font-size:18px;'>Bot</span>
+              : You can go to the
+              <a href='/'>homepage</a>
+              .
+            </p>
+            <p>
+              <span class='define' style='font-size:18px;'>Bot</span>
+              : Or you can see & download the
+              <a href='/public/files/ClovisKyndt-CV-EN.pdf' target='_blank'>resume</a>
+            </p>
+            <p class='georgia'>
+              <br>
+              <span style='font-weight:bold'>END</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{end}}
+    {{end}}
+  </body>
 </html>

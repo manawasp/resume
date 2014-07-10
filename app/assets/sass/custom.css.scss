@@ -4,6 +4,10 @@ body {
     background: url('/public/img/bg2.jpg') 0px 30px no-repeat #f6f3ea fixed;
 }
 
+body.t404 {
+  background: url('/public/img/scribble_light.png');
+}
+
 .georgia {
   font-family: Georgia;
 }
