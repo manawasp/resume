@@ -247,9 +247,14 @@ ul li {
   }
 }
 
-.experience {
+.book {
+  line-height: 1.6rem;
+}
+
+.experience, .education, .project {
   border-bottom: 1px dashed #ddd;
   padding-bottom: 25px;
+  padding-left:5px;
 }
 // body.t404 {
 //   background: url('/public/img/subtle-pattern-10.jpg');
