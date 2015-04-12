@@ -251,6 +251,17 @@ ul li {
   }
 }
 
+.lang-menu a {
+  color: #aaa;
+  &:hover {
+    color: #444;
+  }
+  &.select {
+    color:#444;
+    border-bottom:1px solid #ddd;
+  }
+}
+
 .book {
   line-height: 1.6rem;
 }

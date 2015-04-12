@@ -1,3 +1,160 @@
 ---
 en:
-  hello: "Hello"
+  titleKnowledges: Computer Knowledges
+  titleWork: Work Experience
+  titleEducation: Education
+  titleLanguages: Languages
+  titleProjects: Personal Work
+  titleInterests: Interest
+  knowledges:
+    -
+      title: Languages
+      ability:
+        - C/C++
+        - Golang
+        - Python
+        - Javascript
+    -
+      title: Framework
+      ability:
+        - Ruby on Rails
+        - AngularJS
+        - Node.js
+        - Code Igniter
+    -
+      title: Database
+      ability:
+        - MongoDB
+        - MySQL
+        - Redis
+        - PostgreSQL
+    -
+      title: Distributed
+      ability:
+        - Microservice
+        - ELK stack
+        - Kafka
+        - RabbitMQ
+    -
+      title: Tools / Method
+      ability:
+        - Git
+        - Docker
+        - TDD
+        - Agile Dev
+    -
+      title: Extra
+      ability:
+        - Algorithm
+        - Design Pattern
+        - Mathematiques
+        - Procedural Prog.
+  works:
+    -
+      job: Backend developer ruby on rails
+      company: Libertrip
+      type: Internship
+      date: avril 2014 - aout 2015
+      localization: "a Euratechnologie, Lille, France"
+      describe: '"Libertrip is the easiest way to plan your next dream vacation. Build your itinerary, and Share with friends."<br />Tasks: Create an interface between Hotels Managers and Libertrip.'
+      tags:
+        - Ruby on Rails
+        - Backbone
+        - AngularJS
+        - PostgreSQL
+        - MongoDB
+    -
+      job: Developer Web
+      company: Freelance
+      type: ''
+      date: juillet 2012 - decembre 2012
+      localization: "a Edinburgh, Scotland, United Kingdom"
+      describe: ''
+      tags:
+        - Ruby on Rails
+        - JQuery
+        - MySQL
+  educations:
+    -
+      name: 'Beijing Jiaotong University'
+      date: 2014 - 2015
+      localization: "Beijing, Beijing Municipality, China"
+    -
+      name: 'Epitech - European Institute of Technology'
+      date: 2011 - 2016
+      localization: "Paris, France"
+  languages:
+    - 
+      lang: English
+      level: Intermediate
+      comment: Lived 6 months in Edinburgh
+    -
+      lang: French
+      level: Native Language
+      comment: ''
+    -
+      lang: Chinese
+      level: Basic
+      comment: Lived 1 year in Beijing
+  works:
+    -
+      title: Noihara
+      subtitle: Tools to manage project schedule
+      describe: 'Wombat is a web platform to manage a company and manager groups via its tasks / objectives. Obtain a fluid platform, user friendly, with advanced features like the crea tion Gantt Management Agenda (connection to external APIs), etc ... <br />Improve the use GO and AngularJS.'
+      tags:
+        - Microservice
+        - Golang
+        - Redis
+        - MongoDB
+        - Kafka
+        - Elasticsearch - ELK
+        - Docker
+    -
+      title: Citywarfare
+      subtitle: Mobile game with reality augmented
+      describe: 'Wombat is a web platform to manage a company and manager groups via its tasks / objectives. Obtain a fluid platform, user friendly, with advanced features like the crea tion Gantt Management Agenda (connection to external APIs), etc ... <br />Improve the use GO and AngularJS.'
+      tags:
+        - Ruby on Rails
+        - CodeIgniter
+        - API
+        - MongoDB
+        - Backend Architecture
+        - UX - Design
+    -
+      title: Hexatyla
+      subtitle: Computer game RTS
+      describe: 'Resume Hexatyla is a project built in a limited time (2 ½ months). This is a game gest ion / STR 3D (Warcraft3). <br />The Maps are fully scalable either the field or the tech tree. This project was a very big challenge<br /><br />Objective Each part depends on a map, this map contains the playing field but also the whole tree technology that provides a very high modularity. We have 3 records: This is an ambitious realize in 2 months and a half project, we have to choose the finality of the maintabilite depends.'
+      tags:
+        - C++
+        - Mathematiques
+        - Algorithms
+        - Ogre3D
+        - Javascript
+        - Management
+  interests:
+    -
+      meta: 'heartbeat'
+      names:
+        - "Running, Swimming, Fitness"
+    -
+      meta: heart
+      names: 
+        - Traveling
+        - "Movies, Series"
+        - "Digital Art, Photography"
+    -
+      meta: book
+      names:
+        - Machine Learning: The Art and Science of Algorithms that Make Sense of Data
+        -  Essential Algorithms: A Practical Approach to Computer Algorithms
+        - Design Patterns: Elements of Reusable Object-Oriented
+        - MongoDB Applied Design Patterns
+        - Go Programming Blueprints
+        - Building Microservices
+        - Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement
+        - Lean Startup
+        - The Art of War
+    -
+      meta: "thumbs-up"
+      names:
+        - "Food, Beer"

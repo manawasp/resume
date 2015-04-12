@@ -11,7 +11,14 @@
   %body{:class => page_classes}
     .row
       .large-8.large-push-4.white-bg.medium-11.medium-push-1.small-12
-        #cv-content.padding-h-40.padding-top-40{style: "margin-bottom:120px"}
+        .text-right.font-medium.padding-top-10.lang-menu
+          - if I18n.locale.to_s == 'fr'
+            %a.margin-right-10.select{href:"/"} Francais
+            %a.margin-right-10{href:"/en"} English
+          - elsif I18n.locale.to_s == 'en'
+            %a.margin-right-10{href:"/"} Francais
+            %a.margin-right-10.select{href:"/en"} English
+        #cv-content.padding-h-40.padding-top-20{style: "margin-bottom:120px"}
           %div.large-8.small-12.columns
             %h1.georgia.margin-top-0
               %div{style: 'letter-spacing:0.3rem'} CLOVIS KYNDT
