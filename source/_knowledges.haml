@@ -1,68 +1,39 @@
 .row
   .small-12
     %h3.title.margin-top-30
-      Computer Knowledges
+      = I18n.t(:titleKnowledges)
 .row.padding-h-30.padding-top-30
-  .small-12.medium-6.large-4.columns
-    %ul.knowledges
-      %li.title Languages
-      %li C/C++
-      %li Go
-      %li Ruby / Python
-      %li Shell script
-      %li C#
-  .small-12.medium-6.large-4.columns
-    %ul.knowledges
-      %li.title Web Development
-      %li PHP - codeIgniter
-      %li HTML, CSS, JavaScript
-      %li Pre-pocessing (HAML/SASS/CoffeScript)
-  .small-12.medium-6.large-4.columns.show-for-large-up
-    %ul.knowledges
-      %li.title Database
-      %li MySQL
-      %li PostgreSQL
-      %li MongoDB
+  - [0,1,2].each do |i|
+    - if i == 2
+      .small-12.medium-6.large-4.columns.show-for-large-up
+        %ul.knowledges
+          %li.title=I18n.t(:knowledges)[i][:title]
+          - I18n.t(:knowledges)[i][:abilities].each do |ability|
+            %li=ability
+    - else
+      .small-12.medium-6.large-4.columns
+        %ul.knowledges
+          %li.title=I18n.t(:knowledges)[i][:title]
+          - I18n.t(:knowledges)[i][:abilities].each do |ability|
+            %li=ability
 .row.padding-h-30.show-for-large-up
-  .small-12.medium-6.large-4.columns
-    %ul.knowledges
-      %li.title Operating Systems
-      %li Unix/Linux
-      %li Windows
-  .small-12.medium-6.large-4.columns
-    %ul.knowledges
-      %li.title Tools
-      %li Git / Subversion
-      %li Heroku
-      %li VS2013 / ViM / SublimeText
-  .small-12.medium-6.large-4.columns
-    %ul.knowledges
-      %li.title Other
-      %li Dedicated server
-      %li Design pattern
-      %li Algorithm
+  - [3,4,5].each do |i|
+    .small-12.medium-6.large-4.columns
+      %ul.knowledges
+        %li.title=I18n.t(:knowledges)[i][:title]
+        - I18n.t(:knowledges)[i][:abilities].each do |ability|
+          %li=ability
 .row.padding-h-30.hide-for-large-up
-  .small-12.medium-6.large-4.columns
-    %ul.knowledges
-      %li.title Database
-      %li MySQL
-      %li PostgreSQL
-      %li MongoDB
-  .small-12.medium-6.large-4.columns
-    %ul.knowledges
-      %li.title Operating Systems
-      %li Unix/Linux
-      %li Windows
+  - [2,3].each do |i|
+    .small-12.medium-6.large-4.columns
+      %ul.knowledges
+        %li.title=I18n.t(:knowledges)[i][:title]
+        - I18n.t(:knowledges)[i][:abilities].each do |ability|
+          %li=ability
 .row.padding-h-30.show.hide-for-large-up
-  .small-12.medium-6.large-4.columns
-    %ul.knowledges
-      %li.title Tools
-      %li Git / Subversion
-      %li Heroku
-      %li VS2013 / ViM / SublimeText
-  .small-12.medium-6.large-4.columns
-    %ul.knowledges
-      %li.title Other
-      %li Dedicated server
-      %li Design pattern
-      %li Algorithm
+  - [4,5].each do |i|
+    .small-12.medium-6.large-4.columns
+      %ul.knowledges
+        %li.title=I18n.t(:knowledges)[i][:title]
+        - I18n.t(:knowledges)[i][:abilities].each do |ability|
+          %li=ability

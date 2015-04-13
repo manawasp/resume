@@ -1,14 +1,12 @@
 .row
   .small-12
     %h3.title.margin-top-30
-      Education
+      = I18n.t(:titleEducations)
 .row.padding-h-30.padding-top-30
   .small-12.columns.padding-left-40.padding-right-40
-    .education.margin-bottom-20
-      %h4
-        Beijing Jiaotong University
-      %h6 2014 - 2015, Beijing, Beijing Municipality, China
-    .education.margin-bottom-20
-      %h4
-        Epitech - European Institute of Technology
-      %h6 2011 - 2016, Paris, France
+    - I18n.t(:educations).each do |education|
+      .education.margin-bottom-20
+        %h4
+          #{education[:name]}
+        %h6
+          #{education[:date]}, #{education[:localization]}

@@ -1,63 +1,15 @@
 .row.padding-top-10
   .small-12
     %h3.title.margin-top-30
-      Personal Work
-.row.padding-h-30.padding-top-30
+      = I18n.t(:titleProjects)
+.row.padding-h-30
   .small-12.columns.padding-left-40.padding-right-40
-    .project
-      %h4
-        Noihara
-      %h6
-        Tools to manage project schedule
-      %div.margin-top-20
-        %p
-          Wombat is a web platform to manage a company and manager groups via its tasks / objectives.
-          Obtain a fluid platform, user friendly, with advanced features like the crea tion Gantt Management Agenda (connection to external APIs), etc ...
-          %br Improve the use GO and AngularJS.
-      %div.margin-top-20
-        %span.label.label-primary Golang
-        %span.label.label-primary Redis
-        %span.label.label-primary MongoDB
-        %span.label.label-primary Distributed system
-        %span.label.label-primary Kafka
-        %span.label.label-primary Elasticsearch - ELK
-        %span.label.label-primary Fullstack-dev
-    .project.margin-top-30
-      %h4
-        Citywarfare
-      %h6
-        Mobile game with reality augmented
-      %div.margin-top-20
-        %p
-          Wombat is a web platform to manage a company and manager groups via its tasks / objectives.
-          Obtain a fluid platform, user friendly, with advanced features like the crea tion Gantt Management Agenda (connection to external APIs), etc ...
-          %br Improve the use GO and AngularJS.
-      %div.margin-top-20
-        %span.label.label-primary Ruby on Rails
-        %span.label.label-primary CodeIgniter
-        %span.label.label-primary API
-        %span.label.label-primary MongoDB
-        %span.label.label-primary Architect
-        %span.label.label-primary UX
-    .project.margin-top-30
-      %h4
-        Hexatyla
-      %h6
-        Computer game RTS
-      %div.margin-top-20
-        %p
-          %span.define Resume
-          Hexatyla is a project built in a limited time (2 ½ months). This is a game gest ion / STR 3D (Warcraft3).
-          %br
-          The Maps are fully scalable either the field or the tech tree.
-          %i This project was a very big challenge
-        %p
-          %span.define Objective
-          Each part depends on a map, this map contains the playing field but also the whole tree technology that provides a very high modularity. We have 3 records:
-          This is an ambitious realize in 2 months and a half project, we have to choose the finality of the maintabilite depends.
-      %div.margin-top-20
-        %span.label.label-primary C++
-        %span.label.label-primary Mathematiques
-        %span.label.label-primary Algorithms
-        %span.label.label-primary Ogre3D
-        %span.label.label-primary Javascript
+    - I18n.t(:projects).each do |project|
+      .project.margin-top-30
+        %h4=project[:title]
+        %h6=project[:subtitle]
+        %div.margin-top-20
+          %p=project[:describe]
+        %div.margin-top-20
+          - project[:tags].each do |tag|
+            %span.label.label-primary=tag

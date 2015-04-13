@@ -1,50 +1,50 @@
 ---
 en:
   titleKnowledges: Computer Knowledges
-  titleWork: Work Experience
-  titleEducation: Education
+  titleWorks: Work Experience
+  titleEducations: Education
   titleLanguages: Languages
   titleProjects: Personal Work
   titleInterests: Interest
   knowledges:
     -
       title: Languages
-      ability:
+      abilities:
         - C/C++
         - Golang
         - Python
         - Javascript
     -
       title: Framework
-      ability:
+      abilities:
         - Ruby on Rails
         - AngularJS
         - Node.js
-        - Code Igniter
+        - CodeIgniter
     -
       title: Database
-      ability:
+      abilities:
         - MongoDB
         - MySQL
         - Redis
         - PostgreSQL
     -
       title: Distributed
-      ability:
+      abilities:
         - Microservice
         - ELK stack
         - Kafka
         - RabbitMQ
     -
       title: Tools / Method
-      ability:
+      abilities:
         - Git
         - Docker
         - TDD
         - Agile Dev
     -
       title: Extra
-      ability:
+      abilities:
         - Algorithm
         - Design Pattern
         - Mathematiques
@@ -96,7 +96,7 @@ en:
       lang: Chinese
       level: Basic
       comment: Lived 1 year in Beijing
-  works:
+  projects:
     -
       title: Noihara
       subtitle: Tools to manage project schedule
@@ -145,15 +145,15 @@ en:
     -
       meta: book
       names:
-        - Machine Learning: The Art and Science of Algorithms that Make Sense of Data
-        -  Essential Algorithms: A Practical Approach to Computer Algorithms
-        - Design Patterns: Elements of Reusable Object-Oriented
-        - MongoDB Applied Design Patterns
-        - Go Programming Blueprints
-        - Building Microservices
-        - Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement
-        - Lean Startup
-        - The Art of War
+        - "Machine Learning: The Art and Science of Algorithms that Make Sense of Data"
+        - "Essential Algorithms: A Practical Approach to Computer Algorithms"
+        - "Design Patterns: Elements of Reusable Object-Oriented"
+        - "MongoDB Applied Design Patterns"
+        - "Go Programming Blueprints"
+        - "Building Microservices"
+        - "Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement"
+        - "Lean Startup"
+        - "The Art of War"
     -
       meta: "thumbs-up"
       names:

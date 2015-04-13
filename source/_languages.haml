@@ -1,22 +1,14 @@
 .row
   .small-12
     %h3
-      Languages
+      = I18n.t(:titleLanguages)
 .row.padding-h-30.padding-top-30
   .small-12.columns.padding-left-40.padding-right-40
     .languages.margin-bottom-20
-      .small-12.medium-4.columns.margin-bottom-20
-        %h4 English
-        %h6
-          Intermediate
-          %br
-          Lived 6 months in Edinburgh
-      .small-12.medium-4.columns.margin-bottom-20
-        %h4 French
-        %h6 Native Language
-      .small-12.medium-4.columns.margin-bottom-20
-        %h4 Chinese
-        %h6
-          Basic
-          %br
-          Liver 1 year in Beijing
+      - I18n.t(:languages).each do |lang|
+        .small-12.medium-4.columns.margin-bottom-20
+          %h4=lang[:lang]
+          %h6
+            #{lang[:level]}
+            %br
+            #{lang[:comment]}
