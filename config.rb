@@ -73,4 +73,4 @@ configure :build do
 end
 
 set :haml, { :ugly => true, :format => :html5 }
-activate :i18n, :langs => [:fr, :en]
+activate :i18n, :langs => [:fr, :en, :cn]

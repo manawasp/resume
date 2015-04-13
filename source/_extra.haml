@@ -8,6 +8,6 @@
       %ul
         - I18n.t('interests').each do |categorie|
           - categorie[:names].each do |name|
-            %li.font-medium
+            %li{style: "font-size:0.95rem"}
               %i.fa.margin-right-10.grey-5{class: "fa-#{categorie[:meta]}"}
               #{name}

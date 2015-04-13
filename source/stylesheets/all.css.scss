@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Sorts Mill Goudy";
+  src: url(./fonts/SortsMillGoudy-Regular.ttf);
+}
 
 .cursor {cursor: pointer}
 .white {color: #fff}
@@ -129,6 +133,11 @@ body {
   background: url('/images/background.jpg') left 50% no-repeat #f6f3ea fixed;
   overflow-x: hidden;
   font-size: 1rem;
+  font-family: "Sorts Mill Goudy";
+}
+
+h1 {
+  font-family: "Sorts Mill Goudy";
 }
 
 a.social {
@@ -264,6 +273,7 @@ ul li {
 
 .book {
   line-height: 1.6rem;
+  font-size:2rem;
 }
 
 .experience, .education, .project {

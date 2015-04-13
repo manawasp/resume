@@ -5,7 +5,7 @@
     / Always force latest IE rendering engine or request Chrome Frame
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
     / Use title if it's in the page YAML frontmatter
-    -# %title= 'Clovis Kyndt :: ' + @title
+    %title= @title + ' | Clovis Kyndt'
     = stylesheet_link_tag "normalize", "foundation", "all"
     %link{:href => "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", :rel => "stylesheet"}/
   %body{:class => page_classes}
@@ -15,9 +15,15 @@
           - if I18n.locale.to_s == 'fr'
             %a.margin-right-10.select{href:"/"} Francais
             %a.margin-right-10{href:"/en"} English
+            %a.margin-right-10{href:"/cn"} Chinese
           - elsif I18n.locale.to_s == 'en'
             %a.margin-right-10{href:"/"} Francais
             %a.margin-right-10.select{href:"/en"} English
+            %a.margin-right-10{href:"/cn"} Chinese
+          - elsif I18n.locale.to_s == 'cn'
+            %a.margin-right-10{href:"/"} Francais
+            %a.margin-right-10{href:"/en"} English
+            %a.margin-right-10.select{href:"/cn"} Chinese
         #cv-content.padding-h-40.padding-top-20{style: "margin-bottom:120px"}
           %div.large-8.small-12.columns
             %h1.georgia.margin-top-0
