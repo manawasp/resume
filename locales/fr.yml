@@ -9,7 +9,7 @@ fr:
   presentation:
     quick: "Je suis un passionné de programmation et de mathématiques."
     computer: "J'ai débuté la programmation au lycée avec le JavaScript, puis le C/C++ a l'Epitech. Aujourd'hui je me tourne vers les technologies backend (NodeJs, RoR, Python & Golang), je suis intéressé par les systèmes distribués et le big data.<br />Je consacre beaucoup de mon temps libre à actualiser/augmenter mes connaissances avec des projets personnels, de la lecture. J'aime le challenge et résoudre des problèmes.<br /> En ce moment je travaille sur une architecture orientée microservice et facilement scalable."
-    interest: "J'ai vécu six mois à Edimburg dans l'objectif d'augmenter mon niveau d'anglais. J'ai étudié un an en Chine. J'aime voyager et j'espère voyager en Coree du Sud et au Japon.<br /> J'apprécie beaucoup ce qui touche au design notamment l'art numérique' et la photographie."
+    interest: "J'ai vécu six mois à Edimburg dans l'objectif d'augmenter mon niveau d'anglais. J'ai étudié un an en Chine. J'aime voyager et j'espère voyager en Coree du Sud et au Japon.<br /> J'apprécie beaucoup ce qui touche au design notamment l'art numérique et la photographie."
   knowledges:
     -
       title: Langages
@@ -72,7 +72,7 @@ fr:
       company: Freelance
       type: 'Stage'
       date: juillet 2012 - decembre 2012
-      localization: "à Edimburgh, Ecosse, Royaume-Unis"
+      localization: "à Edinburgh, Ecosse, Royaume-Unis"
       describe: ''
       tags:
         - Ruby on Rails
@@ -94,7 +94,7 @@ fr:
       date: 2011 - 2016
       localization: "Paris, France"
       courses:
-        - Gestion de groupe
+        - Projets en groupe
   languages:
     - 
       lang: Anglais
@@ -112,7 +112,7 @@ fr:
     -
       title: Noihara
       subtitle: Outils de planification et de management de taches dans un projet
-      describe: "Noihara est une application web pour manager vos projets au sein d'une équipe. Il disposera une interface web le plus 'friendly' possible, une gestion de diagramme comme le diagramme de Pert et Gantt, un système d'agenda, chat, etc.<br/> L'idée est venue après avoir testé Asana, Basecamp et d'autres pour le projet Citywarfare. Le projet me permet de me former a diverses technologies."
+      describe: "Noihara est une application web pour manager vos projets au sein d'une équipe. Il disposera une interface web le plus 'friendly' possible, une gestion de diagramme comme le diagramme de Pert et Gantt, un système d'agenda, chat, etc.<br/> L'idée est venue après avoir testé Asana, Basecamp et d'autres pour le management du projet Citywarfare. Le projet me permet de me former a diverses technologies."
       tags:
         - Microservice
         - Golang
