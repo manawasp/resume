@@ -1,16 +1,15 @@
-.row
-  .small-12
-    %h3.title.margin-top-30
-      = I18n.t(:titleWorks)
+.small-12
+  %h3.title.margin-top-30
+    = I18n.t(:titleWorks)
 - I18n.t(:works).each do |work| 
-  .row.padding-h-30.padding-top-30{style: 'max-width:825px'}
-    .small-12.columns.padding-left-40.padding-right-40
-      .experience
+  .small-12.padding-h-30.padding-top-20
+    .small-12.columns.padding-left-20.padding-right-20
+      .experience.margin-bottom-20
         %h4
           #{work[:job]} -
           %span.company
             #{work[:company]}
-        %h6{style: 'color:#a5a5a5'}
+        %h6.grey-a5
           #{work[:type]} #{work[:date]} #{work[:localization]}
         %div.margin-top-20.text-justify
           #{work[:describe]}

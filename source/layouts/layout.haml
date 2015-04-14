@@ -25,11 +25,11 @@
             %a.margin-right-10{href:"/"} Français
             %a.margin-right-10{href:"/en"} English
             %a.margin-right-10.select{href:"/cn"} 中文
-        #cv-content.padding-h-40.padding-top-20{style: "margin-bottom:120px"}
+        #cv-content.padding-h-40.padding-top-20.margin-bottom-120
           %div.large-8.small-12.columns
             %h1.georgia.margin-top-0
-              %div{style: 'letter-spacing:0.3rem'} CLOVIS KYNDT
-              %div.font-large.grey-8{style: 'letter-spacing:0.6rem'} SOFTWARE ENGINEER
+              %div.letter-spacing-0-3 CLOVIS KYNDT
+              %div.font-large.grey-8.letter-spacing-0-6 SOFTWARE ENGINEER
           %div.large-4.small-12.columns
             %div#social.margin-top-30.margin-right-10.margin-bottom-30
               %a.social.googleplus{href: 'https://plus.google.com/u/0/+ClovisKyndt/posts', target: '_blank'}
@@ -42,6 +42,6 @@
                 %i.fa.fa-download.fa-lg
         = yield
         #footer.margin-left-40.margin-right-40
-          %a{href: 'mailto:clovis.kyndt@gmail.com', target: '_blank', style:"color:#777"} clovis.kyndt@gmail.com
+          %a.grey-7{href: 'mailto:clovis.kyndt@gmail.com', target: '_blank'} clovis.kyndt@gmail.com
           .font-small Design by Clovis Kyndt
     = javascript_include_tag  "all"
