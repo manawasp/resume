@@ -10,9 +10,9 @@
           #{work[:job]} -
           %span.company
             #{work[:company]}
-        %h6
+        %h6{style: 'color:#a5a5a5'}
           #{work[:type]} #{work[:date]} #{work[:localization]}
-        %div.margin-top-20
+        %div.margin-top-20.text-justify
           #{work[:describe]}
         %div.margin-top-20
           - work[:tags].each do |tag|

@@ -7,8 +7,8 @@ fr:
   titleProjects: Projets
   titleInterests: Centres d’intérêt
   presentation:
-    quick: "J'ai 22 ans et je suis passionné de développement et de mathématiques."
-    computer: "C'est a mes 15 ans que j'ai decouvert le monde de la programmation. Ce n'est qu'en etude superieur que mon niveau a reellement progresser en apprenant le C et le C++.<br />Je consacre beaucoup de mon temps libre a actualiser/augmenter mes connaissances avec des projets personnel, de la lecture. J'aime etre plonger dans la complexite et le challenge.<br /> En ce moment je travail sur une architecture orientee microservice et facilement scalable."
+    quick: "Je suis un passionné de programmation et de mathématiques."
+    computer: "J'ai débuté la programmation au lycée avec le JavaScript, puis le C/C++ a l'Epitech. Aujourd'hui je me tourne vers les technologies backend (NodeJs, RoR, Python & Golang), je suis intéressé par les systèmes distribués et le big data.<br />Je consacre beaucoup de mon temps libre à actualiser/augmenter mes connaissances avec des projets personnels, de la lecture. J'aime le challenge et résoudre des problèmes.<br /> En ce moment je travaille sur une architecture orientée microservice et facilement scalable."
     interest: "J'ai vecu six mois a Edimburg dans l'objectif d'augmenter mon niveau d'anglais. J'ai etudie un an en Chine. J'aime voyager et j'espere voyager en Coree du Sud et au Japon.<br /> J'apprecie beaucoup ce qui touche au design notament le digital art et la photographie."
   knowledges:
     -
@@ -60,7 +60,7 @@ fr:
       type: Stage
       date: avril 2014 - aout 2015
       localization: "a Euratechnologie, Lille, France"
-      describe: '"Libertrip is the easiest way to plan your next dream vacation. Build your itinerary, and Share with friends."<br />Tasks: Create an interface between Hotels Managers and Libertrip.'
+      describe: "Le premier mois j'ai ete en charge de l'implementation de feature sur l'application Rails / Backbone.<br />L'autre partie de mon stage a ete consacre a la creation d'une API Rails implementant et uniformisant les API de different 'Channel Manager'.<br />Par la suite j'ai mise en place une interface web a l'aide d'AngularJs pour visualiser et manipuler ces donnees."
       tags:
         - Ruby on Rails
         - Backbone
@@ -70,9 +70,9 @@ fr:
     -
       job: Developpeur Web
       company: Freelance
-      type: ''
+      type: 'Stage'
       date: juillet 2012 - decembre 2012
-      localization: "a Edinburgh, Scotland, United Kingdom"
+      localization: "a Edimburgh, Ecosse, Royaume-Unis"
       describe: ''
       tags:
         - Ruby on Rails
