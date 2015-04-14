@@ -1,14 +1,18 @@
 ---
 fr:
-  titleKnowledges: Computer Knowledges
-  titleWorks: Work Experience
-  titleEducations: Education
-  titleLanguages: Languages
-  titleProjects: Personal Work
-  titleInterests: Interest
+  titleKnowledges: Competences
+  titleWorks: Expérience
+  titleEducations: Formation
+  titleLanguages: Langues
+  titleProjects: Projets
+  titleInterests: Centres d’intérêt
+  presentation:
+    quick: "Je suis young French software engineer. I love technology, mathematics."
+    computer: "When I was 15 old I started to learn programming, but It was in my first year of undergratuate school I really began to start programming and increase my knowledges with C, C++.<br />I spend a lot of time to improve myself with side project, read some blogs, website, books. I like 'swimming' in the complexity and challenge. Currently I work on microservice concept and high scalability."
+    interest: "I lived 6 months in Edinburgh to increase my English and I studied 1 year in China. I like traveling I would like to travel in South Corea and in Japan.<br />I have some interest for the digital art and photography. "
   knowledges:
     -
-      title: Languages
+      title: Langages
       abilities:
         - C/C++
         - Golang
@@ -22,26 +26,26 @@ fr:
         - Node.js
         - CodeIgniter
     -
-      title: Database
+      title: BDD
       abilities:
         - MongoDB
         - MySQL
         - Redis
         - PostgreSQL
     -
-      title: Distributed
+      title: Sys. Distribue
       abilities:
         - Microservice
         - ELK stack
         - Kafka
         - RabbitMQ
     -
-      title: Tools / Method
+      title: Outils / Methodes
       abilities:
         - Git
         - Docker
         - TDD
-        - Agile Dev
+        - Agile Dev.
     -
       title: Extra
       abilities:
@@ -51,9 +55,9 @@ fr:
         - Procedural Prog.
   works:
     -
-      job: Backend developer ruby on rails
+      job: Developpeur backend ruby on rails
       company: Libertrip
-      type: Internship
+      type: Stage
       date: avril 2014 - aout 2015
       localization: "a Euratechnologie, Lille, France"
       describe: '"Libertrip is the easiest way to plan your next dream vacation. Build your itinerary, and Share with friends."<br />Tasks: Create an interface between Hotels Managers and Libertrip.'
@@ -64,7 +68,7 @@ fr:
         - PostgreSQL
         - MongoDB
     -
-      job: Developer Web
+      job: Developpeur Web
       company: Freelance
       type: ''
       date: juillet 2012 - decembre 2012
@@ -85,21 +89,21 @@ fr:
       localization: "Paris, France"
   languages:
     - 
-      lang: English
-      level: Intermediate
-      comment: Lived 6 months in Edinburgh
+      lang: Anglais
+      level: Compétence professionnelle
+      comment: "A vécu 6 mois à Edimburgh"
     -
-      lang: French
-      level: Native Language
+      lang: Francais
+      level: Langue maternelle
       comment: ''
     -
-      lang: Chinese
-      level: Basic
-      comment: Lived 1 year in Beijing
+      lang: Chinois
+      level: Debutant
+      comment: "A vécu 1 an à Beijing"
   projects:
     -
       title: Noihara
-      subtitle: Tools to manage project schedule
+      subtitle: Outils de planification et de management de taches dans un projet
       describe: 'Wombat is a web platform to manage a company and manager groups via its tasks / objectives. Obtain a fluid platform, user friendly, with advanced features like the crea tion Gantt Management Agenda (connection to external APIs), etc ... <br />Improve the use GO and AngularJS.'
       tags:
         - Microservice
@@ -111,7 +115,7 @@ fr:
         - Docker
     -
       title: Citywarfare
-      subtitle: Mobile game with reality augmented
+      subtitle: Jeu mobile utilisant la realite augmente
       describe: 'Wombat is a web platform to manage a company and manager groups via its tasks / objectives. Obtain a fluid platform, user friendly, with advanced features like the crea tion Gantt Management Agenda (connection to external APIs), etc ... <br />Improve the use GO and AngularJS.'
       tags:
         - Ruby on Rails
@@ -122,12 +126,12 @@ fr:
         - UX - Design
     -
       title: Hexatyla
-      subtitle: Computer game RTS
+      subtitle: Jeu sur Linux en 3D de type STR
       describe: 'Resume Hexatyla is a project built in a limited time (2 ½ months). This is a game gest ion / STR 3D (Warcraft3). <br />The Maps are fully scalable either the field or the tech tree. This project was a very big challenge<br /><br />Objective Each part depends on a map, this map contains the playing field but also the whole tree technology that provides a very high modularity. We have 3 records: This is an ambitious realize in 2 months and a half project, we have to choose the finality of the maintabilite depends.'
       tags:
         - C++
         - Mathematiques
-        - Algorithms
+        - Algorithmes
         - Ogre3D
         - Javascript
         - Management
@@ -135,13 +139,13 @@ fr:
     -
       meta: 'heartbeat'
       names:
-        - "Running, Swimming, Fitness"
+        - "Jogging, Nation, Fitness"
     -
       meta: heart
       names: 
         - Traveling
-        - "Movies, Series"
-        - "Digital Art, Photography"
+        - "Film, Series"
+        - "Digital Art, Photographie"
     -
       meta: book
       names:
@@ -157,4 +161,4 @@ fr:
     -
       meta: "thumbs-up"
       names:
-        - "Food, Beer"
+        - "Nourriture, Biere"

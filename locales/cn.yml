@@ -1,11 +1,15 @@
 ---
-fr:
+cn:
   titleKnowledges: Computer Knowledges
   titleWorks: Work Experience
   titleEducations: Education
   titleLanguages: Languages
   titleProjects: Personal Work
   titleInterests: Interest
+  presentation:
+    quick: "Zhong guo ! young French software engineer. I love technology, mathematics."
+    computer: "When I was 15 old I started to learn programming, but It was in my first year of undergratuate school I really began to start programming and increase my knowledges with C, C++.<br />I spend a lot of time to improve myself with side project, read some blogs, website, books. I like 'swimming' in the complexity and challenge. Currently I work on microservice concept and high scalability."
+    interest: "I lived 6 months in Edinburgh to increase my English and I studied 1 year in China. I like traveling I would like to travel in South Corea and in Japan.<br />I have some interest for the digital art and photography. "
   knowledges:
     -
       title: Languages
