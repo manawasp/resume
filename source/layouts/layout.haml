@@ -15,11 +15,11 @@
           - if I18n.locale.to_s == 'fr'
             %a.margin-right-10.select{href:"/"} Français
             %a.margin-right-10{href:"/en"} English
-            %a.margin-right-10{href:"/cn"} 中文
+            -# %a.margin-right-10{href:"/cn"} 中文
           - elsif I18n.locale.to_s == 'en'
             %a.margin-right-10{href:"/"} Français
             %a.margin-right-10.select{href:"/en"} English
-            %a.margin-right-10{href:"/cn"} 中文
+            -# %a.margin-right-10{href:"/cn"} 中文
           - elsif I18n.locale.to_s == 'cn'
             %a.margin-right-10{href:"/"} Français
             %a.margin-right-10{href:"/en"} English

@@ -7,9 +7,9 @@ en:
   titleProjects: Personal Work
   titleInterests: Interest
   presentation:
-    quick: "I'm a young French software engineer. I love programming and mathematics."
-    computer: "I started to learn programming when I was in the high school with the JavaScript, then C and C++ in my College. Today I focus my practice to the Backend technologies (NodeJs, RoR, Python & Golang), I'm very interested in the distributed system and the big data.<br />I spend a lot of time to improve myself with side projects, read some blogs, website, books. I like challenge, play and solve complex problems.<br />Currently I work on microservice architecture with an easy way to scale."
-    interest: "I lived 6 months in Edinburgh to increase my English and I studied 1 year in China. I like traveling I would like to travel in South Corea and in Japan.<br />I'm interested in the digital art and photography. "
+    quick: "I am a young French software engineer that loves programming and mathematics."
+    computer: "I started learning programming when I was in high school with JavaScript, then C and C++ during college, and now I focus on Backend technologies (NodeJs, RoR, Python & Golang). I am very interested in distributed systems and big data.<br />I spend a lot of time improving myself by working on side projects, reading CS blogs, website, and books. I like challenges and solving complex problems.<br />I am currently working on a microservices architecture that will be easy to scale."
+    interest: "I lived 6 months in Edinburgh to improve my English and I studied 1 year in China. I like traveling and I would like to visit South Korea and Japan.<br />I am interested in the digital art and photography."
   knowledges:
     -
       title: Languages
@@ -50,7 +50,7 @@ en:
       title: Extra
       abilities:
         - Algorithms
-        - Design Pattern
+        - Design Patterns
         - Mathematics
         - Procedural Prog.
   works:
@@ -60,7 +60,7 @@ en:
       type: Internship
       date: april 2014 - august 2015
       localization: "in Euratechnologie, Lille, France"
-      describe: 'My first month in Libertrip I integrated some features in the main application in Rails / Backbone.<br />After this month I spent my time to build an API in Rails, to create it I had to incorporate several API from channel manager.<br />Then I built a web client to read and to handle my data.'
+      describe: 'During my first month in Libertrip I integrated new features in the main application in Rails / Backbone.<br />After this month I spent my time building an API in Rails to query the application. To create it I had to incorporate several other API from channel manager together.<br />I then built a web client to read and handle the data.'
       tags:
         - Ruby on Rails
         - Backbone
@@ -111,8 +111,8 @@ en:
   projects:
     -
       title: Noihara
-      subtitle: Tools to plan and manage project schedule
-      describe: "Noihara is a web application to manage your projects in team. It will have the most friendly interface possible, capability to manage some diagram like Pert and Gantt, schedule, chat, etc.<br />This project was born after tested Asana, Basecamp and some other tools to manage the Citywarfare project. This project allows me to test and improve my knowledge about various technologies."
+      subtitle: Tools to plan and manage projects schedules
+      describe: "Noihara is a web application to help you manage your projects in a team. It will have the most user friendly interface possible, the ability to manage diagrams like Pert and Gantt, schedules, chats, etc.<br />The project was born after having tested Asana, Basecamp and other tools to manage the Citywarfare project. This project allows me to test and improve my knowledge about various technologies."
       tags:
         - Microservice
         - Golang
@@ -124,7 +124,7 @@ en:
     -
       title: Citywarfare
       subtitle: Mobile game with reality augmented
-      describe: "Citywarfare is a multiplayer war game in augmented reality done during our studies at Epitech. It will have mobile applications and a web interface. The user will be able to play in a world game and in custom games with different game modes available. We are 7 in the Citywarfare team.<br />I supervise the backend architecture, I build the API and the design."
+      describe: "Citywarfare is a multiplayer war game in augmented reality created during our curriculum at Epitech. It will have mobile applications and a web interface. The user will be able to play in a world game and in custom games with different game modes available. We are 7 in the Citywarfare team.<br />I supervise the backend architecture and build the API and its design."
       tags:
         - Ruby on Rails
         - CodeIgniter
@@ -135,7 +135,7 @@ en:
     -
       title: Hexatyla
       subtitle: Computer game RTS
-      describe: "Resume Hexatyla is a project built in a limited time 3 months done during our undergraduate at Epitech. We were 5 in the team to build this project.<br />This project was a big challenge with only use 3d motor to build it. It has 3 parts, server, client application, and web application. The web application allow to manage race, map, tech tree to have a modular game.<br />We have been strongly congratulate about our work achievement even it was not complete."
+      describe: "Resume Hexatyla was a project built in a mandatory 3-months time during our undergraduate year at Epitech. We were 5 in the team to work on this project.<br />The project was a real challenge and we chose to only use a low-level rendering engine to build the core of the project. It has 3 parts, a server, a client application, and a web application. The web application allows to manage the race, map, and tech. tree to help having a modular game.<br />We have been strongly congratulated about the work we put on eventhough we could not finish it in the set time constraint."
       tags:
         - C++
         - Mathematics
