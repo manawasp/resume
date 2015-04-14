@@ -1,0 +1,39 @@
+.row
+  .small-12
+    %h3.title.margin-top-30
+      = I18n.t(:titleKnowledges)
+.row.padding-h-30.padding-top-30
+  - [0,1,2].each do |i|
+    - if i == 2
+      .small-12.medium-6.large-4.columns.show-for-large-up
+        %ul.knowledges
+          %li.title=I18n.t(:knowledges)[i][:title]
+          - I18n.t(:knowledges)[i][:abilities].each do |ability|
+            %li=ability
+    - else
+      .small-12.medium-6.large-4.columns
+        %ul.knowledges
+          %li.title=I18n.t(:knowledges)[i][:title]
+          - I18n.t(:knowledges)[i][:abilities].each do |ability|
+            %li=ability
+.row.padding-h-30.show-for-large-up
+  - [3,4,5].each do |i|
+    .small-12.medium-6.large-4.columns
+      %ul.knowledges
+        %li.title=I18n.t(:knowledges)[i][:title]
+        - I18n.t(:knowledges)[i][:abilities].each do |ability|
+          %li=ability
+.row.padding-h-30.hide-for-large-up
+  - [2,3].each do |i|
+    .small-12.medium-6.large-4.columns
+      %ul.knowledges
+        %li.title=I18n.t(:knowledges)[i][:title]
+        - I18n.t(:knowledges)[i][:abilities].each do |ability|
+          %li=ability
+.row.padding-h-30.show.hide-for-large-up
+  - [4,5].each do |i|
+    .small-12.medium-6.large-4.columns
+      %ul.knowledges
+        %li.title=I18n.t(:knowledges)[i][:title]
+        - I18n.t(:knowledges)[i][:abilities].each do |ability|
+          %li=ability

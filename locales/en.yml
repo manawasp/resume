@@ -1,0 +1,172 @@
+---
+en:
+  titleKnowledges: Computer Knowledges
+  titleWorks: Work Experience
+  titleEducations: Education
+  titleLanguages: Languages
+  titleProjects: Personal Work
+  titleInterests: Interest
+  presentation:
+    quick: "I'm a young French software engineer. I love programming and mathematics."
+    computer: "I started to learn programming when I was in the high school with the JavaScript, then C and C++ in my College. Today I focus my practice to the Backend technologies (NodeJs, RoR, Python & Golang), I'm very interested in the distributed system and the big data.<br />I spend a lot of time to improve myself with side projects, read some blogs, website, books. I like challenge, play and solve complex problems.<br />Currently I work on microservice architecture with an easy way to scale."
+    interest: "I lived 6 months in Edinburgh to increase my English and I studied 1 year in China. I like traveling I would like to travel in South Corea and in Japan.<br />I'm interested in the digital art and photography. "
+  knowledges:
+    -
+      title: Languages
+      abilities:
+        - C/C++
+        - Golang
+        - Python
+        - Javascript
+    -
+      title: Framework
+      abilities:
+        - Ruby on Rails
+        - AngularJS
+        - Node.js
+        - CodeIgniter
+    -
+      title: Database
+      abilities:
+        - MongoDB
+        - MySQL
+        - Redis
+        - PostgreSQL
+    -
+      title: Distributed sys.
+      abilities:
+        - Microservice
+        - ELK stack
+        - Kafka
+        - RabbitMQ
+    -
+      title: Tools / Methods
+      abilities:
+        - Git
+        - Docker
+        - TDD
+        - Agile Dev
+    -
+      title: Extra
+      abilities:
+        - Algorithms
+        - Design Pattern
+        - Mathematics
+        - Procedural Prog.
+  works:
+    -
+      job: Backend developer ruby on rails
+      company: Libertrip
+      type: Internship
+      date: april 2014 - august 2015
+      localization: "in Euratechnologie, Lille, France"
+      describe: 'My first month in Libertrip I integrated some features in the main application in Rails / Backbone.<br />After this month I spent my time to build an API in Rails, to create it I had to incorporate several API from channel manager.<br />Then I built a web client to read and to handle my data.'
+      tags:
+        - Ruby on Rails
+        - Backbone
+        - AngularJS
+        - PostgreSQL
+        - MongoDB
+    -
+      job: Web Developer
+      company: Freelance
+      type: ''
+      date: july 2012 - december 2012
+      localization: "in Edinburgh, Scotland, United Kingdom"
+      describe: ''
+      tags:
+        - Ruby on Rails
+        - JQuery
+        - MySQL
+  educations:
+    -
+      name: 'Beijing Jiaotong University'
+      date: 2014 - 2015
+      localization: "Beijing, Beijing Municipality, China"
+      courses:
+        - Project Management
+        - Quality and Process Software Management
+        - BigData (Hadoop)
+        - Software training (Node.js & AngularJS)
+        - Chinese writting and oral
+    -
+      name: 'Epitech - European Institute of Technology'
+      date: 2011 - 2016
+      localization: "Paris, France"
+      courses:
+        - Group projects
+  languages:
+    - 
+      lang: English
+      level: Intermediate
+      comment: Lived 6 months in Edinburgh
+    -
+      lang: French
+      level: Native Language
+      comment: ''
+    -
+      lang: Chinese
+      level: Basic
+      comment: Lived 1 year in Beijing
+  projects:
+    -
+      title: Noihara
+      subtitle: Tools to plan and manage project schedule
+      describe: "Noihara is a web application to manage your projects in team. It will have the most friendly interface possible, capability to manage some diagram like Pert and Gantt, schedule, chat, etc.<br />This project was born after tested Asana, Basecamp and some other tools to manage the Citywarfare project. This project allows me to test and improve my knowledge about various technologies."
+      tags:
+        - Microservice
+        - Golang
+        - Redis
+        - MongoDB
+        - Kafka
+        - Elasticsearch - ELK
+        - Docker
+    -
+      title: Citywarfare
+      subtitle: Mobile game with reality augmented
+      describe: "Citywarfare is a multiplayer war game in augmented reality done during our studies at Epitech. It will have mobile applications and a web interface. The user will be able to play in a world game and in custom games with different game modes available. We are 7 in the Citywarfare team.<br />I supervise the backend architecture, I build the API and the design."
+      tags:
+        - Ruby on Rails
+        - CodeIgniter
+        - API
+        - MongoDB
+        - Backend Architecture
+        - UX - Design
+    -
+      title: Hexatyla
+      subtitle: Computer game RTS
+      describe: "Resume Hexatyla is a project built in a limited time 3 months done during our undergraduate at Epitech. We were 5 in the team to build this project.<br />This project was a big challenge with only use 3d motor to build it. It has 3 parts, server, client application, and web application. The web application allow to manage race, map, tech tree to have a modular game.<br />We have been strongly congratulate about our work achievement even it was not complete."
+      tags:
+        - C++
+        - Mathematics
+        - Algorithms
+        - Ogre3D
+        - Javascript
+        - Team Leader
+  interests:
+    -
+      meta: 'heartbeat'
+      names:
+        - "Running, Swimming, Fitness"
+    -
+      meta: heart
+      names: 
+        - Traveling
+        - "Movies, Series"
+        - "Digital Art, Photography"
+    -
+      meta: book
+      names:
+        - "Machine Learning: The Art and Science of Algorithms that Make Sense of Data"
+        - "Essential Algorithms: A Practical Approach to Computer Algorithms"
+        - "Design Patterns: Elements of Reusable Object-Oriented"
+        - "MongoDB Applied Design Patterns"
+        - "Go Programming Blueprints"
+        - "Building Microservices"
+        - "Seven Databases in Seven Weeks: A Guide to Modern Databases and the NoSQL Movement"
+        - "Lean Startup"
+        - "The Art of War"
+    -
+      meta: "thumbs-up"
+      names:
+        - "Food, Beer"

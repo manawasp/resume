@@ -1,0 +1,15 @@
+.row.padding-top-10
+  .small-12
+    %h3.title.margin-top-30
+      = I18n.t(:titleProjects)
+.row.padding-h-30
+  .small-12.columns.padding-left-40.padding-right-40{style: 'max-width:825px'}
+    - I18n.t(:projects).each do |project|
+      .project.margin-top-30
+        %h4=project[:title]
+        %h6=project[:subtitle]
+        %div.margin-top-20
+          %p=project[:describe]
+        %div.margin-top-20
+          - project[:tags].each do |tag|
+            %span.label.label-primary=tag
