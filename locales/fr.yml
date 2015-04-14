@@ -1,15 +1,15 @@
 ---
 fr:
-  titleKnowledges: Competences
+  titleKnowledges: Compétences
   titleWorks: Expérience
   titleEducations: Formation
   titleLanguages: Langues
   titleProjects: Projets
   titleInterests: Centres d’intérêt
   presentation:
-    quick: "Je suis young French software engineer. I love technology, mathematics."
-    computer: "When I was 15 old I started to learn programming, but It was in my first year of undergratuate school I really began to start programming and increase my knowledges with C, C++.<br />I spend a lot of time to improve myself with side project, read some blogs, website, books. I like 'swimming' in the complexity and challenge. Currently I work on microservice concept and high scalability."
-    interest: "I lived 6 months in Edinburgh to increase my English and I studied 1 year in China. I like traveling I would like to travel in South Corea and in Japan.<br />I have some interest for the digital art and photography. "
+    quick: "J'ai 22 ans et je suis passionné de développement et de mathématiques."
+    computer: "C'est a mes 15 ans que j'ai decouvert le monde de la programmation. Ce n'est qu'en etude superieur que mon niveau a reellement progresser en apprenant le C et le C++.<br />Je consacre beaucoup de mon temps libre a actualiser/augmenter mes connaissances avec des projets personnel, de la lecture. J'aime etre plonger dans la complexite et le challenge.<br /> En ce moment je travail sur une architecture orientee microservice et facilement scalable."
+    interest: "J'ai vecu six mois a Edimburg dans l'objectif d'augmenter mon niveau d'anglais. J'ai etudie un an en Chine. J'aime voyager et j'espere voyager en Coree du Sud et au Japon.<br /> J'apprecie beaucoup ce qui touche au design notament le digital art et la photographie."
   knowledges:
     -
       title: Langages
@@ -143,7 +143,7 @@ fr:
     -
       meta: heart
       names: 
-        - Traveling
+        - Voyager
         - "Film, Series"
         - "Digital Art, Photographie"
     -
