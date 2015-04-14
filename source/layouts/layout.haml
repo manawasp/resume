@@ -13,15 +13,15 @@
       .large-8.large-push-4.white-bg.medium-11.medium-push-1.small-12
         .text-right.font-medium.padding-top-10.lang-menu
           - if I18n.locale.to_s == 'fr'
-            %a.margin-right-10.select{href:"/"} Francais
+            %a.margin-right-10.select{href:"/"} Français
             %a.margin-right-10{href:"/en"} English
             %a.margin-right-10{href:"/cn"} 中文
           - elsif I18n.locale.to_s == 'en'
-            %a.margin-right-10{href:"/"} Francais
+            %a.margin-right-10{href:"/"} Français
             %a.margin-right-10.select{href:"/en"} English
             %a.margin-right-10{href:"/cn"} 中文
           - elsif I18n.locale.to_s == 'cn'
-            %a.margin-right-10{href:"/"} Francais
+            %a.margin-right-10{href:"/"} Français
             %a.margin-right-10{href:"/en"} English
             %a.margin-right-10.select{href:"/cn"} 中文
         #cv-content.padding-h-40.padding-top-20{style: "margin-bottom:120px"}
