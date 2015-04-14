@@ -1,5 +1,5 @@
 ---
-cn:
+en:
   titleKnowledges: Computer Knowledges
   titleWorks: Work Experience
   titleEducations: Education
@@ -7,9 +7,9 @@ cn:
   titleProjects: Personal Work
   titleInterests: Interest
   presentation:
-    quick: "Zhong guo ! young French software engineer. I love technology, mathematics."
-    computer: "When I was 15 old I started to learn programming, but It was in my first year of undergratuate school I really began to start programming and increase my knowledges with C, C++.<br />I spend a lot of time to improve myself with side project, read some blogs, website, books. I like 'swimming' in the complexity and challenge. Currently I work on microservice concept and high scalability."
-    interest: "I lived 6 months in Edinburgh to increase my English and I studied 1 year in China. I like traveling I would like to travel in South Corea and in Japan.<br />I have some interest for the digital art and photography. "
+    quick: "I'm a young French software engineer. I love programming and mathematics."
+    computer: "I started to learn programming when I was in the high school with the JavaScript, then C and C++ in my College. Today I focus my practice to the Backend technologies (NodeJs, RoR, Python & Golang), I'm very interested in the distributed system and the big data.<br />I spend a lot of time to improve myself with side projects, read some blogs, website, books. I like challenge, play and solve complex problems.<br />Currently I work on microservice architecture with an easy way to scale."
+    interest: "I lived 6 months in Edinburgh to increase my English and I studied 1 year in China. I like traveling I would like to travel in South Corea and in Japan.<br />I'm interested in the digital art and photography. "
   knowledges:
     -
       title: Languages
@@ -33,14 +33,14 @@ cn:
         - Redis
         - PostgreSQL
     -
-      title: Distributed
+      title: Distributed sys.
       abilities:
         - Microservice
         - ELK stack
         - Kafka
         - RabbitMQ
     -
-      title: Tools / Method
+      title: Tools / Methods
       abilities:
         - Git
         - Docker
@@ -49,18 +49,18 @@ cn:
     -
       title: Extra
       abilities:
-        - Algorithm
+        - Algorithms
         - Design Pattern
-        - Mathematiques
+        - Mathematics
         - Procedural Prog.
   works:
     -
       job: Backend developer ruby on rails
       company: Libertrip
       type: Internship
-      date: avril 2014 - aout 2015
-      localization: "a Euratechnologie, Lille, France"
-      describe: '"Libertrip is the easiest way to plan your next dream vacation. Build your itinerary, and Share with friends."<br />Tasks: Create an interface between Hotels Managers and Libertrip.'
+      date: april 2014 - august 2015
+      localization: "in Euratechnologie, Lille, France"
+      describe: 'My first month in Libertrip I integrated some features in the main application in Rails / Backbone.<br />After this month I spent my time to build an API in Rails, to create it I had to incorporate several API from channel manager.<br />Then I built a web client to read and to handle my data.'
       tags:
         - Ruby on Rails
         - Backbone
@@ -68,11 +68,11 @@ cn:
         - PostgreSQL
         - MongoDB
     -
-      job: Developer Web
+      job: Web Developer
       company: Freelance
       type: ''
-      date: juillet 2012 - decembre 2012
-      localization: "a Edinburgh, Scotland, United Kingdom"
+      date: july 2012 - december 2012
+      localization: "in Edinburgh, Scotland, United Kingdom"
       describe: ''
       tags:
         - Ruby on Rails
@@ -83,10 +83,18 @@ cn:
       name: 'Beijing Jiaotong University'
       date: 2014 - 2015
       localization: "Beijing, Beijing Municipality, China"
+      courses:
+        - Project Management
+        - Quality and Process Software Management
+        - BigData (Hadoop)
+        - Software training (Node.js & AngularJS)
+        - Chinese writting and oral
     -
       name: 'Epitech - European Institute of Technology'
       date: 2011 - 2016
       localization: "Paris, France"
+      courses:
+        - Group projects
   languages:
     - 
       lang: English
@@ -103,8 +111,8 @@ cn:
   projects:
     -
       title: Noihara
-      subtitle: Tools to manage project schedule
-      describe: 'Wombat is a web platform to manage a company and manager groups via its tasks / objectives. Obtain a fluid platform, user friendly, with advanced features like the crea tion Gantt Management Agenda (connection to external APIs), etc ... <br />Improve the use GO and AngularJS.'
+      subtitle: Tools to plan and manage project schedule
+      describe: "Noihara is a web application to manage your projects in team. It will have the most friendly interface possible, capability to manage some diagram like Pert and Gantt, schedule, chat, etc.<br />This project was born after tested Asana, Basecamp and some other tools to manage the Citywarfare project. This project allows me to test and improve my knowledge about various technologies."
       tags:
         - Microservice
         - Golang
@@ -116,7 +124,7 @@ cn:
     -
       title: Citywarfare
       subtitle: Mobile game with reality augmented
-      describe: 'Wombat is a web platform to manage a company and manager groups via its tasks / objectives. Obtain a fluid platform, user friendly, with advanced features like the crea tion Gantt Management Agenda (connection to external APIs), etc ... <br />Improve the use GO and AngularJS.'
+      describe: "Citywarfare is a multiplayer war game in augmented reality done during our studies at Epitech. It will have mobile applications and a web interface. The user will be able to play in a world game and in custom games with different game modes available. We are 7 in the Citywarfare team.<br />I supervise the backend architecture, I build the API and the design."
       tags:
         - Ruby on Rails
         - CodeIgniter
@@ -127,14 +135,14 @@ cn:
     -
       title: Hexatyla
       subtitle: Computer game RTS
-      describe: 'Resume Hexatyla is a project built in a limited time (2 ½ months). This is a game gest ion / STR 3D (Warcraft3). <br />The Maps are fully scalable either the field or the tech tree. This project was a very big challenge<br /><br />Objective Each part depends on a map, this map contains the playing field but also the whole tree technology that provides a very high modularity. We have 3 records: This is an ambitious realize in 2 months and a half project, we have to choose the finality of the maintabilite depends.'
+      describe: "Resume Hexatyla is a project built in a limited time 3 months done during our undergraduate at Epitech. We were 5 in the team to build this project.<br />This project was a big challenge with only use 3d motor to build it. It has 3 parts, server, client application, and web application. The web application allow to manage race, map, tech tree to have a modular game.<br />We have been strongly congratulate about our work achievement even it was not complete."
       tags:
         - C++
-        - Mathematiques
+        - Mathematics
         - Algorithms
         - Ogre3D
         - Javascript
-        - Management
+        - Team Leader
   interests:
     -
       meta: 'heartbeat'
