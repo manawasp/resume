@@ -12,7 +12,7 @@
   %body{:class => page_classes}
     .row
       .large-8.large-push-4.white-bg.medium-11.medium-push-1.small-12
-        .text-right.font-medium.padding-top-10.lang-menu
+        .text-right.font-medium.padding-top-10.lang-menu.margin-right-40.padding-right-30
           - if I18n.locale.to_s == 'fr'
             %a.margin-right-10.select{href:"/"} Français
             %a.margin-right-10{href:"/en"} English
@@ -38,8 +38,10 @@
                 %i.fa.fa-linkedin.fa-lg
               %a.social.github{href: 'https://github.com/Manawasp', target: '_blank'}
                 %i.fa.fa-github-alt.fa-lg
-              %a.social{href: 'https://github.com/Manawasp', target: '_blank'}
-                %i.fa.fa-download.fa-lg
+              %div.pos-download
+                %a.social.download{href: 'https://github.com/Manawasp', target: '_blank'}
+                  %i.fa.fa-download.fa-lg
+                  .download-content Download
         = yield
         #footer.margin-left-40.margin-right-40
           %a.grey-7{href: 'mailto:clovis.kyndt@gmail.com', target: '_blank'} clovis.kyndt@gmail.com
