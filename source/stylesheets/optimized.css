@@ -138,13 +138,10 @@ a.social.googleplus:hover{background-color:#c13929;}
 a.social.googleplus{background-color:#DD4B39;color:white;}
 #social{text-align:right;margin-top:40px;}
 ul.knowledges li{font-size:1rem;}
-@media only screen and (max-width:64em){#social{text-align:left;margin-top:10px;}
-}
-@media only screen and (max-width:425px){.social.download{display:block;margin-top:20px;}
-}
+@media only screen and (max-width:64em){#social{text-align:left;margin-top:10px;}}
+@media only screen and (max-width:425px){.social.download{display:block;margin-top:20px;}}
 .pos-download{display:inline;}
-@media only screen and (min-width: 64em) and (max-width: 1600px){.social.download{display:inline-block;margin-top:20px;}#social{margin-top:5px;margin-bottom:5px;right:0;}.pos-download{text-align:right;display:block;}
-}
+@media only screen and (min-width: 64em) and (max-width: 1600px){.social.download{display:inline-block;margin-top:20px;}#social{margin-top:5px;margin-bottom:5px;right:0;}.pos-download{text-align:right;display:block;}}
 h3{text-transform:uppercase;font-size:1.3rem;background-color:#F4F4F4;display:inline-block;padding:5px 20px 5px 40px;width:100%;max-width:400px;color:#555;}
 h4{font-size:1.2rem;color:#333;margin-bottom:0;}
 .company{color:#777;font-weight:100;margin-bottom:0;}
