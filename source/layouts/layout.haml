@@ -39,10 +39,18 @@
               %a.social.github{href: 'https://github.com/Manawasp', target: '_blank'}
                 %i.fa.fa-github-alt.fa-lg
               %div.pos-download
-                %a.social.download{href: 'https://github.com/Manawasp', target: '_blank'}
+                %a.social.download{href: '/downloads/clovis-kyndt-cv-en.pdf', target: '_blank'}
                   %i.fa.fa-download.fa-lg
                   .download-content Download
         = yield
         #footer.margin-left-40.margin-right-40
           %a.grey-7{href: 'mailto:clovis.kyndt@gmail.com', target: '_blank'} clovis.kyndt@gmail.com
           .font-small Design by Clovis Kyndt
+  %script
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-62400219-1', 'auto');
+    ga('send', 'pageview');
