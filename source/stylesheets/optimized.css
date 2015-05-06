@@ -102,3 +102,5 @@ ul.knowledges li{font-size:1rem;}
 .padding-h-20{padding-left:20px;padding-right:20px;}
 .padding-h-30{padding-left:30px;padding-right:30px;}
 .padding-h-40{padding-left:40px;padding-right:40px;}
+body{background:url("/images/background.jpg") left 50% no-repeat #f6f3ea fixed;}
+#main-page{padding:0px;}
