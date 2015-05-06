@@ -139,18 +139,22 @@
   %body{:class => page_classes}
     .row
       .large-8.large-push-4.white-bg.medium-11.medium-push-1.small-12
-        .text-right.font-medium.padding-top-10.lang-menu.margin-right-40.padding-right-30
+        .overlay-margin-500.text-right.font-medium.padding-top-10.lang-menu.margin-right-40.padding-right-30
+          .overlay-margin-500.fleft.margin-left-40.padding-left-20
+            %a.grey-7{href: 'mailto:clovis.kyndt@gmail.com', target: '_blank'}
+              %i.fa.fa-share.fa-1x.margin-right-5
+              clovis.kyndt@gmail.com
           - if I18n.locale.to_s == 'fr'
-            %a.margin-right-10.select{href:"/"} Français
-            %a.margin-right-10{href:"/en"} English
+            %a.margin-right-10.select{href:"/fr"} Français
+            %a.margin-right-10{href:"/"} English
             -# %a.margin-right-10{href:"/cn"} 中文
           - elsif I18n.locale.to_s == 'en'
-            %a.margin-right-10{href:"/"} Français
-            %a.margin-right-10.select{href:"/en"} English
+            %a.margin-right-10{href:"/fr"} Français
+            %a.margin-right-10.select{href:"/"} English
             -# %a.margin-right-10{href:"/cn"} 中文
           - elsif I18n.locale.to_s == 'cn'
-            %a.margin-right-10{href:"/"} Français
-            %a.margin-right-10{href:"/en"} English
+            %a.margin-right-10{href:"/fr"} Français
+            %a.margin-right-10{href:"/"} English
             %a.margin-right-10.select{href:"/cn"} 中文
         #cv-content.padding-h-40.padding-top-20.margin-bottom-120
           %div.large-8.small-12.columns
@@ -185,11 +189,11 @@
     var cb = function() {
     var h = document.getElementsByTagName('head')[0];
     var l1 = document.createElement('link'); l1.rel = 'stylesheet';
-    l1.href = 'stylesheets/foundationcss';
+    l1.href = 'stylesheets/foundation.css';
     h.parentNode.insertBefore(l1, h);
 
     var l2 = document.createElement('link'); l2.rel = 'stylesheet';
-    l2.href = 'stylesheets/optimizedcss';
+    l2.href = 'stylesheets/optimized.css';
     h.parentNode.insertBefore(l2, h);
 
     var l3 = document.createElement('link'); l3.rel = 'stylesheet';
