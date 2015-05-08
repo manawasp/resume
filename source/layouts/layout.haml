@@ -70,7 +70,7 @@
           .overlay-margin-500.fleft.margin-left-40.padding-left-20
             %a.grey-7{href: 'mailto:clovis.kyndt@gmail.com', target: '_blank'}
               %i.fa.fa-share.fa-1x.margin-right-5
-              clovis.kyndt@gmail.com 
+              clovis.kyndt@gmail.com
           - if I18n.locale.to_s == 'fr'
             %a.margin-right-10.select{href:"/fr"} Français
             %a.margin-right-10{href:"/"} English
@@ -105,6 +105,8 @@
           %a.grey-7{href: 'mailto:clovis.kyndt@gmail.com', target: '_blank'} clovis.kyndt@gmail.com
           .font-small Design by Clovis Kyndt
   %script
+    var cb=function(){var e=document.getElementsByTagName("head")[0],t=document.createElement("link");t.rel="stylesheet",t.href="stylesheets/foundation.css",e.parentNode.insertBefore(t,e);var n=document.createElement("link");n.rel="stylesheet",n.href="stylesheets/optimized.css",e.parentNode.insertBefore(n,e);var s=document.createElement("link");s.rel="stylesheet",s.href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",e.parentNode.insertBefore(s,e)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(cb):window.addEventListener("load",cb);
+
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -112,21 +114,3 @@
 
     ga('create', 'UA-62400219-1', 'auto');
     ga('send', 'pageview');
-  %script
-    var cb = function() {
-    var h = document.getElementsByTagName('head')[0];
-    var l1 = document.createElement('link'); l1.rel = 'stylesheet';
-    l1.href = 'stylesheets/foundation.css';
-    h.parentNode.insertBefore(l1, h);
-
-    var l2 = document.createElement('link'); l2.rel = 'stylesheet';
-    l2.href = 'stylesheets/optimized.css';
-    h.parentNode.insertBefore(l2, h);
-
-    var l3 = document.createElement('link'); l3.rel = 'stylesheet';
-    l3.href = 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
-    h.parentNode.insertBefore(l3, h);
-    };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);
