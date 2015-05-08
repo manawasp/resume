@@ -1,6 +1,7 @@
 .small-12.margin-top-10
   %h3.title.margin-top-30
-    = I18n.t(:titleProjects)
+    .space
+      = I18n.t(:titleProjects)
 - I18n.t(:projects).each do |project|
   .project.margin-top-30.margin-left-50
     %h4=project[:title]
