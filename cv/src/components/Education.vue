@@ -1,7 +1,9 @@
 <template>
   <div>
     <h3>titleEducations</h3>
-    <p>{{ $t("message.hello") }}</p>
+    <div v-for="education in $t('educations')">
+      <li v-for="course in education.courses">{{ course }}</li>
+    </div>
   </div>
 </template>
 
