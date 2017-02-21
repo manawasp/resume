@@ -1,0 +1,25 @@
+<template>
+  <div>
+    <h3>{{$t('titleProjects')}}</h3>
+    <div v-for="project in $t('projects')">
+      <h4>{{project.title}}</h4>
+      <h6>{{project.subtitle}}</h6>
+      <div>
+        <p>{{project.describe}}</p>
+      </div>
+      <div>
+        <span v-for="tag in project.tags">{{tag}}</span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'project'
+}
+</script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+</style>

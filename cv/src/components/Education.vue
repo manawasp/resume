@@ -1,8 +1,12 @@
 <template>
   <div>
-    <h3>titleEducations</h3>
+    <h3>{{$t('titleEducations')}}</h3>
     <div v-for="education in $t('educations')">
-      <li v-for="course in education.courses">{{ course }}</li>
+      <h4>{{education.name}}</h4>
+      <h6>{{education.date}}, {{education.localization}}</h6>
+      <div>
+        <span v-for="course in education.courses">{{ course }}</span>
+      </div>
     </div>
   </div>
 </template>
