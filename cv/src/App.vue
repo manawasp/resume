@@ -28,13 +28,13 @@
 </template>
 
 <script>
-import Education from './components/Education'
-import Extra from './components/Extra'
-import Knowledge from './components/Knowledge'
-import Language from './components/Language'
-import Presentation from './components/Presentation'
-import Project from './components/Project'
-import Work from './components/Work'
+import Education from './sections/Education'
+import Extra from './sections/Extra'
+import Knowledge from './sections/Knowledge'
+import Language from './sections/Language'
+import Presentation from './sections/Presentation'
+import Project from './sections/Project'
+import Work from './sections/Work'
 
 export default {
   name: 'app',
