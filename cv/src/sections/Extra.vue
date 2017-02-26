@@ -4,6 +4,7 @@
     <ul>
       <template v-for="categorie in $t('interests')">
         <li v-for="name in categorie.names">
+          <i class="fa margin-right-10 grey-5" :class="'fa-' + categorie.meta"></i>
           {{name}}
         </li>
       </template>

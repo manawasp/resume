@@ -1,17 +1,17 @@
 <template>
   <div>
     <h3>{{$t('titleWorks')}}</h3>
-    <div v-for="work in $t('works')">
+    <div v-for="work in $t('works')" class="experience">
       <h4>
         {{work.job}}
         <span>{{work.company}}</span>
       </h4>
-      <h6>{{work.type}} {{work.date}} {{work.localization}}</h6>
-      <div>
-        {{work.describe}}
+      <h6 class="grey-a5">{{work.type}} {{work.date}} {{work.localization}}</h6>
+      <div class="margin-top-20 text-justify">
+        {{work.description}}
       </div>
-      <div>
-        <span v-for="tag in work.tags">{{tag}}</span>
+      <div class="margin-top-20">
+        <span v-for="tag in work.tags" class="label label-primary">{{tag}}</span>
       </div>
     </div>
   </div>

@@ -8,7 +8,7 @@
         <p>{{project.describe}}</p>
       </div>
       <div>
-        <span v-for="tag in project.tags">{{tag}}</span>
+        <span v-for="tag in project.tags" class="label label-primary">{{tag}}</span>
       </div>
     </div>
   </div>

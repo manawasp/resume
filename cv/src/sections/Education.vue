@@ -4,8 +4,11 @@
     <div v-for="education in $t('educations')">
       <h4>{{education.name}}</h4>
       <h6>{{education.date}}, {{education.localization}}</h6>
-      <div>
-        <span v-for="course in education.courses">{{ course }}</span>
+      <div class="margin-top-10">
+        <div v-for="course in education.courses" class="padding-top-5 font-0-9">
+          <i class="fa fa-minus margin-right-5 margin-left-5 grey-6 font-0-7"></i>
+          {{ course }}
+        </div>
       </div>
     </div>
   </div>
