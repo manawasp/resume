@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="max-width:825px">
     <p>{{$t('presentation.quick')}}</p>
     <p>{{$t('presentation.computer')}}</p>
     <p>{{$t('presentation.interest')}}</p>

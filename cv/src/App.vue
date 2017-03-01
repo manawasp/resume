@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="white-bg overlay-margin-500 text-right font-medium padding-top-10 lang-menu margin-left-40 padding-right-30">
+  <div id="app" class="white-bg overlay-margin-500 text-right font-medium padding-top-10 lang-menu">
     <div>
       <a href="mailto:clovis.kyndt@gmail.com" target="_blank">
         <i class="fa fa-share fa-1x margin-right-5"></i>
@@ -33,19 +33,19 @@
       </a>
     </div>
 
-    <presentatio class="padding-left-50"n></presentation>
+    <presentation class="padding-left-50"></presentation>
     <knowledge class="padding-left-50"></knowledge>
     <work class="padding-left-50"></work>
     <education class="padding-left-50"></education>
     <language class="padding-left-50"></language>
     <project class="padding-left-50"></project>
     <extra class="padding-left-50"></extra>
-    <div>
+    <div id="footer">
       <a href="mailto:clovis.kyndt@gmail.com" target="_blank">
         clovis.kyndt@gmail.com
       </a>
       <br />
-      <span>
+      <span class="font-small">
         Design by Clovis Kyndt
       </span>
     </div>
