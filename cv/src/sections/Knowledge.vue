@@ -1,13 +1,19 @@
 <template>
   <div>
     <h3>{{$t('titleEducations')}}</h3>
-    <div  style="display:table">
-      <ul v-for="knowledge in $t('knowledges')" class="knowledges">
-        <li class="title">{{knowledge.title}}</li>
-        <li v-for="ability in knowledge.abilities">
-          {{ability}}
-        </li>
-      </ul>
+    <div style="margin-right:50px">
+
+      <div v-for="knowledge in $t('knowledges')" class="knowledges">
+        <ul style="padding:0">
+          <div style="margin:0 30px 0 0">
+            <li class="title">{{knowledge.title}}</li>
+            <li v-for="ability in knowledge.abilities">
+              {{ability}}
+            </li>
+          </div>
+        </ul>
+      </div>
+
     </div>
   </div>
 </template>
