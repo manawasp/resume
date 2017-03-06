@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3>{{$t('titleProjects')}}</h3>
-    <div v-for="project in $t('projects')">
+    <div v-for="project in $t('projects')" class="project">
       <h4>{{project.title}}</h4>
       <h6>{{project.subtitle}}</h6>
       <div>

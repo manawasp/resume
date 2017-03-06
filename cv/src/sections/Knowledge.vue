@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h3>{{$t('titleEducations')}}</h3>
-    <div style="margin-right:50px">
+    <h3>{{$t('titleKnowledges')}}</h3>
+    <div style="margin-right:50px;display:block" class="margin-top-5 margin-bottom-20">
 
       <div v-for="knowledge in $t('knowledges')" class="knowledges">
         <ul style="padding:0">
-          <div style="margin:0 30px 0 0">
+          <div style="margin:20px 30px 20px 0">
             <li class="title">{{knowledge.title}}</li>
             <li v-for="ability in knowledge.abilities">
               {{ability}}

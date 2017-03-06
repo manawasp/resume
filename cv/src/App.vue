@@ -1,13 +1,15 @@
 <template>
   <div id="app" class="white-bg overlay-margin-500 text-right font-medium padding-top-10 lang-menu">
-    <div>
+    <div class="padding-left-50 padding-right-50">
       <a href="mailto:clovis.kyndt@gmail.com" target="_blank">
         <i class="fa fa-share fa-1x margin-right-5"></i>
         clovis.kyndt@gmail.com
       </a>
-      <a class="margin-right" href="/fr">Français</a>
-      <a class="margin-right" href="/"> English</a>
-      <a class="margin-right" href="/cn"> 中文</a>
+      <div class="pull-right">
+        <a class="margin-right" href="/fr">Français</a>
+        <a class="margin-right" href="/"> English</a>
+        <a class="margin-right" href="/cn"> 中文</a>
+      </div>
     </div>
 
     <div class="padding-left-50">
@@ -163,6 +165,7 @@ export default {
 .padding-right-20 {padding-right:20px}
 .padding-right-30 {padding-right:30px}
 .padding-right-40 {padding-right:40px}
+.padding-right-50 {padding-right:50px}
 .padding-left-5 {padding-left:5px}
 .padding-left-10 {padding-left:10px}
 .padding-left-15 {padding-left:15px}
@@ -213,10 +216,9 @@ body {
   background: url('./assets/img/background.jpg') left 50% no-repeat #f6f3ea fixed;
   overflow-x: hidden;
   font-size: 1rem;
-  font-family: "Sorts Mill Goudy", "Helvetica";
 }
 
-h1 {
+h1, h3, h4, h5, .knowledges li {
   font-family: "Sorts Mill Goudy", "Helvetica";
 }
 
@@ -338,9 +340,12 @@ ul li {
   line-height:1.9rem;
 
   &.title {
-    border-bottom:1px solid #ddd;
-    font-weight:600;
-    color: #333;
+    font-weight:500;
+    border-bottom:0;
+    color: #999;
+    font-size: .9rem;
+    font-family:'Open sans';
+    padding-bottom: 10px;
   }
 }
 
@@ -364,6 +369,7 @@ ul li {
   border-bottom: 1px dashed #ddd;
   padding-bottom: 25px;
   padding-left:5px;
+  max-width:800px;
 }
 .education {
   padding-bottom:15px;
@@ -385,6 +391,6 @@ ul li {
 
 .knowledges {
   width: 33%;
-  float:left;
+  display:inline-block;
 }
 </style>
