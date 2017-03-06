@@ -5,7 +5,7 @@
       <h4>{{project.title}}</h4>
       <h6>{{project.subtitle}}</h6>
       <div>
-        <p>{{project.describe}}</p>
+        <p v-html="project.describe"></p>
       </div>
       <div>
         <span v-for="tag in project.tags" class="label label-primary">{{tag}}</span>

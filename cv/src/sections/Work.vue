@@ -7,9 +7,7 @@
         <span>{{work.company}}</span>
       </h4>
       <h6 class="grey-a5">{{work.type}} {{work.date}} {{work.localization}}</h6>
-      <div class="margin-top-20 text-justify">
-        {{work.description}}
-      </div>
+      <div class="margin-top-20 text-justify" v-html="work.description"></div>
       <div class="margin-top-20">
         <span v-for="tag in work.tags" class="label label-primary">{{tag}}</span>
       </div>
