@@ -13,26 +13,26 @@
     </div>
 
     <div class="padding-left-50">
+      <div class="pull-right">
+        <a target="_blank" class="social googleplus">
+          <i class="fa fa-google-plus fa-lg"></i>
+        </a>
+        <a target="_blank" class="social linkedin">
+          <i class="fa fa-linkedin fa-lg"></i>
+        </a>
+        <a target="_blank" class="social github">
+          <i class="fa fa-github-alt fa-lg"></i>
+        </a>
+        <a target="_blank" class="social download">
+          <i class="fa fa-download fa-lg"></i>
+          <span class="download-content">Download</a>
+        </a>
+      </div>
+
       <h1>
         <div class="letter-spacing-0-3" style="font-size:2.95rem;font-weight:normal">CLOVIS KYNDT</div>
         <div class="font-large grey-8 letter-spacing-0-6" style="font-size:1.3rem;font-weight:normal">SOFTWARE DEVELOPER</div>
       </h1>
-    </div>
-
-    <div>
-      <a target="_blank" class="social googleplus">
-        <i class="fa fa-google-plus fa-lg"></i>
-      </a>
-      <a target="_blank" class="social linkedin">
-        <i class="fa fa-linkedin fa-lg"></i>
-      </a>
-      <a target="_blank" class="social github">
-        <i class="fa fa-github-alt fa-lg"></i>
-      </a>
-      <a target="_blank" class="social download">
-        <i class="fa fa-download fa-lg"></i>
-        <span class="download-content">Download</a>
-      </a>
     </div>
 
     <presentation class="padding-left-50"></presentation>
@@ -343,7 +343,7 @@ ul li {
     font-weight:500;
     border-bottom:0;
     color: #999;
-    font-size: .9rem;
+    font-size: .95rem;
     font-family:'Open sans';
     padding-bottom: 10px;
   }

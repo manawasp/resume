@@ -1,8 +1,8 @@
 <template>
-  <div style="max-width:825px">
-    <p v-html="$t('presentation.quick')"></p>
-    <p v-html="$t('presentation.computer')"></p>
-    <p v-html="$t('presentation.interest')"></p>
+  <div class="paper-limit description-txt margin-top-40 margin-bottom-40">
+    <p v-html="$t('presentation.quick')" class="margin-bottom-30"></p>
+    <p v-html="$t('presentation.computer')" class="margin-bottom-30"></p>
+    <p v-html="$t('presentation.interest')" class="margin-bottom-30"></p>
   </div>
 </template>
 
