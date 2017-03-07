@@ -20,7 +20,7 @@
         <a target="_blank" class="social github">
           <i class="fa fa-github-alt fa-lg"></i>
         </a>
-        <a target="_blank" class="social googleplus">
+        <a target="_blank" class="social reddit">
           <i class="fa fa-reddit-alien fa-lg"></i>
         </a>
         <a target="_blank" class="social download">
@@ -158,10 +158,10 @@ a.social.github {
   background-color:#171515;
   color:white !important;
 }
-a.social.googleplus:hover {
+a.social.reddit:hover {
   border-color:#ecb19f;
 }
-a.social.googleplus {
+a.social.reddit {
   background-color:#DD4B39;
   color:white !important;
 }
