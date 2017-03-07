@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="padding-bottom-30">
     <h3>{{$t('titleProjects')}}</h3>
     <div v-for="project in $t('projects')" class="project">
       <h4>{{project.title}}</h4>

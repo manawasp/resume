@@ -91,7 +91,7 @@ export default {
 .dark-grey {color: #666}
 
 .font-small {font-size:0.7em}
-.font-medium {font-size:0.8775rem;}
+.font-medium {font-size:0.9rem;}
 .font-normal {font-size:1rem;}
 .font-1-2 {font-size:1.2rem;}
 .font-large {font-size:1.3rem;}
@@ -301,8 +301,9 @@ h3 {
 }
 
 h4 {
-  font-size:1.2rem;
+  font-size:1.4rem;
   color: #333;
+  font-weight: normal;
   margin-bottom:0;
 }
 
@@ -312,20 +313,17 @@ h4 {
   margin-bottom:0;
 }
 
-h6 {
-  font-size: 0.9rem;
-  color: #666;
-  margin-bottom:0;
-}
-
 .label {
   margin-right:6px;
   font-size: 0.8rem;
 }
 
 .label.label-primary {
-  background-color:transparent;
-  color:#777;
+  background-color: #f5f5f5;
+  color: #444;
+  padding: 3px 6px;
+  border-radius: 3px;
+  margin-right:15px;
 }
 
 ul {
@@ -343,8 +341,8 @@ ul li {
     font-weight:500;
     border-bottom:0;
     color: #999;
-    font-size: .95rem;
-    font-family:'Open sans';
+    font-weight: 300;
+    font-family:'Merriweather', sans-serif;
     padding-bottom: 10px;
   }
 }
@@ -371,6 +369,11 @@ ul li {
   padding-left:5px;
   max-width:800px;
 }
+
+.experience > h4 {
+  font-family: 'Lara';
+}
+
 .education {
   padding-bottom:15px;
 }
