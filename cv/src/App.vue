@@ -1,7 +1,7 @@
 <template>
-  <div id="app" class="white-bg overlay-margin-500 text-right font-medium padding-top-10 lang-menu">
+  <div id="app" class="white-bg overlay-margin-500 text-right font-medium lang-menu">
     <div class="padding-left-50 padding-right-50">
-      <a href="mailto:clovis.kyndt@gmail.com" target="_blank">
+      <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline">
         <i class="fa fa-share fa-1x margin-right-5"></i>
         clovis.kyndt@gmail.com
       </a>
@@ -14,14 +14,14 @@
 
     <div class="padding-left-50">
       <div class="pull-right">
-        <a target="_blank" class="social googleplus">
-          <i class="fa fa-google-plus fa-lg"></i>
-        </a>
         <a target="_blank" class="social linkedin">
           <i class="fa fa-linkedin fa-lg"></i>
         </a>
         <a target="_blank" class="social github">
           <i class="fa fa-github-alt fa-lg"></i>
+        </a>
+        <a target="_blank" class="social googleplus">
+          <i class="fa fa-reddit-alien fa-lg"></i>
         </a>
         <a target="_blank" class="social download">
           <i class="fa fa-download fa-lg"></i>
@@ -43,7 +43,7 @@
     <project class="padding-left-50"></project>
     <extra class="padding-left-50"></extra>
     <div id="footer">
-      <a href="mailto:clovis.kyndt@gmail.com" target="_blank">
+      <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline">
         clovis.kyndt@gmail.com
       </a>
       <br />
@@ -83,6 +83,7 @@ export default {
   font-family: "Sorts Mill Goudy";
   src: url(./assets/fonts/SortsMillGoudy-Regular.ttf);
 }
+#app {padding-top:15px}
 .font-small {font-size:0.7em}
 .font-medium {font-size:0.9rem;}
 .font-large {font-size:1.3rem;}
@@ -101,7 +102,6 @@ export default {
 
 .padding-top-5 {padding-top:0px}
 .padding-top-5 {padding-top:5px}
-.padding-top-10 {padding-top:10px}
 .padding-bottom-30 {padding-bottom:30px}
 .padding-right-50 {padding-right:50px}
 .padding-left-50 {padding-left:50px}
@@ -119,54 +119,65 @@ h1, h3, h4, h5, .knowledges li {
 }
 
 a.social {
+  overflow: hidden;
   display: inline-block;
   width: 1.8rem;
   height: 1.8rem;
+  line-height:1.8rem;
+  cursor: pointer;
+
   margin-right:20px;
-  -webkit-border-radius: 0.9rem;
-  -moz-border-radius: 0.9rem;
-  border-radius: 0.9rem;
+  border-radius: 50%;
   background-color:#ddd;
   color:#444;
   text-align:center;
   font-size:0.7rem;
-  line-height:1.8rem;
-  transition: background 0.3s, color 0.3s  linear; /* vendorless fallback */
-  -o-transition: background 0.3s, color 0.3s linear; /* opera */
-  -ms-transition: background 0.3s, color 0.3s linear; /* IE 10 */
-  -moz-transition: background 0.3s, color 0.3s linear; /* Firefox */
-  -webkit-transition: background 0.3s, color 0.3s linear; /*safari and chrome */
+  border: 3px solid white;
+  transition: background 0.3s, color 0.3s, border-color 0.3s linear;
 }
 a.social.little {
   width: 26px;
   height: 26px;
-  -webkit-border-radius: 13px;
-  -moz-border-radius: 13px;
   border-radius:13px;
 }
 a.social i {
   vertical-align:middle;
 }
 a.social.linkedin:hover {
-  background-color:#125675;
+  border-color:#a0c6ff;
+  // border-color:red;
 }
 a.social.linkedin {
   background-color:#006699;
-  color:white;
+  color:white !important;
 }
 a.social.github:hover {
-  background-color:#171515;
+  border-color:#ccc;
 }
 a.social.github {
   background-color:#171515;
-  color:white;
+  color:white !important;
 }
 a.social.googleplus:hover {
-  background-color:#c13929;
+  border-color:#ecb19f;
 }
 a.social.googleplus {
   background-color:#DD4B39;
-  color:white;
+  color:white !important;
+}
+a.social.download {
+  color:#444;
+  transition: all 0.25s ease-out;
+}
+a.social.download .download-content {
+  display: none;
+}
+a.social.download:hover {
+  width: 110px;
+  border-radius: 0;
+}
+a.social.download:hover .download-content {
+  display: inline-block;
 }
 
 #social {
