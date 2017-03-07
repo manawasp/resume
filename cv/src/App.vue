@@ -83,132 +83,28 @@ export default {
   font-family: "Sorts Mill Goudy";
   src: url(./assets/fonts/SortsMillGoudy-Regular.ttf);
 }
-.paper-limit {max-width:825px}
-.cursor {cursor: pointer}
-.white {color: #fff}
-.silver {color: #ccc}
-.grey {color: #999}
-.dark-grey {color: #666}
-
 .font-small {font-size:0.7em}
 .font-medium {font-size:0.9rem;}
-.font-normal {font-size:1rem;}
-.font-1-2 {font-size:1.2rem;}
 .font-large {font-size:1.3rem;}
-.font-1-4 {font-size:1.4rem;}
-.font-1-6 {font-size:1.6rem;}
-.font-xlarge {font-size:2rem;}
-.font-xxlarge {font-size:3rem;}
 
-.text-upper {text-transform: uppercase;}
-
-.white {color:white;}
-.white-bg {background-color:white;}
-
-.min-height-full {min-height:100%;}
-.height-full {height:100%;}
-.width-full {width:100%;}
-
-.grey-4 {color:#444;}
-.grey-5 {color:#555;}
-.grey-6 {color:#666;}
-.grey-8 {color:#888;}
-.grey-9 {color:#999;}
-
-.fleft {float:left;}
-.fright {float:right;}
-
-.margin-top-0 {margin-top:0px}
 .margin-top-5 {margin-top:5px}
 .margin-top-10 {margin-top:10px}
-.margin-top-15 {margin-top:15px}
 .margin-top-20 {margin-top:20px}
-.margin-top-30 {margin-top:30px}
 .margin-top-40 {margin-top:40px}
-.margin-bottom-0 {margin-bottom:0px}
-.margin-bottom-5 {margin-bottom:5px}
-.margin-bottom-15 {margin-bottom:15px}
 .margin-bottom-10 {margin-bottom:10px}
 .margin-bottom-20 {margin-bottom:20px}
 .margin-bottom-30 {margin-bottom:30px}
 .margin-bottom-40 {margin-bottom:40px}
-.margin-bottom-50 {margin-bottom:50px}
 .margin-right-5 {margin-right:5px}
 .margin-right-10 {margin-right:10px}
-.margin-right-20 {margin-right:20px}
-.margin-right-30 {margin-right:30px}
-.margin-right-40 {margin-right:40px}
 .margin-left-5 {margin-left:5px}
-.margin-left-10 {margin-left:10px}
-.margin-left-20 {margin-left:20px}
-.margin-left-30 {margin-left:30px}
-.margin-left-40 {margin-left:40px}
 
 .padding-top-5 {padding-top:0px}
 .padding-top-5 {padding-top:5px}
 .padding-top-10 {padding-top:10px}
-.padding-top-15 {padding-top:15px}
-.padding-top-20 {padding-top:20px}
-.padding-top-30 {padding-top:30px}
-.padding-top-40 {padding-top:40px}
-.padding-bottom-0 {padding-bottom:0px}
-.padding-bottom-5 {padding-bottom:5px}
-.padding-bottom-10 {padding-bottom:10px}
-.padding-bottom-15 {padding-bottom:15px}
-.padding-bottom-20 {padding-bottom:20px}
 .padding-bottom-30 {padding-bottom:30px}
-.padding-bottom-40 {padding-bottom:40px}
-.padding-bottom-50 {padding-bottom:50px}
-.padding-right-5 {padding-right:5px}
-.padding-right-10 {padding-right:10px}
-.padding-right-15 {padding-right:15px}
-.padding-right-20 {padding-right:20px}
-.padding-right-30 {padding-right:30px}
-.padding-right-40 {padding-right:40px}
 .padding-right-50 {padding-right:50px}
-.padding-left-5 {padding-left:5px}
-.padding-left-10 {padding-left:10px}
-.padding-left-15 {padding-left:15px}
-.padding-left-20 {padding-left:20px}
-.padding-left-30 {padding-left:30px}
-.padding-left-40 {padding-left:40px}
 .padding-left-50 {padding-left:50px}
-
-.margin-5 {margin: 5px}
-.margin-10 {margin: 10px}
-.margin-15 {margin: 15px}
-.margin-20 {margin: 20px}
-.margin-30 {margin: 30px}
-
-.padding-5 {padding: 5px}
-.padding-10 {padding: 10px}
-.padding-15 {padding: 15px}
-.padding-20 {padding: 20px}
-.padding-30 {padding: 30px}
-.padding-h-5 {padding-left: 5px;padding-right: 5px}
-.padding-h-10 {padding-left: 10px;padding-right: 10px}
-.padding-h-15 {padding-left: 15px;padding-right: 15px}
-.padding-h-20 {padding-left: 20px;padding-right: 20px}
-.padding-h-30 {padding-left: 30px;padding-right: 30px}
-.padding-h-40 {padding-left: 40px;padding-right: 40px}
-
-.line-height-2 {line-height: 2em}
-.height-2 {line-height: 2em}
-
-.block {display: block}
-.inline {display: inline-block}
-.relative {position:relative}
-
-.border {border: 1px solid #777}
-.round-5 {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-
-textarea, input {
-  font-size:0.875rem;
-}
 
 body {
   height: 100%;
@@ -307,12 +203,6 @@ h4 {
   margin-bottom:0;
 }
 
-.company {
-  color:#777;
-  font-weight:100;
-  margin-bottom:0;
-}
-
 .label {
   margin-right:6px;
   font-size: 0.8rem;
@@ -358,11 +248,6 @@ ul li {
   }
 }
 
-.book {
-  line-height: 1.6rem;
-  font-size:2rem;
-}
-
 .experience, .education, .project {
   border-bottom: 1px dashed #ddd;
   padding-bottom: 25px;
@@ -374,17 +259,12 @@ ul li {
   font-family: 'Lara';
 }
 
-.education {
-  padding-bottom:15px;
-}
-
 #footer {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #888;
   text-align:center;
 }
-
 
 #app {
   position: relative;
