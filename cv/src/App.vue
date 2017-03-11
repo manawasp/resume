@@ -1,14 +1,14 @@
 <template>
   <div id="app" class="white-bg overlay-margin-500 text-right font-medium lang-menu">
-    <div class="padding-left-50 padding-right-50">
+    <div class="padding-left-50 padding-right-50 lang-menu">
       <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline hidden-mobile">
         <i class="fa fa-share fa-1x margin-right-5"></i>
         clovis.kyndt@gmail.com
       </a>
       <div class="pull-right" id="lang">
-        <a class="margin-right" href="/fr">Français</a>
-        <a class="margin-right" href="/"> English</a>
-        <a class="margin-right" href="/cn"> 中文</a>
+        <a class="margin-right-10" href="/fr" :class="{select: lang === 'fr'}">Français</a>
+        <a class="margin-right-10" href="/" :class="{select: lang === 'en'}"> English</a>
+        <a class="margin-right-10" href="/cn" :class="{select: lang === 'cn'}"> 中文</a>
       </div>
     </div>
 
@@ -44,7 +44,7 @@
     <extra class="padding-left-50"></extra>
     <div id="footer">
       <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline">
-        clovis.kyndt@gmail.com
+        clovis.kyndt@gmail.com [{{lang}}]
       </a>
       <br />
       <span class="font-small">
@@ -56,6 +56,7 @@
 
 <script>
 
+import Vue from 'vue'
 import Education from './sections/Education'
 import Extra from './sections/Extra'
 import Knowledge from './sections/Knowledge'
@@ -74,6 +75,11 @@ export default {
     Presentation,
     Project,
     Work
+  },
+  computed: {
+    lang: () => {
+      return Vue.config.lang
+    }
   }
 }
 </script>
@@ -83,6 +89,7 @@ export default {
   font-family: "Sorts Mill Goudy";
   src: url(./assets/fonts/SortsMillGoudy-Regular.ttf);
 }
+a {text-decoration: none;}
 #app {padding-top:15px}
 .font-small {font-size:0.7em}
 .font-medium {font-size:0.9rem;}
@@ -183,15 +190,13 @@ a.social.download:hover .download-content {
 #social {
   text-align:right;
   margin-top:40px;
-}
-ul.knowledges li {
-  font-size:1rem;
-}
-
-#social {
   position: absolute;
   top: 20px;
   right:0;
+}
+
+ul.knowledges li {
+  font-size:1rem;
 }
 
 h3 {
