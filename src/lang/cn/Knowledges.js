@@ -1,22 +1,22 @@
 const Knowledges = [
   {
     title: 'Languages',
-    abilities: ['C/C++', 'Golang', 'Python', 'Javascript']
+    abilities: ['Golang', 'Javascript', 'Python', 'C/C++']
   }, {
     title: 'Framework',
-    abilities: ['Ruby on Rails', 'AngularJS', 'Node.js', 'CodeIgniter']
+    abilities: ['VueJS', 'AngularJS', 'Node.js', 'Ruby on Rails']
   }, {
     title: 'Database',
     abilities: ['MongoDB', 'MySQL', 'Redis', 'PostgreSQL']
   }, {
     title: 'Distributed sys.',
-    abilities: ['Microservce', 'ELK stack', 'Kafka', 'RabbitMQ']
+    abilities: ['Machine Learning', 'Data visualization', 'Microservices']
   }, {
     title: '方法',
-    abilities: ['Git', 'Docker', 'TDD', 'Agile Dev']
+    abilities: ['Git', 'Docker', 'TDD']
   }, {
     title: '额外',
-    abilities: ['Algorithms', 'Design Patterns', 'Mathematics', 'Procedural Prog.']
+    abilities: ['Algorithms', 'Design Patterns', 'Mathematics']
   }
 ]
 
