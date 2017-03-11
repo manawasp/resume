@@ -12,15 +12,20 @@
       </div>
     </div>
 
-    <div class="padding-left-50">
-      <div class="pull-right">
-        <a target="_blank" class="social linkedin">
+    <div class="padding-left-50 relative">
+      <h1>
+        <div class="letter-spacing-0-3" style="font-size:2.95rem;font-weight:normal">CLOVIS KYNDT</div>
+        <div class="font-large grey-8 letter-spacing-0-6" style="font-size:1.3rem;font-weight:normal">SOFTWARE DEVELOPER</div>
+      </h1>
+
+      <div id="social">
+        <a target="_blank" class="social linkedin" href="https://www.linkedin.com/in/cloviskyndt">
           <i class="fa fa-linkedin fa-lg"></i>
         </a>
-        <a target="_blank" class="social github">
+        <a target="_blank" class="social github" href="https://github.com/Manawasp">
           <i class="fa fa-github-alt fa-lg"></i>
         </a>
-        <a target="_blank" class="social reddit">
+        <a target="_blank" class="social reddit" href="https://www.reddit.com/user/manawasp">
           <i class="fa fa-reddit-alien fa-lg"></i>
         </a>
         <a target="_blank" class="social download">
@@ -28,11 +33,6 @@
           <span class="download-content">Download</a>
         </a>
       </div>
-
-      <h1>
-        <div class="letter-spacing-0-3" style="font-size:2.95rem;font-weight:normal">CLOVIS KYNDT</div>
-        <div class="font-large grey-8 letter-spacing-0-6" style="font-size:1.3rem;font-weight:normal">SOFTWARE DEVELOPER</div>
-      </h1>
     </div>
 
     <presentation class="padding-left-50"></presentation>
@@ -187,11 +187,11 @@ a.social.download:hover .download-content {
 ul.knowledges li {
   font-size:1rem;
 }
-@media only screen and (max-width: 64em) {
-  #social {
-    text-align:left;
-    margin-top:10px;
-  }
+
+#social {
+  position: absolute;
+  top: 20px;
+  right:0;
 }
 
 h3 {
@@ -262,6 +262,7 @@ ul li {
 .experience, .education, .project {
   border-bottom: 1px dashed #ddd;
   padding-bottom: 25px;
+  padding-right:40px;
   padding-left:5px;
   max-width:800px;
 }
@@ -286,5 +287,21 @@ ul li {
 .knowledges {
   width: 33%;
   display:inline-block;
+}
+@media only screen and (max-width: 1175px) {
+  #social {
+    position: relative;
+    text-align: left;
+    top:0;
+    margin-top:0;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #app {
+    left:0;
+    width:100%;
+    margin-top:100px;
+  }
 }
 </style>
