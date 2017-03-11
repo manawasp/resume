@@ -1,16 +1,16 @@
 const Languages = [
   {
-    lang: 'English',
-    level: 'Intermediate',
-    comment: 'Lived 6 months in Edinburgh'
+    lang: 'Anglais',
+    level: 'Compétence professionnelle',
+    comment: 'A vécu 6 mois à Edimburgh'
   }, {
-    lang: 'French',
-    level: 'Native Language',
+    lang: 'Français',
+    level: 'Langue maternelle',
     comment: ''
   }, {
-    lang: 'Chinese',
-    level: 'Basic',
-    comment: 'Lived 1 year in Beijing'
+    lang: 'Chinois',
+    level: 'Débutant',
+    comment: 'A vécu 1 an à Beijing'
   }
 ]
 

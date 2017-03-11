@@ -1,18 +1,18 @@
 const Works = [
   {
-    job: 'Backend developer ruby on rails',
+    job: 'Développeur backend ruby on rails',
     company: 'Libertrip',
-    type: 'Internship',
-    date: 'april 2014 - august 2015',
-    localization: 'in Euratechnologie, Lille, France',
-    description: 'During my first month in Libertrip I integrated new features in the main application in Rails / Backbone.<br />After this month I spent my time building an API in Rails to query the application. To create it I had to incorporate several other API from channel manager together.<br />I then built a web client to read and handle the data.',
+    type: 'Stage',
+    date: 'avril 2014 - aout 2015',
+    localization: 'à Euratechnologie, Lille, France',
+    description: `Le premier mois j'ai été en charge de l'intégration de feature sur l'application Rails / Backbone.<br />L'autre partie de mon stage a été consacré à la création d'une API Rails implémentant et uniformisant les API de différent 'Channel Manager'.<br />Par la suite j'ai mise en place une interface web à l'aide d'AngularJs pour visualiser et manipuler ces données.`,
     tags: ['Ruby on rails', 'Backbone', 'AngularJS', 'PostgreSQL', 'MongoDB']
   }, {
-    job: 'Web Developer',
+    job: 'Développeur Web',
     company: 'Freelance',
     type: '',
-    date: 'july 2012 - december 2012',
-    localization: 'in Edinburgh, Scotland, United Kingdom',
+    date: 'juillet 2012 - decembre 2012',
+    localization: 'à Edinburgh, Ecosse, Royaume-Unis',
     description: '',
     tags: ['Ruby on Rails', 'JQuery', 'MySQL']
   }

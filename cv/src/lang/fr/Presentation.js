@@ -1,7 +1,7 @@
 const Presentation = {
-  quick: 'I am a young French software engineer that loves programming and mathematics.',
-  computer: 'I  started learning programming when I was in high school with JavaScript, then C and C++ during college, and now I focus on Backend technologies (NodeJs, RoR, Python & Golang). I am very interested in distributed systems and big data.<br />I spend a lot of time improving myself by working on side projects, reading CS blogs, website, and books. I like challenges and solving complex problems.<br />I am currently working on a microservices architecture that will be easy to scale.',
-  interest: 'I lived 6 months in Edinburgh to improve my English and I studied 1 year in China. I like traveling and I would like to visit South Korea and Japan.<br />I am interested in the digital art and photography.'
+  quick: 'Je suis un passionné de programmation et de mathématiques.',
+  computer: `J'ai débuté la programmation au lycée avec le JavaScript, puis le C/C++ à l'Epitech. Aujourd'hui je me tourne vers les technologies backend (NodeJs, RoR, Python & Golang), je suis intéressé par les systèmes distribués et le big data.<br />Je consacre beaucoup de mon temps libre à actualiser/augmenter mes connaissances avec des projets personnels, de la lecture. J'aime le challenge et résoudre des problèmes.<br /> En ce moment je travaille sur une architecture orientée microservice et facilement scalable.`,
+  interest: `J'ai vécu six mois à Edimburg dans l'objectif d'augmenter mon niveau d'anglais. J'ai étudié un an en Chine. J'aime voyager et j'espère voyager en Coree du Sud et au Japon.<br /> J'apprécie beaucoup ce qui touche au design notamment l'art numérique et la photographie.`
 }
 
 export default Presentation

@@ -7,12 +7,12 @@ import Projects from './Projects'
 import Works from './Works'
 
 const fr = {
-  titleKnowledges: 'Computer Knowledges',
-  titleWorks: 'Work Experience',
-  titleEducations: 'Education',
-  titleLanguages: 'Languages',
-  titleProjects: 'Personal Work',
-  titleInterests: 'Interest',
+  titleKnowledges: 'Compétences',
+  titleWorks: 'Expérience',
+  titleEducations: 'Formation',
+  titleLanguages: 'Langues',
+  titleProjects: 'Projets',
+  titleInterests: 'Centres d’intérêt',
   presentation: Presentation,
   knowledges: Knowledges,
   works: Works,

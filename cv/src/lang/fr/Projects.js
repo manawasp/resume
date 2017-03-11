@@ -1,8 +1,8 @@
 const Projects = [
   {
     title: 'Noihara',
-    subtitle: 'Tools to plan and manage projects schedules',
-    describe: 'Noihara is a web application to help you manage your projects in a team. It will have the most user friendly interface possible, the ability to manage diagrams like Pert and Gantt, schedules, chats, etc.<br />The project was born after having tested Asana, Basecamp and other tools to manage the Citywarfare project. This project allows me to test and improve my knowledge about various technologies.',
+    subtitle: 'Outils de planification et de management de tâches dans un projet',
+    describe: `Noihara est une application web pour manager vos projets au sein d'une équipe. Il disposera d'une interface web le plus 'friendly' possible, une gestion de diagramme comme le diagramme de Pert et Gantt, un système d'agenda, chat, etc.<br/> L'idée est venue après avoir testé Asana, Basecamp et d'autres pour le management du projet Citywarfare. Le projet me permet de me former a diverses technologies.`,
     tags: [
       'Microservice',
       'Golang',
@@ -14,8 +14,8 @@ const Projects = [
     ]
   }, {
     title: 'Citywarfare',
-    subtitle: 'Mobile game with reality augmented',
-    describe: 'Citywarfare is a multiplayer war game in augmented reality created during our curriculum at Epitech. It will have mobile applications and a web interface. The user will be able to play in a world game and in custom games with different game modes available. We are 7 in the Citywarfare team.<br />I supervise the backend architecture and build the API and its design.',
+    subtitle: 'Jeu mobile utilisant la realité augmenté',
+    describe: `Citywarfare est un jeu de guerre multijoueur en réalité augmentée réalisé dans le cadre de notre projet de fin d'étude à l'Epitech. Il disposera d'applications mobiles et d’une interface web. L'utilisateur pourra jouer dans une partie mondiale ou dans des parties personnalisées avec différents modes de jeu disponibles. L'equipe Citywarfare comprend 7 personnes<br />Je suis en charge de l'architecture technique et de la réalisation de l'Api et du Design`,
     tags: [
       'Ruby on Rails',
       'CodeIgniter',
@@ -26,15 +26,15 @@ const Projects = [
     ]
   }, {
     title: 'Hexatyla',
-    subtitle: 'Computer game RTS',
-    describe: 'Resume Hexatyla was a project built in a mandatory 3-months time during our undergraduate year at Epitech. We were 5 in the team to work on this project.<br />The project was a real challenge and we chose to only use a low-level rendering engine to build the core of the project. It has 3 parts, a server, a client application, and a web application. The web application allows to manage the race, map, and tech. tree to help having a modular game.<br />We have been strongly congratulated about the work we put on eventhough we could not finish it in the set time constraint.',
+    subtitle: 'Jeu sur Linux en 3D de type STR',
+    describe: `Hexatyla est un jeu de stratégie réalisé dans le cadre de notre projet de fin de licence à l'Epitech, par une équipe de 5 personnes.<br/> Ce projet était un gros challenge réalisé en seulement 3 mois à partir d'uniquement un moteur 3d. Le projet est découpé en 3 parties, un serveur de jeu, un client graphique et web app permettant de configurer les parties. Les races, la carte de jeu ainsi que l'arbre technologique sont configurables.<br/>Nous avons été fortement félicité pour le travail accompli malgré un manque de temps (gestion des dégâts non implémentés).`,
     tags: [
       'C++',
-      'Mathematics',
-      'Algorithms',
+      'Mathématiques',
+      'Algorithmes',
       'Ogre3D',
       'Javascript',
-      'Team Leader'
+      'Chef de projet'
     ]
   }
 ]

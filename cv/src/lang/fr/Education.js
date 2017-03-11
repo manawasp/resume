@@ -8,7 +8,7 @@ const Education = [
     name: 'Epitech - European Institute of Technology',
     date: '2011 - 2016',
     localization: 'Paris, France',
-    courses: ['Group projects']
+    courses: ['Projets en groupe']
   }
 ]
 

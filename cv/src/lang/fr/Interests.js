@@ -1,13 +1,13 @@
 const Interests = [
   {
     meta: 'heartbeat',
-    names: ['Running, Swimming, Fitness']
+    names: ['Jogging, Nation, Fitness']
   }, {
     meta: 'heart',
     names: [
-      'Traveling',
-      'Movies, Series',
-      'Digital Art, Photography'
+      'Voyager',
+      'Film, Series',
+      'Digital Art, Photographie'
     ]
   }, {
     meta: 'book',
@@ -24,7 +24,7 @@ const Interests = [
     ]
   }, {
     meta: 'thumbs-up',
-    names: ['Food, Beer']
+    names: ['Nourriture, Bière']
   }
 ]
 
