@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>{{$t('titleKnowledges')}}</h3>
+    <h3><span>{{$t('titleKnowledges')}}</span></h3>
     <div style="margin-right:50px;display:block" class="margin-top-5 margin-bottom-20">
 
       <div v-for="knowledge in $t('knowledges')" class="knowledges">

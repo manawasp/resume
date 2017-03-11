@@ -1,6 +1,6 @@
 <template>
   <div class="padding-bottom-30">
-    <h3>{{$t('titleEducations')}}</h3>
+    <h3><span>{{$t('titleEducations')}}</span></h3>
     <div v-for="education in $t('educations')">
       <h4>{{education.name}}</h4>
       <h6>{{education.date}}, {{education.localization}}</h6>

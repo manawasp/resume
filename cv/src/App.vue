@@ -200,11 +200,13 @@ h3 {
   line-height: 1.6rem;
   background-color:#F4F4F4;
   display:inline-block;
-  padding:8px 20px 5px 55px;
-  min-width:400px;
   color:#555;
   font-weight: normal;
   margin-left: -50px;
+}
+h3 > span {
+  padding:10px 20px 3px 55px;
+  display: inline-block;
 }
 
 h4 {
@@ -302,6 +304,9 @@ ul li {
     left:0;
     width:100%;
     margin-top:100px;
+  }
+  body {
+    background-position: left -200px;
   }
 }
 </style>

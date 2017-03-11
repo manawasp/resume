@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>{{$t('titleInterests')}}</h3>
+    <h3><span>{{$t('titleInterests')}}</span></h3>
     <ul style="padding:0 40px 0 0">
       <template v-for="categorie in $t('interests')">
         <li v-for="name in categorie.names">

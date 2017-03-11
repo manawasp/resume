@@ -1,6 +1,6 @@
 <template>
   <div class="padding-bottom-30">
-    <h3>{{$t('titleWorks')}}</h3>
+    <h3><span>{{$t('titleWorks')}}</span></h3>
     <div v-for="work in $t('works')" class="experience">
       <h4>
         {{work.job}}
