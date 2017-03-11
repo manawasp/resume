@@ -269,7 +269,7 @@ ul li {
 .experience, .education, .project {
   border-bottom: 1px dashed #ddd;
   padding-bottom: 25px;
-  padding-right:40px;
+  padding-right:5px;
   padding-left:5px;
   max-width:800px;
 }
@@ -311,9 +311,16 @@ ul li {
     width:100%;
     margin-top:100px;
   }
+  .knowledges {
+    width: 50%;
+  }
   body {
     background-position: left -200px;
   }
+}
+
+#app > div {
+  padding-right: 30px;
 }
 
 // Mobile
@@ -324,6 +331,9 @@ ul li {
   }
   .hidden-mobile {
     display: none;
+  }
+  .knowledges {
+    width: 100%;
   }
   #lang {
     float: none;
