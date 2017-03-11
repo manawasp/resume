@@ -1,11 +1,11 @@
 <template>
   <div id="app" class="white-bg overlay-margin-500 text-right font-medium lang-menu">
     <div class="padding-left-50 padding-right-50">
-      <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline">
+      <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline hidden-mobile">
         <i class="fa fa-share fa-1x margin-right-5"></i>
         clovis.kyndt@gmail.com
       </a>
-      <div class="pull-right">
+      <div class="pull-right" id="lang">
         <a class="margin-right" href="/fr">Français</a>
         <a class="margin-right" href="/"> English</a>
         <a class="margin-right" href="/cn"> 中文</a>
@@ -13,7 +13,7 @@
     </div>
 
     <div class="padding-left-50 relative">
-      <h1>
+      <h1 id="head">
         <div class="letter-spacing-0-3" style="font-size:2.95rem;font-weight:normal">CLOVIS KYNDT</div>
         <div class="font-large grey-8 letter-spacing-0-6" style="font-size:1.3rem;font-weight:normal">SOFTWARE DEVELOPER</div>
       </h1>
@@ -299,6 +299,7 @@ ul li {
   }
 }
 
+// tablet
 @media only screen and (max-width: 800px) {
   #app {
     left:0;
@@ -307,6 +308,23 @@ ul li {
   }
   body {
     background-position: left -200px;
+  }
+}
+
+// Mobile
+@media only screen and (max-width: 500px) {
+  #app > div {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .hidden-mobile {
+    display: none;
+  }
+  #lang {
+    float: none;
+  }
+  #social, #lang, #head {
+    text-align: center;
   }
 }
 </style>
