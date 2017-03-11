@@ -1,4 +1,4 @@
-# vue
+# My CV
 
 > Clovis Kyndt CV written with VueJs
 
