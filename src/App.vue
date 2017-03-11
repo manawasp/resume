@@ -44,7 +44,7 @@
     <extra class="padding-left-50"></extra>
     <div id="footer">
       <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline">
-        clovis.kyndt@gmail.com [{{lang}}]
+        clovis.kyndt@gmail.com
       </a>
       <br />
       <span class="font-small">
