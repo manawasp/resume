@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "clovis-kyndt-cv",
   "version": "1.0.0",
   "description": "Clovis Kyndt CV written with VueJs",
   "author": "Clovis Kyndt <clovis.kyndt@gmail.com>",
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "node-sass": "^4.5.0",
+    "prerender-spa-plugin": "^2.0.1",
     "sass-loader": "^6.0.2",
     "vue": "^2.1.10",
     "vue-i18n": "^5.0.2"
