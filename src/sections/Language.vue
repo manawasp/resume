@@ -9,7 +9,7 @@
         </h6>
       </div>
     </div>
-    <div style="clear:both;margin-bottom:30px">
+    <div style="clear:both;margin-bottom:30px"></div>
   </div>
 </template>
 

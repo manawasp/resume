@@ -30,7 +30,7 @@
         </a>
         <a target="_blank" class="social download">
           <i class="fa fa-download fa-lg"></i>
-          <span class="download-content">Download</a>
+          <span class="download-content">Download</span>
         </a>
       </div>
     </div>
