@@ -1,22 +1,22 @@
 const Knowledges = [
   {
     title: 'Langages',
-    abilities: ['Golang', 'Javascript', 'Python', 'C/C++']
+    abilities: ['Python', 'Golang', 'Javascript', 'C/C++']
+  }, {
+    title: 'Data',
+    abilities: ['PostgreSQL', 'MongoDB', 'Kafka', 'MS SQL']
+  }, {
+    title: 'Intérêts',
+    abilities: ['Design et maintenabilité', 'Machine Learning', 'Data visualization', 'Scalability']
   }, {
     title: 'Framework',
-    abilities: ['VueJS', 'AngularJS', 'Node.js', 'Ruby on Rails']
+    abilities: ['VueJS', 'FastAPI', 'Flutter']
   }, {
-    title: 'BDD',
-    abilities: ['MongoDB', 'MySQL', 'Redis', 'PostgreSQL']
+    title: 'Cloud',
+    abilities: ['Kubernetes', 'AWS & Azure', 'Terraform']
   }, {
     title: 'Extra',
-    abilities: ['Machine Learning', 'Data visualization', 'Microservices']
-  }, {
-    title: 'Outils / Méthodes',
-    abilities: ['Git', 'Docker', 'TDD']
-  }, {
-    title: 'Général',
-    abilities: ['Algorithmes', 'Design Patterns', 'Mathématiques']
+    abilities: ['Gestion d\'équipe', 'Méthodologie agile', 'TDD']
   }
 ]
 

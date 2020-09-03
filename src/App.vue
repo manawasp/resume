@@ -25,12 +25,8 @@
         <a target="_blank" class="social github" href="https://github.com/Manawasp">
           <i class="fa fa-github-alt fa-lg"></i>
         </a>
-        <a target="_blank" class="social reddit" href="https://www.reddit.com/user/manawasp">
-          <i class="fa fa-reddit-alien fa-lg"></i>
-        </a>
         <a target="_blank" class="social download">
-          <i class="fa fa-download fa-lg"></i>
-          <span class="download-content">Download</span>
+          <i class="fa fa-file-pdf fa-lg"></i>
         </a>
       </div>
     </div>
@@ -165,28 +161,13 @@ a.social.github {
   background-color:#171515;
   color:white !important;
 }
-a.social.reddit:hover {
+a.social.download:hover {
   border-color:#ecb19f;
 }
-a.social.reddit {
-  background-color:#DD4B39;
+a.social.download {
+  background-color:#E11218;
   color:white !important;
 }
-a.social.download {
-  color:#444;
-  transition: all 0.25s ease-out;
-}
-a.social.download .download-content {
-  display: none;
-}
-a.social.download:hover {
-  width: 110px;
-  border-radius: 0;
-}
-a.social.download:hover .download-content {
-  display: inline-block;
-}
-
 #social {
   text-align:right;
   margin-top:40px;
