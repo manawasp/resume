@@ -3,28 +3,16 @@
 import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import App from './App'
-import Locales from './lang'
+import i18n from './lang'
 
 Vue.use(VueI18n)
 
-// set lang
+// // set lang
 let path = window.location.pathname.split('/')
-if (path.length > 1 && path[1] === 'fr' || path[1] === 'cn') {
-  Vue.config.lang = path[1]
-} else {
-  Vue.config.lang = 'en'
-}
-
-// set locales
-Object.keys(Locales).forEach(function (lang) {
-  Vue.locale(lang, Locales[lang])
-})
+i18n.locale = path.length > 1 && path[1] === 'fr' || path[1] === 'cn' ? path[1] : 'en'
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  template: '<App/>',
-  components: {
-    App
-  }
-})
+  i18n,
+  render: h => h(App)
+}).$mount('#app')
