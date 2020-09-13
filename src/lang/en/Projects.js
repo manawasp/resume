@@ -1,33 +1,27 @@
 const Projects = [
   {
-    title: 'Noihara',
-    subtitle: 'Tools to plan and manage projects schedules',
-    describe: 'Noihara is a web application to help you manage your projects in a team. It will have the most user friendly interface possible, the ability to manage diagrams like Pert and Gantt, schedules, chats, etc.<br />The project was born after having tested Asana, Basecamp and other tools to manage the Citywarfare project. This project allows me to test and improve my knowledge about various technologies.',
+    title: 'Ore',
+    subtitle: 'Mobile application to maintain habit',
+    describe: 'Small mobile application that allows to record tasks to be performed regularly and encourages the user to maintain their achievements via a gamified interface.<br/>Ore is a personal project under development.',
     tags: [
-      'Microservice',
       'Golang',
-      'Redis',
-      'MongoDB',
-      'Kafka',
-      'Elasticsearch - ELK',
-      'Docker'
+      'PostgreSQL',
+      'Flutter',
+      'UI/UX'
     ]
   }, {
-    title: 'Citywarfare',
-    subtitle: 'Mobile game with reality augmented',
-    describe: 'Citywarfare is a multiplayer war game in augmented reality created during our curriculum at Epitech. It will have mobile applications and a web interface. The user will be able to play in a world game and in custom games with different game modes available. We are 7 in the Citywarfare team.<br />I supervise the backend architecture and build the API and its design.',
+    title: 'Memine',
+    subtitle: `Mobile application facilitating memorization`,
+    describe: 'MemoryCard is a tool that allows the creation of a deck, a set of cards, in order to memorize them. This kind of tool is very useful to learn large lists of information and to help memorize them on the long term.<br/>MemoryCard is a personal project allowing me to discover mobile application development with Flutter and to think about UI/UX issues.',
     tags: [
-      'Ruby on Rails',
-      'CodeIgniter',
-      'API',
-      'MongoDB',
-      'Backend Architecture',
-      'UX - Design'
+      'Flutter',
+      'Algorithmie',
+      'UI/UX'
     ]
   }, {
     title: 'Hexatyla',
-    subtitle: 'Computer game RTS',
-    describe: 'Resume Hexatyla was a project built in a mandatory 3-months time during our undergraduate year at Epitech. We were 5 in the team to work on this project.<br />The project was a real challenge and we chose to only use a low-level rendering engine to build the core of the project. It has 3 parts, a server, a client application, and a web application. The web application allows to manage the race, map, and tech. tree to help having a modular game.<br />We have been strongly congratulated about the work we put on eventhough we could not finish it in the set time constraint.',
+    subtitle: '3D strategy game on Linux',
+    describe: `Hexatyla is a strategy game made by a team of 5 people as part of the end of our bachelor's degree project at Epitech.<br/> This project was completed in only 3 months using only a 3d engine. The project was divided into 3 parts, a game server, a graphical client and a web back office allowing the configuration of the units, the game maps and the technology tree.<br/> We were highly congratulated for the work accomplished.`,
     tags: [
       'C++',
       'Mathematics',

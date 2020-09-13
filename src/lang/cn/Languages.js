@@ -5,11 +5,11 @@ const Languages = [
     comment: '住在爱丁堡的六个月'
   }, {
     lang: '中文',
-    level: 'Basic - HSK3',
-    comment: '住在北京的一年'
+    level: 'Intermediate - HSK3',
+    comment: '在北京生活了1年'
   }, {
     lang: '法语',
-    level: 'Native Language',
+    level: '母语',
     comment: ''
   }
 ]

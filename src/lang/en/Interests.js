@@ -5,9 +5,8 @@ const Interests = [
   }, {
     meta: 'heart',
     names: [
-      'Traveling',
-      'Movies, Series',
-      'Digital Art, Photography'
+      'Digital Art, Photography, Traveling',
+      'Movies, TV shows'
     ]
   }, {
     meta: 'book',
@@ -22,9 +21,6 @@ const Interests = [
       'Team topologies',
       'The Phoenix Project'
     ]
-  }, {
-    meta: 'thumbs-up',
-    names: ['Beer & Wine']
   }
 ]
 

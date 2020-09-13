@@ -5,7 +5,7 @@ const Languages = [
     comment: 'Lived 6 months in Edinburgh'
   }, {
     lang: 'Chinese',
-    level: 'Basic - HSK3',
+    level: 'Intermediate - HSK3',
     comment: 'Lived 1 year in Beijing'
   }, {
     lang: 'French',

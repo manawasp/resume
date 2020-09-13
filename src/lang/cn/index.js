@@ -2,7 +2,7 @@ import Educations from './Education'
 import Interests from './Interests'
 import Knowledges from './Knowledges'
 import Languages from './Languages'
-import Presentation from './Presentation'
+import Introduction from './Introduction'
 import Projects from './Projects'
 import Works from './Works'
 
@@ -13,7 +13,7 @@ const cn = {
   titleLanguages: '语言',
   titleProjects: '个人工作',
   titleInterests: '利益',
-  presentation: Presentation,
+  introduction: Introduction,
   knowledges: Knowledges,
   works: Works,
   educations: Educations,

@@ -96,15 +96,12 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new PrerenderSPAPlugin({
       staticDir: path.join(__dirname, 'dist'),
-      routes: [ '/', '/about', '/contact' ],
+      routes: [ '/', '/fr', '/en', '/cn' ],
 
-      renderer: new Renderer({
-        inject: {
-          foo: 'bar'
-        },
-        headless: true,
-        renderAfterDocumentEvent: 'render-event'
-      })
+      // renderer: new Renderer({
+      //   headless: true,
+      //   renderAfterDocumentEvent: 'render-event'
+      // })
     })
   ])
 } else {
