@@ -106,7 +106,7 @@ a {text-decoration: none;}
 body {
   height: 100%;
   width: 100%;
-  background: url('/src/assets/img/background.jpg') left 50% no-repeat #f6f3ea fixed;
+  background: url('./assets/img/background.jpg') left 50% no-repeat #f6f3ea fixed;
   overflow-x: hidden;
   font-size: 1rem;
 }

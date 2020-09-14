@@ -7,15 +7,25 @@
       </h1>
 
       <div id="social">
-        <a target="_blank" class="social linkedin" href="https://www.linkedin.com/in/cloviskyndt">
-          <i class="fa fa-linkedin fa-lg" />
-        </a>
-        <a target="_blank" class="social github" href="https://github.com/Manawasp">
-          <i class="fa fa-github-alt fa-lg" />
-        </a>
-        <a target="_blank" class="social download">
-          <i class="fa fa-file-pdf fa-lg" />
-        </a>
+        <a
+          target="_blank"
+          class="social linkedin"
+          href="https://www.linkedin.com/in/cloviskyndt"
+          v-html="require('!html-loader!./../assets/img/linkedin.svg')"
+        />
+        <a
+          target="_blank"
+          class="social github"
+          href="https://github.com/Manawasp"
+          v-html="require('!html-loader!./../assets/img/github.svg')"
+        />
+        <a
+          target="_blank"
+          class="social download"
+          :href="`/static/clovis-kyndt-cv-${$i18n.locale}.pdf`"
+          v-html="require('!html-loader!./../assets/img/pdf.svg')"
+          download
+        />
       </div>
     </div>
     <div class="paper-limit description-txt margin-top-40">
@@ -58,6 +68,12 @@ a.social {
   margin-left: 6px;
   margin-right: 6px;
 
+  svg {
+    width: 14px;
+    height: 14px;
+    margin-top: 7px;
+  }
+
   &.little {
     width: 26px;
     height: 26px;
@@ -78,6 +94,7 @@ a.social {
     background-color:#171515;
     color:white !important;
 
+    svg {margin-top: 8px;}
     &:hover { border-color:#ccc; }
   }
 

@@ -3,8 +3,9 @@ var path = require('path')
 var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 const PrerenderSPAPlugin = require('prerender-spa-plugin')
-const Renderer = PrerenderSPAPlugin.PuppeteerRenderer
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const CopyPlugin = require('copy-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV,
@@ -26,13 +27,6 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]?[hash]'
-        }
-      },
-      {
         test: /\.scss$/,
         use: [
           'vue-style-loader',
@@ -41,16 +35,40 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          'css-loader'
-        ]
+        test: /\.svg$/,
+        use: [{ loader: 'html-loader' }]
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+        options: {
+          attributes: {
+            list: [
+              // All default supported tags and attributes
+              {
+                tag: 'img',
+                attribute: 'data-src',
+                type: 'src',
+              },
+              {
+                tag: 'img',
+                attribute: 'data-srcset',
+                type: 'srcset',
+              }
+            ]
+          }
+        }
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         use: [
-            'file-loader'
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'static/img',
+              name: '[name].[ext]',
+            }
+          }
         ]
       },
       {
@@ -59,6 +77,8 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
+              outputPath: 'static/fonts',
+              name: '[name].[ext]',
               limit: 10000
             },
           },
@@ -78,7 +98,7 @@ module.exports = {
   },
   devtool: '#eval-source-map',
   plugins: [
-    new VueLoaderPlugin(),
+    new VueLoaderPlugin()
   ]
 }
 if (process.env.NODE_ENV === 'production') {
@@ -92,16 +112,21 @@ if (process.env.NODE_ENV === 'production') {
     new HtmlWebpackPlugin({
       title: 'PRODUCTION prerender-spa-plugin',
       template: 'index.html',
+      favicon: 'src/assets/img/favicon.png',
       filename: path.resolve(__dirname, 'dist/index.html')
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: 'static', to: 'static' }
+      ],
     }),
     new PrerenderSPAPlugin({
       staticDir: path.join(__dirname, 'dist'),
-      routes: [ '/', '/fr', '/en', '/cn' ],
-
-      // renderer: new Renderer({
-      //   headless: true,
-      //   renderAfterDocumentEvent: 'render-event'
-      // })
+      routes: ['/fr', '/cn', '/en'],
+    }),
+    new CleanWebpackPlugin({
+      protectWebpackAssets: false,
+      cleanAfterEveryBuildPatterns: ['build.*']
     })
   ])
 } else {

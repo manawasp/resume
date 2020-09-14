@@ -1,10 +1,25 @@
 <template>
-  <div>
+  <div id="extra">
     <h3><span>{{$t('titleInterests')}}</span></h3>
     <ul style="padding-left:0;">
       <template v-for="categorie in $t('interests')">
-        <li v-for="name in categorie.names">
-          <i class="fa margin-right-10 grey-5" :class="'fa-' + categorie.meta"></i>
+        <li
+          v-for="name in categorie.names"
+          v-bind:key="name"
+        >
+          <span
+            v-if="'heart' === categorie.meta"
+            class="svg-icon"
+            v-html="require('!html-loader!./../assets/img/heart.svg')"
+          />
+          <span
+            v-else-if="'heartbeat' === categorie.meta"
+            class="svg-icon"
+            v-html="require('!html-loader!./../assets/img/sport.svg')" />
+          <span
+            v-else-if="'book' === categorie.meta"
+            class="svg-icon"
+            v-html="require('!html-loader!./../assets/img/book.svg')" />
           {{name}}
         </li>
       </template>
@@ -19,5 +34,18 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss">
+#extra svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  fill: #404040;
+}
+
+.svg-icon {
+  float: left;
+  height: 16px;
+  padding-top: 3px;
+  padding-right: 6px;
+}
 </style>

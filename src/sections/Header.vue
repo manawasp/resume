@@ -1,7 +1,10 @@
 <template>
   <div id="topbar">
     <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline hidden-mobile">
-      <i class="fa fa-share fa-1x margin-right-5"></i>
+      <span
+        class="reply-icon"
+        v-html="require('!html-loader!./../assets/img/reply.svg')"
+      />
       clovis.kyndt@gmail.com
     </a>
     <div class="pull-right" id="lang">
@@ -39,5 +42,17 @@ export default {
   &.selected {
     color: #444;
   }
+}
+
+a {
+  .reply-icon svg {
+    width: 16px;
+    height: 14px;
+    float: left;
+    padding-top: 3px;
+    padding-right: 6px;
+    fill: #aaa;
+  }
+  &:hover .reply-icon svg { fill: #444; }
 }
 </style>
