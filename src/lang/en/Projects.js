@@ -5,8 +5,10 @@ const Projects = [
     describe: 'Small mobile application that allows to record tasks to be performed regularly and encourages the user to maintain their achievements via a gamified interface.<br/>Ore is a personal project under development.',
     tags: [
       'Golang',
-      'PostgreSQL',
+      'gRPC',
       'Flutter',
+      'Dart',
+      'PostgreSQL',
       'UI/UX'
     ]
   }, {
@@ -15,6 +17,7 @@ const Projects = [
     describe: 'MemoryCard is a tool that allows the creation of a deck, a set of cards, in order to memorize them. This kind of tool is very useful to learn large lists of information and to help memorize them on the long term.<br/>MemoryCard is a personal project allowing me to discover mobile application development with Flutter and to think about UI/UX issues.',
     tags: [
       'Flutter',
+      'Dart',
       'Algorithmie',
       'UI/UX'
     ]

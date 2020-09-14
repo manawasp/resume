@@ -37,15 +37,15 @@ export default {
 <style lang="scss">
 #extra svg {
   display: inline-block;
-  width: 16px;
-  height: 16px;
-  fill: #404040;
+  width: 15px;
+  height: 15px;
+  fill: #505050;
 }
 
 .svg-icon {
   float: left;
   height: 16px;
   padding-top: 3px;
-  padding-right: 6px;
+  padding-right: 12px;
 }
 </style>

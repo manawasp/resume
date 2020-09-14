@@ -67,7 +67,6 @@ a {text-decoration: none;}
 .grey-5{color:#555;}
 .grey-6{color:#666;}
 .grey-8{color:#888;}
-.grey-a5{color:#a5a5a5;}
 
 .letter-spacing-0-6 {letter-spacing:0.6rem;}
 .letter-spacing-0-3 {letter-spacing:0.3rem;}
@@ -148,7 +147,7 @@ h4 {
 }
 h6 {
   font-size: 0.82rem;
-  color: #999;
+  color: #777;
   margin: 1px 0 0 0;
   font-weight: 300;
 }
