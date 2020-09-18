@@ -9,7 +9,7 @@
     </a>
     <div class="pull-right" id="lang">
       <a href="/fr" :class="{selected: $i18n.locale === 'fr'}">Français</a> &bull;
-      <a href="/en" :class="{selected: $i18n.locale === 'en'}">English</a> &bull;
+      <a href="/" :class="{selected: $i18n.locale === 'en'}">English</a> &bull;
       <a href="/cn" :class="{selected: $i18n.locale === 'cn'}">中文</a>
     </div>
   </div>

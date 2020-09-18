@@ -42,10 +42,6 @@ export default {
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: "Sorts Mill Goudy";
-  src: url(./assets/fonts/SortsMillGoudy-Regular.ttf);
-}
 body {
   margin: 0;
   padding: 0;
@@ -53,7 +49,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   font-size: 1rem;
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Merriweather', 'Times New Roman', serif;
   font-weight: 300;
 }
 a {text-decoration: none;}
@@ -73,7 +69,6 @@ a {text-decoration: none;}
 .description-txt{
   color: #000;
   word-spacing: 2px;
-  font-family: 'Merriweather';
   font-weight: 300;
   font-size: 1rem;
 }
@@ -105,13 +100,13 @@ a {text-decoration: none;}
 body {
   height: 100%;
   width: 100%;
-  background: url('./assets/img/background.jpg') left 50% no-repeat #f6f3ea fixed;
+  background: url('./assets/img/background.webp') left 50% no-repeat #f6f3ea fixed;
   overflow-x: hidden;
   font-size: 1rem;
 }
 
 h1, h3, h4, h5, .knowledges li {
-  font-family: "Sorts Mill Goudy", "Helvetica";
+  font-family: 'Sorts Mill Goudy', 'Helvetica', 'Times New Roman';
 }
 
 ul.knowledges li {
