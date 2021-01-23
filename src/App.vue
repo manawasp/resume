@@ -1,67 +1,27 @@
 <template>
-  <div id="app" class="white-bg overlay-margin-500 text-right font-medium lang-menu">
-    <div class="padding-left-50 padding-right-50 lang-menu">
-      <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline hidden-mobile">
-        <i class="fa fa-share fa-1x margin-right-5"></i>
-        clovis.kyndt@gmail.com
-      </a>
-      <div class="pull-right" id="lang">
-        <a class="margin-right-10" href="/fr" :class="{select: lang === 'fr'}">Français</a>
-        <a class="margin-right-10" href="/" :class="{select: lang === 'en'}"> English</a>
-        <a class="margin-right-10" href="/cn" :class="{select: lang === 'cn'}"> 中文</a>
-      </div>
+  <div id="app" class="lang-menu">
+    <Header />
+    <div id="content">
+      <Introduction />
+      <Knowledge />
+      <Work />
+      <Education />
+      <Language />
+      <Project />
+      <Extra />
     </div>
-
-    <div class="padding-left-50 relative">
-      <h1 id="head">
-        <div class="letter-spacing-0-3" style="font-size:2.95rem;font-weight:normal">CLOVIS KYNDT</div>
-        <div class="font-large grey-8 letter-spacing-0-6" style="font-size:1.3rem;font-weight:normal">SOFTWARE DEVELOPER</div>
-      </h1>
-
-      <div id="social">
-        <a target="_blank" class="social linkedin" href="https://www.linkedin.com/in/cloviskyndt">
-          <i class="fa fa-linkedin fa-lg"></i>
-        </a>
-        <a target="_blank" class="social github" href="https://github.com/Manawasp">
-          <i class="fa fa-github-alt fa-lg"></i>
-        </a>
-        <a target="_blank" class="social reddit" href="https://www.reddit.com/user/manawasp">
-          <i class="fa fa-reddit-alien fa-lg"></i>
-        </a>
-        <a target="_blank" class="social download">
-          <i class="fa fa-download fa-lg"></i>
-          <span class="download-content">Download</span>
-        </a>
-      </div>
-    </div>
-
-    <presentation class="padding-left-50"></presentation>
-    <knowledge class="padding-left-50"></knowledge>
-    <work class="padding-left-50"></work>
-    <education class="padding-left-50"></education>
-    <language class="padding-left-50"></language>
-    <project class="padding-left-50"></project>
-    <extra class="padding-left-50"></extra>
-    <div id="footer">
-      <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline">
-        clovis.kyndt@gmail.com
-      </a>
-      <br />
-      <span class="font-small">
-        Design by Clovis Kyndt
-      </span>
-    </div>
+    <Footer />
   </div>
 </template>
 
 <script>
-
-import Vue from 'vue'
 import Education from './sections/Education'
 import Extra from './sections/Extra'
+import Footer from './sections/Footer'
+import Header from './sections/Header'
 import Knowledge from './sections/Knowledge'
 import Language from './sections/Language'
-import Presentation from './sections/Presentation'
+import Introduction from './sections/Introduction'
 import Project from './sections/Project'
 import Work from './sections/Work'
 
@@ -70,30 +30,54 @@ export default {
   components: {
     Education,
     Extra,
+    Footer,
+    Header,
     Knowledge,
     Language,
-    Presentation,
+    Introduction,
     Project,
     Work
-  },
-  computed: {
-    lang: () => {
-      return Vue.config.lang
-    }
   }
 }
 </script>
 
 <style lang="scss">
-@font-face {
-  font-family: "Sorts Mill Goudy";
-  src: url(./assets/fonts/SortsMillGoudy-Regular.ttf);
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  font-size: 1rem;
+  font-family: 'Merriweather', 'Times New Roman', serif;
+  font-weight: 300;
 }
 a {text-decoration: none;}
-#app {padding-top:15px}
+#app {
+  padding-top:15px;
+  background-color: #ffffff;
+  font-size:0.9rem;
+}
+.no-underline{text-decoration: none;}
+.paper-limit{max-width:825px;padding-right:30px;text-align:justify}
+.grey-5{color:#555;}
+.grey-6{color:#666;}
+.grey-8{color:#888;}
+
+.letter-spacing-0-6 {letter-spacing:0.6rem;}
+.letter-spacing-0-3 {letter-spacing:0.3rem;}
+.description-txt{
+  color: #000;
+  word-spacing: 2px;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
 .font-small {font-size:0.7em}
-.font-medium {font-size:0.9rem;}
 .font-large {font-size:1.3rem;}
+.font-0-9{font-size:0.9rem;}
+.font-0-95{font-size:0.95rem;}
+.font-0-7{font-size:0.7rem;}
 
 .margin-top-5 {margin-top:5px}
 .margin-top-10 {margin-top:10px}
@@ -116,83 +100,13 @@ a {text-decoration: none;}
 body {
   height: 100%;
   width: 100%;
-  background: url('./assets/img/background.jpg') left 50% no-repeat #f6f3ea fixed;
+  background: url('./assets/img/background.webp') left 50% no-repeat #f6f3ea fixed;
   overflow-x: hidden;
   font-size: 1rem;
 }
 
 h1, h3, h4, h5, .knowledges li {
-  font-family: "Sorts Mill Goudy", "Helvetica";
-}
-
-a.social {
-  overflow: hidden;
-  display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
-  line-height:1.8rem;
-  cursor: pointer;
-
-  margin-right:20px;
-  border-radius: 50%;
-  background-color:#ddd;
-  color:#444;
-  text-align:center;
-  font-size:0.7rem;
-  border: 3px solid white;
-  transition: background 0.3s, color 0.3s, border-color 0.3s linear;
-}
-a.social.little {
-  width: 26px;
-  height: 26px;
-  border-radius:13px;
-}
-a.social i {
-  vertical-align:middle;
-}
-a.social.linkedin:hover {
-  border-color:#a0c6ff;
-  // border-color:red;
-}
-a.social.linkedin {
-  background-color:#006699;
-  color:white !important;
-}
-a.social.github:hover {
-  border-color:#ccc;
-}
-a.social.github {
-  background-color:#171515;
-  color:white !important;
-}
-a.social.reddit:hover {
-  border-color:#ecb19f;
-}
-a.social.reddit {
-  background-color:#DD4B39;
-  color:white !important;
-}
-a.social.download {
-  color:#444;
-  transition: all 0.25s ease-out;
-}
-a.social.download .download-content {
-  display: none;
-}
-a.social.download:hover {
-  width: 110px;
-  border-radius: 0;
-}
-a.social.download:hover .download-content {
-  display: inline-block;
-}
-
-#social {
-  text-align:right;
-  margin-top:40px;
-  position: absolute;
-  top: 20px;
-  right:0;
+  font-family: 'Sorts Mill Goudy', 'Helvetica', 'Times New Roman';
 }
 
 ul.knowledges li {
@@ -203,15 +117,21 @@ h3 {
   text-transform: uppercase;
   font-size:1.3rem;
   line-height: 1.6rem;
-  background-color:#F4F4F4;
+  background-color:#EFEEEB;
   display:inline-block;
   color:#555;
   font-weight: normal;
-  margin-left: -50px;
+  max-width:400px;
+  width:100%;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
 }
 h3 > span {
-  padding:10px 20px 3px 55px;
+  padding:10px 20px 3px 15px;
   display: inline-block;
+}
+h3 .space{
+  padding: 5px 20px 5px 40px;
 }
 
 h4 {
@@ -220,14 +140,22 @@ h4 {
   font-weight: normal;
   margin-bottom:0;
 }
+h6 {
+  font-size: 0.82rem;
+  color: #777;
+  margin: 1px 0 0 0;
+  font-weight: 300;
+}
 
 .label {
-  margin-right:6px;
+  display: none;
+  margin-right: 6px;
   font-size: 0.8rem;
 }
 
 .label.label-primary {
-  background-color: #f5f5f5;
+  display: inline-block;
+  background-color: #EFEEEB;
   color: #444;
   padding: 3px 6px;
   border-radius: 3px;
@@ -236,26 +164,30 @@ h4 {
 
 ul {
   list-style-type: none;
-}
+  li {
+    border-bottom:1px dashed #ddd;
+    padding-left:10px;
+    padding-right:10px;
+    font-size:1rem;
+    line-height:1.9rem;
 
-ul li {
-  border-bottom:1px dashed #ddd;
-  padding-left:10px;
-  padding-right:10px;
-  font-size:1rem;
-  line-height:1.9rem;
-
-  &.title {
-    font-weight:500;
-    border-bottom:0;
-    color: #999;
-    font-weight: 300;
-    font-family:'Merriweather', sans-serif;
-    padding-bottom: 10px;
+    &.title {
+      font-weight:500;
+      border-bottom:0;
+      color: #777;
+      font-weight: 300;
+      font-family:'Merriweather', sans-serif;
+      padding-bottom: 10px;
+    }
   }
 }
 
-.lang-menu a {
+#content {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+a {
   color: #aaa;
   &:hover {
     color: #444;
@@ -268,9 +200,9 @@ ul li {
 
 .experience, .education, .project {
   border-bottom: 1px dashed #ddd;
-  padding-bottom: 25px;
-  padding-right:5px;
-  padding-left:5px;
+  padding-bottom: 36px;
+  padding-right: 6px;
+  padding-left: 6px;
   max-width:800px;
 }
 
@@ -295,14 +227,6 @@ ul li {
   width: 33%;
   display:inline-block;
 }
-@media only screen and (max-width: 1175px) {
-  #social {
-    position: relative;
-    text-align: left;
-    top:0;
-    margin-top:0;
-  }
-}
 
 // tablet
 @media only screen and (max-width: 800px) {
@@ -319,8 +243,9 @@ ul li {
   }
 }
 
-#app > div {
-  padding-right: 30px;
+#lang > a {
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 // Mobile
@@ -337,8 +262,6 @@ ul li {
   }
   #lang {
     float: none;
-  }
-  #social, #lang, #head {
     text-align: center;
   }
 }

@@ -1,33 +1,30 @@
 const Projects = [
   {
-    title: 'Noihara',
-    subtitle: '用来计划和管理项目时间表的工具',
-    describe: 'Noihara是一个能帮助你管理团队的项目的web应用程序，它将拥有最友好的处理波特图、甘特图，管理时间表等等之类的用户界面体验<br />这个项目自产生之后由Asana、Basecamp还有其他能处理Citywarfare项目的工具检验过，它能让我检测和增进我对各种不同方面技术的认知',
+    title: 'Ore',
+    subtitle: '保持习惯的移动应用',
+    describe: '小巧的移动应用，允许记录定期执行的任务，并通过游戏化的界面鼓励用户保持自己的成就。<br/>Ore 是一个正在开发的个人项目。',
     tags: [
-      'Microservice',
       'Golang',
-      'Redis',
-      'MongoDB',
-      'Kafka',
-      'Elasticsearch - ELK',
-      'Docker'
+      'gRPC',
+      'Flutter',
+      'Dart',
+      'PostgreSQL',
+      'UI/UX'
     ]
   }, {
-    title: 'Citywarfare',
-    subtitle: '有很强实境体验的手机游戏',
-    describe: 'Citywarfare我和我的团队在Epitech时为增强实境体验而设计的多人战争游戏，它将拥有手机软件和web界面，用户能够选择world game还有不同的自定义游戏模式。我们的团队共有七个人。<br /> 我监督后端体系架构并且建立和设计我的API',
+    title: 'Memine',
+    subtitle: '方便记忆的移动应用程序',
+    describe: '记忆卡是一个工具，它允许创建一副牌，一组牌，以记住它们。这种工具对于学习大量的信息列表和帮助长期记忆这些信息非常有用。<br/>MemoryCard是一个个人项目，让我发现用Flutter开发移动应用，并思考UI/UX问题。',
     tags: [
-      'Ruby on Rails',
-      'CodeIgniter',
-      'API',
-      'MongoDB',
-      'Backend Architecture',
-      'UX - Design'
+      'Flutter',
+      'Dart',
+      'Algorithmie',
+      'UI/UX'
     ]
   }, {
     title: 'Hexatyla',
-    subtitle: '计算机游戏 RTS',
-    describe: 'Resume Hexatyla是我在Epitech本科学习期间设计的，我们五个人按照要求在三个月内完成了这个项目。<br /> 这个项目是一个很大的挑战，我们选择了较低渲染水平的引擎来建设这个项目的核心。它可以分成三个部分：服务器、客户应用程序和网络应用程序。其中网络应用程序可以用于通过管理种族、地图和科技树来获得一个模式化的游戏。<br />即使我们没有在规定的时间内完成任务，但是我们的设计仍然受到了很大的鼓励和赞扬。',
+    subtitle: 'Linux上的3D策略游戏',
+    describe: 'Hexatyla是一个由5人组成的团队制作的策略游戏，是我们在Epitech的学士学位项目结束的一部分。<br/>这个项目只用了3个月的时间就完成了，只用了一个3D引擎。该项目分为3个部分，一个游戏服务器，一个图形客户端和一个网络后台，允许配置单位，游戏地图和技术树。<br/>我们对所完成的工作表示高度祝贺。',
     tags: [
       'C++',
       'Mathematics',

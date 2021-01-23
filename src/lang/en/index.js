@@ -2,18 +2,18 @@ import Educations from './Education'
 import Interests from './Interests'
 import Knowledges from './Knowledges'
 import Languages from './Languages'
-import Presentation from './Presentation'
+import Introduction from './Introduction'
 import Projects from './Projects'
 import Works from './Works'
 
 const en = {
   titleKnowledges: 'Computer Knowledges',
-  titleWorks: 'Work Experience',
-  titleEducations: 'Education',
+  titleWorks: 'Professional Experience',
+  titleEducations: 'Educations',
   titleLanguages: 'Languages',
   titleProjects: 'Personal Work',
-  titleInterests: 'Interest',
-  presentation: Presentation,
+  titleInterests: 'Interests',
+  introduction: Introduction,
   knowledges: Knowledges,
   works: Works,
   educations: Educations,
