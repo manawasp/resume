@@ -1,7 +1,7 @@
 const Interests = [
   {
     meta: 'heartbeat',
-    names: ['Fitness, Jogging, Nation']
+    names: ['Fitness, Jogging, Natation']
   }, {
     meta: 'heart',
     names: [

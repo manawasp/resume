@@ -1,6 +1,6 @@
 const Introduction = {
-  intro: `Passionate about computers and curious by nature. I did a master's degree at EPITECH including an exchange year in China. After more than 5 years of professional experience, I was able to deepen my technical and project management knowledge.`,
-  detail: 'Today, I am turning to web technologies and put my heart into providing products with an excellent level of IU/UX and quality stability. Invested, I devote part of my free time to test new technologies and patterns: mobile development, infrastructure set up, machine learning.'
+  intro: `Being naturally curious and passionate about computers, I finish a master's at EPITECH including a year of exchange in Beijing, China. After 5 years of training in work, I was able to deepen my technical knowledge and project management abilities.`,
+  detail: 'Today, I devote myself to web technologies, thus put my heart into offering high stable products with excellent UI / UX. In my off-work times, I’m obsessed with testing new technologies and patterns: mobile development, infrastructure configuration, machine learning.'
 }
 
 export default Introduction
