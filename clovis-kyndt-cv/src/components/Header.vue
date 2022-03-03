@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import ReplyIcon from '../assets/img/reply.svg'
+import { getLocale } from '../languages';
+
+const locale = getLocale()
 </script>
 
 <template>
@@ -9,9 +12,9 @@ import ReplyIcon from '../assets/img/reply.svg'
       clovis.kyndt@gmail.com
     </a>
     <div class="pull-right" id="lang">
-      <a href="/fr" :class="{selected: $i18n.locale === 'fr'}">Français</a> &bull;
-      <a href="/" :class="{selected: $i18n.locale === 'en'}">English</a> &bull;
-      <a href="/cn" :class="{selected: $i18n.locale === 'cn'}">中文</a>
+      <a href="/fr" :class="{selected: locale === 'fr'}">Français</a> &bull;
+      <a href="/" :class="{selected: locale === 'en'}">English</a> &bull;
+      <a href="/cn" :class="{selected: locale === 'cn'}">中文</a>
     </div>
   </div>
 </template>

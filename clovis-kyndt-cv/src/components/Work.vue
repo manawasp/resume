@@ -1,10 +1,17 @@
 <script lang="ts" setup>
+import { getSection } from '../languages'
+
+const works = getSection().works
 </script>
 
 <template>
   <div class="padding-bottom-30">
-    <h3><span>{{$t('titleWorks')}}</span></h3>
-    <div v-bind:key="key" v-for="(work, key) in $t('works')" class="experience">
+    <h3><span>{{ works.title }}</span></h3>
+    <div
+      class="experience"
+      v-for="(work, idx) in works.data"
+      :key="idx"
+    >
       <h4>
         {{work.job}} -
         <span>{{work.company}}</span>
@@ -13,8 +20,9 @@
       <div class="margin-top-20 text-justify" v-html="work.description"></div>
       <div class="margin-top-20">
         <span
-          v-bind:key="key"
-          v-for="(tag, key) in work.tags" class="label label-primary"
+          class="label label-primary"
+          v-for="(tag, key) in work.tags"
+          :key="key"
         >
           {{tag}}
         </span>

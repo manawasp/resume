@@ -1,13 +1,16 @@
 <script lang="ts" setup>
+import { getSection } from '../languages'
+
+const knowledges = getSection().knowledges
 </script>
 
 <template>
   <div>
-    <h3><span>{{$t('titleKnowledges')}}</span></h3>
+    <h3><span>{{knowledges.title}}</span></h3>
     <div style="display:block" class="margin-top-5 margin-bottom-20">
 
       <div
-        v-for="(knowledge, key) in $t('knowledges')"
+        v-for="(knowledge, key) in knowledges.data"
         v-bind:key="key"
         class="knowledges"
       >

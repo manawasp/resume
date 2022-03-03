@@ -1,12 +1,15 @@
 <script lang="ts" setup>
+import { getSection } from '../languages'
+
+const educations = getSection().educations
 </script>
 
 <template>
   <div class="padding-bottom-30">
-    <h3><span>{{$t('titleEducations')}}</span></h3>
+    <h3><span>{{educations.title}}</span></h3>
     <div
-      v-for="(education, ide) in $t('educations')"
-      v-bind:key="ide"
+      v-for="(education, idx) in educations.data"
+      v-bind:key="idx"
     >
       <h4>{{education.name}}</h4>
       <h6>{{education.date}}, {{education.localization}}</h6>

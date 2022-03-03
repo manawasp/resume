@@ -2,6 +2,10 @@
 import LinkedinIcon from '../assets/img/linkedin.svg'
 import GithubIcon from '../assets/img/github.svg'
 import PdfIcon from '../assets/img/pdf.svg'
+import { getLocale, getSection } from '../languages'
+
+const locale = getLocale()
+const resume = getSection().resume
 </script>
 
 <template>
@@ -30,7 +34,7 @@ import PdfIcon from '../assets/img/pdf.svg'
         <a
           target="_blank"
           class="social download"
-          :href="`/static/clovis-kyndt-cv-${$i18n.locale}.pdf`"
+          :href="`/static/clovis-kyndt-cv-${locale}.pdf`"
           download
         >
           <PdfIcon />
@@ -38,8 +42,8 @@ import PdfIcon from '../assets/img/pdf.svg'
       </div>
     </div>
     <div class="paper-limit description-txt margin-top-40">
-      <p v-html="$t('introduction.intro')" class="margin-bottom-30"></p>
-      <p v-html="$t('introduction.detail')" class="margin-bottom-30"></p>
+      <p v-html="resume.short" class="margin-bottom-30"></p>
+      <p v-html="resume.detail" class="margin-bottom-30"></p>
     </div>
   </div>
 </template>
