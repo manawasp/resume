@@ -7,6 +7,12 @@
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview"
   },
+  "workspaces": [
+    "src/*"
+  ],
+  "files": [
+    "src/**/*.vue"
+  ],
   "dependencies": {
     "vue": "^3.2.25",
     "vue-i18n": "^9.1.9"
