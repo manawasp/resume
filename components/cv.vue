@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import cn from 'locales/cn.json'
-import fr from 'locales/fr.json'
-import en from 'locales/en.json'
+import cn from '../locales/cn.json'
+import fr from '../locales/fr.json'
+import en from '../locales/en.json'
 
 const props = withDefaults(defineProps<Props>(), { locale: 'fr' })
 
