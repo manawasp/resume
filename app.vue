@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Cv locale="fr" />
+    <NuxtPage />
   </div>
 </template>
 

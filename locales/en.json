@@ -85,9 +85,9 @@
         ]
       },
       {
-        "title": "Interets",
+        "title": "Interests",
         "abilities": [
-          "Design et maintenabilité",
+          "Design et maintainability",
           "Machine Learning",
           "Data visualization",
           "Scalability"
@@ -112,8 +112,8 @@
       {
         "title": "Extra",
         "abilities": [
-          "Gestion d'équipe",
-          "Méthodologie agile",
+          "Team management",
+          "Agile method",
           "TDD"
         ]
       }
@@ -128,7 +128,7 @@
         "type": "Permanent",
         "date": "mars 2016 - today",
         "localization": "in Paris, France",
-        "description": "reation of CRM tools in the format of a suite with the aim of making it as intuitive as possible.<br/>Adding monitoring and alerting to ensure the smooth running of our services 24h/24h.<br/>Solution allowing customers to use their own authentication system.<br/>Implementation of quality processes, management of technical choices at team level.",
+        "description": "Creation of CRM tools in the format of a suite with the aim of making it as intuitive as possible.<br/>Adding monitoring and alerting to ensure the smooth running of our services 24h/24h.<br/>Solution allowing customers to use their own authentication system.<br/>Implementation of quality processes, management of technical choices at team level.",
         "tags": [
           "Python",
           "Go",
@@ -214,7 +214,7 @@
         "tags": [
           "Flutter",
           "Dart",
-          "Algorithmie",
+          "Algorithms",
           "UI/UX"
         ]
       },
