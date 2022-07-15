@@ -1,3 +1,5 @@
 <template>
-  <Cv :locale="$route.params.lang" />
+  <div>
+    <Cv :locale="$route.params.lang" />
+  </div>
 </template>

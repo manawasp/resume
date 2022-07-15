@@ -15,9 +15,15 @@ const props = withDefaults(defineProps<Props>(), {})
       clovis.kyndt@gmail.com
     </a>
     <div id="lang" class="pull-right">
-      <a href="/fr" :class="{ selected: props.locale === 'fr' }">Français</a> &bull;
-      <a href="/" :class="{ selected: props.locale === 'en' }">English</a> &bull;
-      <a href="/cn" :class="{ selected: props.locale === 'cn' }">中文</a>
+      <NuxtLink to="/fr" :class="{ selected: props.locale === 'fr' }">
+        Français
+      </NuxtLink> &bull;
+      <NuxtLink to="/" :class="{ selected: props.locale === 'en' }">
+        English
+      </NuxtLink> &bull;
+      <NuxtLink to="/cn" :class="{ selected: props.locale === 'cn' }">
+        中文
+      </NuxtLink>
     </div>
   </div>
 </template>

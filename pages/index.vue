@@ -1,3 +1,5 @@
 <template>
-  <Cv locale="fr" />
+  <div>
+    <Cv locale="en" />
+  </div>
 </template>
