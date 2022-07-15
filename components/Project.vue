@@ -11,27 +11,23 @@ const props = withDefaults(defineProps<Props>(), {})
     <h3><span>{{ props.projects.title }}</span></h3>
     <div
       v-for="(project, idx) in props.projects.data"
-      v-bind:key="idx"
+      :key="idx"
       class="project"
     >
-      <h4>{{project.title}}</h4>
-      <h6>{{project.subtitle}}</h6>
+      <h4>{{ project.title }}</h4>
+      <h6>{{ project.subtitle }}</h6>
       <div>
-        <p v-html="project.describe"></p>
+        <p v-html="project.describe" />
       </div>
       <div>
         <span
           v-for="(tag, idt) in project.tags"
-          v-bind:key="idt"
+          :key="idt"
           class="label label-primary"
         >
-          {{tag}}
+          {{ tag }}
         </span>
       </div>
     </div>
   </div>
 </template>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

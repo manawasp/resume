@@ -10,29 +10,25 @@ const props = withDefaults(defineProps<Props>(), {})
   <div>
     <h3><span>{{ props.knowledges.title }}</span></h3>
     <div style="display:block" class="margin-top-5 margin-bottom-20">
-
       <div
         v-for="(knowledge, key) in props.knowledges.data"
-        v-bind:key="key"
+        :key="key"
         class="knowledges"
       >
         <ul style="padding:0">
           <div style="margin:20px 30px 20px 0">
-            <li class="title">{{knowledge.title}}</li>
+            <li class="title">
+              {{ knowledge.title }}
+            </li>
             <li
               v-for="(ability, key) in knowledge.abilities"
-              v-bind:key="key"
+              :key="key"
             >
-              {{ability}}
+              {{ ability }}
             </li>
           </div>
         </ul>
       </div>
-
     </div>
   </div>
 </template>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-</style>

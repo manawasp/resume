@@ -15,8 +15,12 @@ const props = withDefaults(defineProps<Props>(), {})
   <div>
     <div class="relative">
       <h1 id="title">
-        <div class="letter-spacing-0-3" style="font-size:2.95rem;font-weight:normal">CLOVIS KYNDT</div>
-        <div class="font-large grey-8 letter-spacing-0-6" style="font-size:1.3rem;font-weight:normal">SOFTWARE DEVELOPER</div>
+        <div class="letter-spacing-0-3" style="font-size:2.95rem;font-weight:normal">
+          CLOVIS KYNDT
+        </div>
+        <div class="font-large grey-8 letter-spacing-0-6" style="font-size:1.3rem;font-weight:normal">
+          SOFTWARE DEVELOPER
+        </div>
       </h1>
 
       <div id="social">
@@ -36,14 +40,14 @@ const props = withDefaults(defineProps<Props>(), {})
           target="_blank"
           class="social download"
           :href="`/static/clovis-kyndt-cv-${props.locale}.pdf`"
-          v-html="PdfIcon"
           download
+          v-html="PdfIcon"
         />
       </div>
     </div>
     <div class="paper-limit description-txt margin-top-40">
-      <p v-html="props.resume.short" class="margin-bottom-30"></p>
-      <p v-html="props.resume.detail" class="margin-bottom-30"></p>
+      <p class="margin-bottom-30" v-html="props.resume.short" />
+      <p class="margin-bottom-30" v-html="props.resume.detail" />
     </div>
   </div>
 </template>

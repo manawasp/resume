@@ -11,12 +11,12 @@ const props = withDefaults(defineProps<Props>(), {})
 
 <template>
   <div id="extra">
-    <h3><span>{{props.interests.title}}</span></h3>
+    <h3><span>{{ props.interests.title }}</span></h3>
     <ul style="padding-left:0;">
       <template v-for="categorie in props.interests.data">
         <li
           v-for="name in categorie.names"
-          v-bind:key="name"
+          :key="name"
         >
           <span
             v-if="'heart' === categorie.meta"
@@ -33,7 +33,7 @@ const props = withDefaults(defineProps<Props>(), {})
             class="svg-icon"
             v-html="BookIcon"
           />
-          {{name}}
+          {{ name }}
         </li>
       </template>
     </ul>

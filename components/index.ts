@@ -17,5 +17,5 @@ export default {
   Knowledge,
   Language,
   Project,
-  Work
+  Work,
 }

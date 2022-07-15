@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Cv :locale="'fr'"/>
+    <Cv locale="fr" />
   </div>
 </template>
 
@@ -227,4 +227,5 @@ a {
     float: none;
     text-align: center;
   }
-}</style>
+}
+</style>

@@ -1,0 +1,236 @@
+{
+  "resume": {
+    "short": "Being naturally curious and passionate about computers, I finish a master's at EPITECH including a year of exchange in Beijing, China. After 5 years of training in work, I was able to deepen my technical knowledge and project management abilities.",
+    "detail": "Today, I devote myself to web technologies, thus put my heart into offering high stable products with excellent UI / UX. In my off-work times, I'm obsessed with testing new technologies and patterns: mobile development, infrastructure configuration, machine learning.\n"
+  },
+  "educations": {
+    "title": "Educations",
+    "data": [
+      {
+        "name": "Epitech - European Institute of Technology",
+        "date": "2011 - 2016",
+        "localization": "Paris, France",
+        "courses": [
+          "Programmation",
+          "Project management",
+          "Development method",
+          "Algorithmic"
+        ]
+      },
+      {
+        "name": "Beijing Jiaotong University",
+        "date": "2014 - 2015",
+        "localization": "Beijing, Beijing Municipality, China",
+        "courses": [
+          "Project Management",
+          "Quality and Process Software Management",
+          "BigData (Hadoop)",
+          "Software training (Node.js & AngularJS)",
+          "Chinese writting and oral"
+        ]
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interests",
+    "data": [
+      {
+        "meta": "heartbeat",
+        "names": [
+          "Fitness, Jogging, Swimming"
+        ]
+      },
+      {
+        "meta": "heart",
+        "names": [
+          "Digital Art, Photography, Traveling",
+          "Movies, TV shows"
+        ]
+      },
+      {
+        "meta": "book",
+        "names": [
+          "Designing Event-Driven Systems",
+          "The Software Craftsman",
+          "Clean Architecture",
+          "Essential Algorithms: A Practical Approach to Computer Algorithms",
+          "MongoDB Applied Design Patterns",
+          "Extreme Programming Explained",
+          "Building Microservices",
+          "Team topologies",
+          "The Phoenix Project"
+        ]
+      }
+    ]
+  },
+  "knowledges": {
+    "title": "Knowledges",
+    "data": [
+      {
+        "title": "Langages",
+        "abilities": [
+          "Python",
+          "Golang",
+          "JS/TS",
+          "Rust"
+        ]
+      },
+      {
+        "title": "Data",
+        "abilities": [
+          "PostgreSQL",
+          "MongoDB",
+          "Kafka",
+          "MS SQL"
+        ]
+      },
+      {
+        "title": "Interets",
+        "abilities": [
+          "Design et maintenabilité",
+          "Machine Learning",
+          "Data visualization",
+          "Scalability"
+        ]
+      },
+      {
+        "title": "Framework",
+        "abilities": [
+          "VueJS",
+          "FastAPI",
+          "Flutter"
+        ]
+      },
+      {
+        "title": "Cloud",
+        "abilities": [
+          "Kubernetes",
+          "AWS & Azure",
+          "Terraform"
+        ]
+      },
+      {
+        "title": "Extra",
+        "abilities": [
+          "Gestion d'équipe",
+          "Méthodologie agile",
+          "TDD"
+        ]
+      }
+    ]
+  },
+  "works": {
+    "title": "Works",
+    "data": [
+      {
+        "job": "Fullstack developer",
+        "company": "Numberly",
+        "type": "Permanent",
+        "date": "mars 2016 - today",
+        "localization": "in Paris, France",
+        "description": "reation of CRM tools in the format of a suite with the aim of making it as intuitive as possible.<br/>Adding monitoring and alerting to ensure the smooth running of our services 24h/24h.<br/>Solution allowing customers to use their own authentication system.<br/>Implementation of quality processes, management of technical choices at team level.",
+        "tags": [
+          "Python",
+          "Go",
+          "VueJS",
+          "MS SQL",
+          "MongoDB",
+          "Kubernetes",
+          "DevOps",
+          "Team lead"
+        ]
+      },
+      {
+        "job": "Fullstack developer",
+        "company": "Altran",
+        "type": "Work-study",
+        "date": "october 2015 - march 2016",
+        "localization": "in Wasquehal, France",
+        "description": "Creation of an API and a web interface grouping the French crop plots, forecasting and suggesting countermeasures against fungicide risks according to various parameters.<br /> Creation of an automated and downloadable reporting for each farmer.",
+        "tags": [
+          "C#",
+          ".NET",
+          "AngularJS",
+          "MS SQL"
+        ]
+      },
+      {
+        "job": "Backend developer",
+        "company": "Libertrip",
+        "type": "Internship",
+        "date": "april - august 2014",
+        "localization": "in Lille, France",
+        "description": "Integration of different functionalities on the main application.<br /> Creation of a single service gathering a large inventory of hotels, populated via different external services.<br /> Implementation of a new web interface to visualize and manipulate these data.",
+        "tags": [
+          "Ruby on rails",
+          "Backbone",
+          "AngularJS",
+          "PostgreSQL",
+          "MongoDB"
+        ]
+      }
+    ]
+  },
+  "languages": {
+    "title": "Langues",
+    "data": [
+      {
+        "lang": "English",
+        "level": "Intermediate",
+        "comment": "Lived 6 months in Edinburgh"
+      },
+      {
+        "lang": "Chinese",
+        "level": "Intermediate - HSK3",
+        "comment": "Lived 1 year in Beijing"
+      },
+      {
+        "lang": "French",
+        "level": "Native Language",
+        "comment": ""
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "data": [
+      {
+        "title": "Ore",
+        "subtitle": "Mobile application to maintain habit",
+        "describe": "Small mobile application that allows to record tasks to be performed regularly and encourages the user to maintain their achievements via a gamified interface.<br/>Ore is a personal project under development.",
+        "tags": [
+          "Golang",
+          "gRPC",
+          "Flutter",
+          "Dart",
+          "PostgreSQL",
+          "UI/UX"
+        ]
+      },
+      {
+        "title": "Memine",
+        "subtitle": "Mobile application facilitating memorization",
+        "describe": "MemoryCard is a tool that allows the creation of a deck, a set of cards, in order to memorize them. This kind of tool is very useful to learn large lists of information and to help memorize them on the long term.<br/>MemoryCard is a personal project allowing me to discover mobile application development with Flutter and to think about UI/UX issues.",
+        "tags": [
+          "Flutter",
+          "Dart",
+          "Algorithmie",
+          "UI/UX"
+        ]
+      },
+      {
+        "title": "Hexatyla",
+        "subtitle": "3D strategy game on Linux",
+        "describe": "Hexatyla is a strategy game made by a team of 5 people as part of the end of our bachelor's degree project at Epitech.<br/> This project was completed in only 3 months using only a 3d engine. The project was divided into 3 parts, a game server, a graphical client and a web back office allowing the configuration of the units, the game maps and the technology tree.<br/> We were highly congratulated for the work accomplished.",
+        "tags": [
+          "C++",
+          "Mathematics",
+          "Algorithms",
+          "Ogre3D",
+          "Javascript",
+          "Team Leader"
+        ]
+      }
+    ]
+  }
+}

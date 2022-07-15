@@ -1,12 +1,14 @@
 <script lang="ts" setup>
-import cn from '../languages/cn.yaml'
-import fr from '../languages/fr.yaml'
-import en from '../languages/en.yaml'
+import cn from 'locales/cn.json'
+import fr from 'locales/fr.json'
+import en from 'locales/en.json'
 
-const mapLanguages: { [key: string]: any }= {
-  'cn': cn,
-  'fr': fr,
-  'en': en
+const props = withDefaults(defineProps<Props>(), { locale: 'fr' })
+
+const mapLanguages: { [key: string]: any } = {
+  cn,
+  fr,
+  en,
 }
 
 function getLanguage(lang: string): any {
@@ -14,15 +16,14 @@ function getLanguage(lang: string): any {
 }
 
 interface Props {
-  locale: string;
+  locale: string
 }
 
-const props = withDefaults(defineProps<Props>(), { locale: "fr" });
 const translation = getLanguage(props.locale)
 </script>
 
 <template>
-  <Header :locale="props.locale"></Header>
+  <Header :locale="props.locale" />
   <div id="content">
     <Introduction
       :locale="props.locale"
@@ -47,5 +48,5 @@ const translation = getLanguage(props.locale)
       :interests="translation.interests"
     />
   </div>
-  <Footer></Footer>
+  <Footer />
 </template>

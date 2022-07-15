@@ -14,10 +14,10 @@ const props = withDefaults(defineProps<Props>(), {})
       <span class="reply-icon" v-html="ReplyIcon" />
       clovis.kyndt@gmail.com
     </a>
-    <div class="pull-right" id="lang">
-      <a href="/fr" :class="{selected: props.locale === 'fr'}">Français</a> &bull;
-      <a href="/" :class="{selected: props.locale === 'en'}">English</a> &bull;
-      <a href="/cn" :class="{selected: props.locale === 'cn'}">中文</a>
+    <div id="lang" class="pull-right">
+      <a href="/fr" :class="{ selected: props.locale === 'fr' }">Français</a> &bull;
+      <a href="/" :class="{ selected: props.locale === 'en' }">English</a> &bull;
+      <a href="/cn" :class="{ selected: props.locale === 'cn' }">中文</a>
     </div>
   </div>
 </template>
