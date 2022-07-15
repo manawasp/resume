@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 useHead({
-  title: 'Clovis Kyndt',
+  title: 'Clovis Kyndt - Résumé',
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
   ],
