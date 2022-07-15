@@ -4,11 +4,17 @@
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
-    "preview": "nuxt preview"
+    "preview": "nuxt preview",
+    "test": "eslint .",
+    "lint": "eslint .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.25.2",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "eslint": "^8.19.0",
+    "husky": "^8.0.1",
     "nuxt": "3.0.0-rc.5",
     "sass": "^1.53.0",
     "sass-loader": "^10.3.1",

@@ -21,8 +21,8 @@ const props = withDefaults(defineProps<Props>(), {})
               {{ knowledge.title }}
             </li>
             <li
-              v-for="(ability, key) in knowledge.abilities"
-              :key="key"
+              v-for="(ability, j) in knowledge.abilities"
+              :key="j"
             >
               {{ ability }}
             </li>
