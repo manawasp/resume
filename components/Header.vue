@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-import ReplyIcon from '../assets/img/reply.svg?raw'
-
 interface Props {
   locale: string
 }
@@ -10,10 +8,6 @@ const props = withDefaults(defineProps<Props>(), {})
 
 <template>
   <div id="topbar">
-    <a href="mailto:clovis.kyndt@gmail.com" target="_blank" class="no-underline hidden-mobile">
-      <span class="reply-icon" v-html="ReplyIcon" />
-      clovis.kyndt@gmail.com
-    </a>
     <div id="lang" class="pull-right">
       <NuxtLink to="/fr" :class="{ selected: props.locale === 'fr' }">
         Français

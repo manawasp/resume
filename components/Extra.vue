@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import HeartIcon from '../assets/img/heart.svg?raw'
-import SportIcon from '../assets/img/sport.svg?raw'
-import BookIcon from '../assets/img/book.svg?raw'
+import HeartIcon from '../assets/icons/heart.svg?raw'
+import SportIcon from '../assets/icons/sport.svg?raw'
+import BookIcon from '../assets/icons/book.svg?raw'
 interface Props {
   interests: any
 }
@@ -13,23 +13,23 @@ const props = withDefaults(defineProps<Props>(), {})
   <div id="extra">
     <h3><span>{{ props.interests.title }}</span></h3>
     <ul style="padding-left:0;">
-      <template v-for="categorie in props.interests.data">
+      <template v-for="category in props.interests.data">
         <li
-          v-for="name in categorie.names"
+          v-for="name in category.names"
           :key="name"
         >
           <span
-            v-if="'heart' === categorie.meta"
+            v-if="'heart' === category.meta"
             class="svg-icon"
             v-html="HeartIcon"
           />
           <span
-            v-else-if="'heartbeat' === categorie.meta"
+            v-else-if="'heartbeat' === category.meta"
             class="svg-icon"
             v-html="SportIcon"
           />
           <span
-            v-else-if="'book' === categorie.meta"
+            v-else-if="'book' === category.meta"
             class="svg-icon"
             v-html="BookIcon"
           />

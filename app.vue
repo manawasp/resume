@@ -1,3 +1,17 @@
+<script lang="ts" setup>
+useHead({
+  title: 'Clovis Kyndt',
+  link: [
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+  ],
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
+  charset: 'utf-8',
+  meta: [
+    { name: 'description', content: 'Résumé of me, Clovis Kyndt, software developer' },
+  ],
+})
+</script>
+
 <template>
   <div id="app">
     <NuxtPage />

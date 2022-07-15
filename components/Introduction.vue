@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import LinkedinIcon from 'assets/img/linkedin.svg?raw'
-import GithubIcon from 'assets/img/github.svg?raw'
-import PdfIcon from 'assets/img/pdf.svg?raw'
+import LinkedinIcon from 'assets/icons/linkedin.svg?raw'
+import GithubIcon from 'assets/icons/github.svg?raw'
+import PdfIcon from 'assets/icons/pdf.svg?raw'
 
 interface Props {
   resume: any
