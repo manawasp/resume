@@ -15,15 +15,15 @@ const props = withDefaults(defineProps<Props>(), {})
   <div>
     <div class="relative">
       <h1 id="title">
-        <div class="letter-spacing-0-3" style="font-size:2.95rem;font-weight:normal">
-          CLOVIS KYNDT
+        <div>
+          Clovis Kyndt
         </div>
-        <div class="font-large grey-8 letter-spacing-0-6" style="font-size:1.3rem;font-weight:normal">
-          SOFTWARE DEVELOPER
+        <div class="sub">
+          Software Developer
         </div>
       </h1>
 
-      <div id="social">
+      <!-- <div id="social">
         <a
           target="_blank"
           class="social linkedin"
@@ -43,9 +43,10 @@ const props = withDefaults(defineProps<Props>(), {})
           download
           v-html="PdfIcon"
         />
-      </div>
+      </div> -->
     </div>
-    <div class="paper-limit description-txt margin-top-40">
+    <h3><span>About</span></h3>
+    <div class="paper-limit description-txt ml-small">
       <p class="margin-bottom-30" v-html="props.resume.short" />
       <p class="margin-bottom-30" v-html="props.resume.detail" />
     </div>

@@ -12,15 +12,19 @@ const props = withDefaults(defineProps<Props>(), {})
     <div
       v-for="(work, idx) in props.works.data"
       :key="idx"
-      class="experience"
+      class="experience ml-small"
     >
-      <h4>
-        {{ work.job }} -
-        <span>{{ work.company }}</span>
-      </h4>
-      <h6>{{ work.type }}, {{ work.date }} {{ work.localization }}</h6>
-      <div class="margin-top-20 text-justify" v-html="work.description" />
-      <div class="margin-top-20">
+      <p class="clear-margin">
+        <strong>
+          <a :href="work.link" target="_blank">{{ work.company }}</a>
+        </strong>
+        <span class="job-title text-muted">{{ work.job }}</span>
+      </p>
+      <p class="mt-0 text-muted">
+        <small>{{ work.date }} | {{ work.localization }}</small>
+      </p>
+      <p class="mt-small text-justify" v-html="work.description" />
+      <p class="mt-small">
         <span
           v-for="(tag, key) in work.tags"
           :key="key"
@@ -28,8 +32,18 @@ const props = withDefaults(defineProps<Props>(), {})
         >
           {{ tag }}
         </span>
-      </div>
+      </p>
     </div>
   </div>
 </template>
 
+<style lang="scss" scoped>
+.job-title {
+  font-weight: normal;
+  padding-left: 0.3rem;
+}
+
+.experience {
+  line-height: 1.5;
+}
+</style>

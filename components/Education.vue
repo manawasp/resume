@@ -12,10 +12,15 @@ const props = withDefaults(defineProps<Props>(), {})
     <div
       v-for="(education, idx) in props.educations.data"
       :key="idx"
+      class="margin-bottom-30 ml-small "
     >
-      <h4>{{ education.name }}</h4>
-      <h6>{{ education.date }}, {{ education.localization }}</h6>
-      <div class="margin-top-10">
+      <p class="clear-margin">
+        <strong>{{ education.name }}</strong>
+      </p>
+      <p class="clear-margin text-muted">
+        <small>{{ education.date }} | {{ education.localization }}</small>
+      </p>
+      <div class="mt-small">
         <div
           v-for="(course, id) in education.courses"
           :key="id"

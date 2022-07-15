@@ -9,7 +9,7 @@ const props = withDefaults(defineProps<Props>(), {})
 <template>
   <div id="topbar">
     <div id="lang" class="pull-right">
-      <NuxtLink to="/fr" :class="{ selected: props.locale === 'fr' }">
+      <!-- <NuxtLink to="/fr" :class="{ selected: props.locale === 'fr' }">
         Français
       </NuxtLink> &bull;
       <NuxtLink to="/" :class="{ selected: props.locale === 'en' }">
@@ -17,7 +17,7 @@ const props = withDefaults(defineProps<Props>(), {})
       </NuxtLink> &bull;
       <NuxtLink to="/cn" :class="{ selected: props.locale === 'cn' }">
         中文
-      </NuxtLink>
+      </NuxtLink> -->
     </div>
   </div>
 </template>

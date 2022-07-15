@@ -4,11 +4,11 @@
     "detail": "Today, I devote myself to web technologies, thus put my heart into offering high stable products with excellent UI / UX. In my off-work times, I'm obsessed with testing new technologies and patterns: mobile development, infrastructure configuration, machine learning.\n"
   },
   "educations": {
-    "title": "Educations",
+    "title": "Education",
     "data": [
       {
         "name": "Epitech - European Institute of Technology",
-        "date": "2011 - 2016",
+        "date": "September 2011 - September 2016",
         "localization": "Paris, France",
         "courses": [
           "Programmation",
@@ -19,7 +19,7 @@
       },
       {
         "name": "Beijing Jiaotong University",
-        "date": "2014 - 2015",
+        "date": "September 2014 - July 2015",
         "localization": "Beijing, Beijing Municipality, China",
         "courses": [
           "Project Management",
@@ -64,7 +64,7 @@
     ]
   },
   "knowledges": {
-    "title": "Knowledges",
+    "title": "Stack",
     "data": [
       {
         "title": "Langages",
@@ -120,14 +120,15 @@
     ]
   },
   "works": {
-    "title": "Works",
+    "title": "Work Experience",
     "data": [
       {
-        "job": "Fullstack developer",
+        "job": "Software Developer",
         "company": "Numberly",
+        "link": "https://numberly.com/en/",
         "type": "Permanent",
-        "date": "mars 2016 - today",
-        "localization": "in Paris, France",
+        "date": "March 2016 - Present",
+        "localization": "Paris, France",
         "description": "Creation of CRM tools in the format of a suite with the aim of making it as intuitive as possible.<br/>Adding monitoring and alerting to ensure the smooth running of our services 24h/24h.<br/>Solution allowing customers to use their own authentication system.<br/>Implementation of quality processes, management of technical choices at team level.",
         "tags": [
           "Python",
@@ -141,11 +142,12 @@
         ]
       },
       {
-        "job": "Fullstack developer",
-        "company": "Altran",
+        "job": "Software Developer Intern",
+        "company": "Capgemini Engineering",
+        "link": "https://capgemini-engineering.com/us/en/",
         "type": "Work-study",
-        "date": "october 2015 - march 2016",
-        "localization": "in Wasquehal, France",
+        "date": "October 2015 - March 2016",
+        "localization": "Lille, France",
         "description": "Creation of an API and a web interface grouping the French crop plots, forecasting and suggesting countermeasures against fungicide risks according to various parameters.<br /> Creation of an automated and downloadable reporting for each farmer.",
         "tags": [
           "C#",
@@ -155,11 +157,11 @@
         ]
       },
       {
-        "job": "Backend developer",
+        "job": "Software Developer Intern",
         "company": "Libertrip",
-        "type": "Internship",
-        "date": "april - august 2014",
-        "localization": "in Lille, France",
+        "link": "https://www.libertrip.com/",
+        "date": "April 2014 - August 2014",
+        "localization": "Lille, France",
         "description": "Integration of different functionalities on the main application.<br /> Creation of a single service gathering a large inventory of hotels, populated via different external services.<br /> Implementation of a new web interface to visualize and manipulate these data.",
         "tags": [
           "Ruby on rails",
@@ -176,7 +178,7 @@
     "data": [
       {
         "lang": "English",
-        "level": "Intermediate",
+        "level": "Fluent",
         "comment": "Lived 6 months in Edinburgh"
       },
       {
@@ -186,7 +188,7 @@
       },
       {
         "lang": "French",
-        "level": "Native Language",
+        "level": "Native speaker",
         "comment": ""
       }
     ]

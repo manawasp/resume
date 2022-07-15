@@ -24,27 +24,50 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
+  color: #333;
   font-size: 1rem;
-  font-family: 'Merriweather', 'Times New Roman', serif;
-  font-weight: 300;
 }
-a {text-decoration: none;}
+
+a {
+  color: #333;
+  text-decoration: none;
+
+  &:not(.icon) {
+    border-bottom: 1px dashed #0005;
+  }
+
+  &:hover {
+    transition: all .3s;
+    background-clip: text;
+    background-image: linear-gradient(to right, #b12952 0%, #c63156 55%, #da385b 90%);
+    color: transparent;
+  }
+}
+
 #app {
-  padding-top:15px;
-  background-color: #ffffff;
-  font-size:0.9rem;
+  box-sizing: border-box;
+  width: 1120px;
+  padding: 2em 3.5em;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+h1 .sub {
+  font-weight: normal;
+  font-size: 1.2rem;
+  color: #75767a;
+}
+
 .no-underline{text-decoration: none;}
 .paper-limit{max-width:825px;padding-right:30px;text-align:justify}
 .grey-5{color:#555;}
 .grey-6{color:#666;}
-.grey-8{color:#888;}
+.text-muted{color:#888;}
 
 .letter-spacing-0-6 {letter-spacing:0.6rem;}
 .letter-spacing-0-3 {letter-spacing:0.3rem;}
 .description-txt{
-  color: #000;
   word-spacing: 2px;
   font-weight: 300;
   font-size: 1rem;
@@ -74,37 +97,35 @@ a {text-decoration: none;}
 .padding-right-50 {padding-right:50px}
 .padding-left-50 {padding-left:50px}
 
-body {
-  height: 100%;
-  width: 100%;
-  background: url('./assets/img/background.webp') left 50% no-repeat #f6f3ea fixed;
-  overflow-x: hidden;
-  font-size: 1rem;
+.mt-0 {
+  margin-top: 0;
+}
+.mt-small {
+  margin-top: 0.8rem;
+}
+.ml-small {
+  margin-left: 0.8rem;
 }
 
 h1, h3, h4, h5, .knowledges li {
-  font-family: 'Sorts Mill Goudy', 'Helvetica', 'Times New Roman';
+  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
 }
 
 ul.knowledges li {
-  font-size:1rem;
+  font-size:.875rem;
 }
 
 h3 {
-  text-transform: uppercase;
-  font-size:1.3rem;
-  line-height: 1.6rem;
-  background-color:#EFEEEB;
-  display:inline-block;
-  color:#555;
-  font-weight: normal;
-  max-width:400px;
-  width:100%;
+  font-size:1.1rem;
+  color: #333;
+  font-weight: bold;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
-}
-h3 > span {
-  padding:10px 20px 3px 15px;
+  border-bottom: 2px solid #333;
+  // -webkit-background-clip: text;
+  // background-clip: text;
+  // background-image: linear-gradient(to right, rgb(39, 77, 150) 0%, #3153c6 15%, #abb7e0 60%);
+  // color: transparent;
   display: inline-block;
 }
 h3 .space{
@@ -112,9 +133,9 @@ h3 .space{
 }
 
 h4 {
-  font-size:1.4rem;
+  font-size:1rem;
   color: #333;
-  font-weight: normal;
+  font-weight: 700;
   margin-bottom:0;
 }
 h6 {
@@ -132,20 +153,27 @@ h6 {
 
 .label.label-primary {
   display: inline-block;
-  background-color: #EFEEEB;
-  color: #444;
-  padding: 3px 6px;
+  border: 1px solid #ddd;
+  padding: 2px 6px;
   border-radius: 3px;
   margin-right:15px;
+  cursor: default;
+}
+
+.clear-margin {
+  margin: 0;
+}
+
+small, .small {
+    font-size: 85%;
 }
 
 ul {
   list-style-type: none;
   li {
     border-bottom:1px dashed #ddd;
-    padding-left:10px;
     padding-right:10px;
-    font-size:1rem;
+    font-size:.875rem;
     line-height:1.9rem;
 
     &.title {
@@ -153,7 +181,6 @@ ul {
       border-bottom:0;
       color: #777;
       font-weight: 300;
-      font-family:'Merriweather', sans-serif;
       padding-bottom: 10px;
     }
   }
@@ -164,27 +191,10 @@ ul {
   padding-right: 50px;
 }
 
-a {
-  color: #aaa;
-  &:hover {
-    color: #444;
-  }
-  &.select {
-    color:#444;
-    border-bottom:1px solid #ddd;
-  }
-}
-
 .experience, .education, .project {
-  border-bottom: 1px dashed #ddd;
   padding-bottom: 36px;
-  padding-right: 6px;
-  padding-left: 6px;
+  padding: .8rem .1rem;
   max-width:800px;
-}
-
-.experience > h4 {
-  font-family: 'Lara';
 }
 
 #footer {
@@ -192,12 +202,6 @@ a {
   padding-bottom: 30px;
   color: #888;
   text-align:center;
-}
-
-#app {
-  position: relative;
-  left: 33.33333%;
-  width: 66.66666%;
 }
 
 .knowledges {
@@ -241,5 +245,21 @@ a {
     float: none;
     text-align: center;
   }
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(assets/fonts/NunitoSans-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(assets/fonts/NunitoSans-Bold.woff2) format('woff2');
 }
 </style>
