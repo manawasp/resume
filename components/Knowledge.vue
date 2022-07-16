@@ -9,14 +9,14 @@ const props = withDefaults(defineProps<Props>(), {})
 <template>
   <div>
     <h3><span>{{ props.knowledges.title }}</span></h3>
-    <div style="display:block" class="margin-bottom-20 ml-small">
+    <div style="display:block">
       <div
         v-for="(knowledge, key) in props.knowledges.data"
         :key="key"
         class="knowledges"
       >
-        <ul style="padding:0">
-          <div style="margin:0 30px 20px 0">
+        <ul class="font-sm">
+          <div style="margin:0 30px 40px 0">
             <li class="title">
               {{ knowledge.title }}
             </li>

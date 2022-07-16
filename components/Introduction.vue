@@ -46,9 +46,9 @@ const props = withDefaults(defineProps<Props>(), {})
       </div> -->
     </div>
     <h3><span>About</span></h3>
-    <div class="paper-limit description-txt ml-small">
-      <p class="margin-bottom-30" v-html="props.resume.short" />
-      <p class="margin-bottom-30" v-html="props.resume.detail" />
+    <div class="paper-limit description-txt">
+      <p class="margin-bottom-30 mt-0" v-html="props.resume.short" />
+      <p class="clear-margin" v-html="props.resume.detail" />
     </div>
   </div>
 </template>

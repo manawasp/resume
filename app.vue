@@ -97,22 +97,27 @@ h1 .sub {
 .padding-right-50 {padding-right:50px}
 .padding-left-50 {padding-left:50px}
 
-.mt-0 {
-  margin-top: 0;
-}
-.mt-small {
-  margin-top: 0.8rem;
-}
-.ml-small {
-  margin-left: 0.8rem;
+.pl-0 { padding-left: 0; }
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+.mt-small { margin-top: 0.8rem; }
+.ml-small { margin-left: 0.8rem; }
+
+.block:not(:last-child) {
+  margin-bottom: 2rem;
 }
 
 h1, h3, h4, h5, .knowledges li {
   font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
 }
 
+.knowledges ul {
+  padding: 0;
+  margin: 0;
+}
+
 ul.knowledges li {
-  font-size:.875rem;
+  font-size:.975rem;
 }
 
 h3 {
@@ -120,7 +125,7 @@ h3 {
   color: #333;
   font-weight: bold;
   margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   border-bottom: 2px solid #333;
   // -webkit-background-clip: text;
   // background-clip: text;
@@ -137,6 +142,7 @@ h4 {
   color: #333;
   font-weight: 700;
   margin-bottom:0;
+  margin-top: 0;
 }
 h6 {
   font-size: 0.82rem;
@@ -164,6 +170,10 @@ h6 {
   margin: 0;
 }
 
+.read-block {
+  max-width: 700px;
+}
+
 small, .small {
     font-size: 85%;
 }
@@ -173,7 +183,6 @@ ul {
   li {
     border-bottom:1px dashed #ddd;
     padding-right:10px;
-    font-size:.875rem;
     line-height:1.9rem;
 
     &.title {
@@ -184,6 +193,13 @@ ul {
       padding-bottom: 10px;
     }
   }
+
+  &.no-border li {
+    border: 0;
+  }
+  &.font-sm {
+    font-size:.925rem;
+  }
 }
 
 #content {
@@ -191,10 +207,8 @@ ul {
   padding-right: 50px;
 }
 
-.experience, .education, .project {
-  padding-bottom: 36px;
-  padding: .8rem .1rem;
-  max-width:800px;
+.experience+.experience {
+  margin-top: 36px;
 }
 
 #footer {

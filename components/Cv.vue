@@ -38,11 +38,11 @@ const translation = getLanguage(props.locale)
     <Education
       :educations="translation.educations"
     />
-    <Language
-      :languages="translation.languages"
-    />
     <Project
       :projects="translation.projects"
+    />
+    <Language
+      :languages="translation.languages"
     />
     <Extra
       :interests="translation.interests"

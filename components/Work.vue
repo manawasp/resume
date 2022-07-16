@@ -7,32 +7,39 @@ const props = withDefaults(defineProps<Props>(), {})
 </script>
 
 <template>
-  <div class="padding-bottom-30">
-    <h3><span>{{ props.works.title }}</span></h3>
-    <div
-      v-for="(work, idx) in props.works.data"
-      :key="idx"
-      class="experience ml-small"
-    >
-      <p class="clear-margin">
-        <strong>
-          <a :href="work.link" target="_blank">{{ work.company }}</a>
-        </strong>
-        <span class="job-title text-muted">{{ work.job }}</span>
-      </p>
-      <p class="mt-0 text-muted">
-        <small>{{ work.date }} | {{ work.localization }}</small>
-      </p>
-      <p class="mt-small text-justify" v-html="work.description" />
-      <p class="mt-small">
-        <span
-          v-for="(tag, key) in work.tags"
-          :key="key"
-          class="label label-primary"
-        >
-          {{ tag }}
-        </span>
-      </p>
+  <div>
+    <h3 style="margin-top: 0.6rem;">
+      <span>{{ props.works.title }}</span>
+    </h3>
+    <div>
+      <div
+        v-for="(work, idx) in props.works.data"
+        :key="idx"
+        class="experience block"
+      >
+        <p class="clear-margin">
+          <strong>
+            <a :href="work.link" target="_blank">{{ work.company }}</a>
+          </strong>
+          <span class="job-title text-muted">{{ work.job }}</span>
+        </p>
+        <p class="mt-0 text-muted">
+          <small>{{ work.date }} | {{ work.localization }}</small>
+        </p>
+        <p
+          class="mt-small mb-0 text-justify read-block"
+          v-html="work.description"
+        />
+        <div class="mt-small ml-small">
+          <div
+            v-for="(detail, idj) in work.details"
+            :key="idj"
+            class="padding-top-"
+          >
+            &ndash; {{ detail }}
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>

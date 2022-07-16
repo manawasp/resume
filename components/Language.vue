@@ -9,20 +9,24 @@ const props = withDefaults(defineProps<Props>(), {})
 <template>
   <div>
     <h3><span>{{ props.languages.title }}</span></h3>
-    <div style="margin-top:30px;">
+    <div>
       <div
         v-for="(lang, id) in props.languages.data"
         :key="id"
-        style="width:33%;float:left"
+        class="block"
       >
-        <h4 style="margin:0">
-          {{ lang.lang }}
-        </h4>
-        <h6 style="margin-top:5px;">
-          {{ lang.level }}<br>{{ lang.comment }}
-        </h6>
+        <p class="clear-margin">
+          <strong>
+            {{ lang.lang }}
+          </strong>
+        </p>
+        <p class="clear-margin text-muted">
+          <small>
+            {{ lang.level }}
+            <span v-if="lang.comment">, {{ lang.comment }}</span>
+          </small>
+        </p>
       </div>
     </div>
-    <div style="clear:both;margin-bottom:30px" />
   </div>
 </template>

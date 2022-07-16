@@ -7,26 +7,33 @@ const props = withDefaults(defineProps<Props>(), {})
 </script>
 
 <template>
-  <div class="padding-bottom-30">
+  <div>
     <h3><span>{{ props.projects.title }}</span></h3>
-    <div
-      v-for="(project, idx) in props.projects.data"
-      :key="idx"
-      class="project"
-    >
-      <h4>{{ project.title }}</h4>
-      <h6>{{ project.subtitle }}</h6>
-      <div>
-        <p v-html="project.describe" />
-      </div>
-      <div>
-        <span
-          v-for="(tag, idt) in project.tags"
-          :key="idt"
-          class="label label-primary"
-        >
-          {{ tag }}
-        </span>
+    <div>
+      <div
+        v-for="(project, idx) in props.projects.data"
+        :key="idx"
+        class="project block"
+      >
+        <p class="clear-margin">
+          <strong>
+            {{ project.title }}
+          </strong> <span class="text-muted" style="margin-left:.3rem">
+            {{ project.subtitle }}
+          </span>
+        </p>
+        <div>
+          <p v-html="project.describe" />
+        </div>
+        <div>
+          <span
+            v-for="(tag, idt) in project.tags"
+            :key="idt"
+            class="label label-primary"
+          >
+            {{ tag }}
+          </span>
+        </div>
       </div>
     </div>
   </div>

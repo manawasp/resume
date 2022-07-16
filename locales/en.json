@@ -7,59 +7,57 @@
     "title": "Education",
     "data": [
       {
-        "name": "Epitech - European Institute of Technology",
+        "title": "MSc Computer Science",
+        "school": "Epitech",
         "date": "September 2011 - September 2016",
-        "localization": "Paris, France",
-        "courses": [
-          "Programmation",
-          "Project management",
-          "Development method",
-          "Algorithmic"
-        ]
+        "localization": "Paris, France"
       },
       {
-        "name": "Beijing Jiaotong University",
+        "title": "MSc Computer Science (Exchange)",
+        "school": "Beijing JiaoTong University",
         "date": "September 2014 - July 2015",
-        "localization": "Beijing, Beijing Municipality, China",
-        "courses": [
-          "Project Management",
-          "Quality and Process Software Management",
-          "BigData (Hadoop)",
-          "Software training (Node.js & AngularJS)",
-          "Chinese writting and oral"
-        ]
+        "localization": "Beijing, China"
       }
     ]
   },
   "interests": {
-    "title": "Interests",
+    "title": "Inspiring books",
     "data": [
       {
-        "meta": "heartbeat",
-        "names": [
-          "Fitness, Jogging, Swimming"
-        ]
+        "title": "The Software Craftsman",
+        "author": "Sandro Mancuso"
       },
       {
-        "meta": "heart",
-        "names": [
-          "Digital Art, Photography, Traveling",
-          "Movies, TV shows"
-        ]
+        "title": "Clean Architecture",
+        "author": "Robert C. Martin"
       },
       {
-        "meta": "book",
-        "names": [
-          "Designing Event-Driven Systems",
-          "The Software Craftsman",
-          "Clean Architecture",
-          "Essential Algorithms: A Practical Approach to Computer Algorithms",
-          "MongoDB Applied Design Patterns",
-          "Extreme Programming Explained",
-          "Building Microservices",
-          "Team topologies",
-          "The Phoenix Project"
-        ]
+        "title": "The Staff Engineer's Path",
+        "author": "Tanya Reilly"
+      },
+      {
+        "title": "Team Topologies",
+        "author": "Matthew Skelton"
+      },
+      {
+        "title": "Extreme Programming Explained",
+        "author": "Kent Beck"
+      },
+      {
+        "title": "Building Event-Driven Microservices",
+        "author": "Adam Bellemare"
+      },
+      {
+        "title": "Software Architecture: the Hard Parts",
+        "author": "Neal Ford, Mark Richars, Zhamak Dehghani"
+      },
+      {
+        "title": "100 Things Every Designer Needs to Know About People",
+        "author": "Susan M. Weinschenk"
+      },
+      {
+        "title": "The Phoenix Project",
+        "author": "Gene Kim, Kevin Behr George Spafford"
       }
     ]
   },
@@ -71,7 +69,7 @@
         "abilities": [
           "Python",
           "Golang",
-          "JS/TS",
+          "Typescript",
           "Rust"
         ]
       },
@@ -87,22 +85,22 @@
       {
         "title": "Interests",
         "abilities": [
-          "Design et maintainability",
-          "Machine Learning",
-          "Data visualization",
-          "Scalability"
+          "Product development",
+          "Code quality",
+          "Architecture",
+          "Data visualization"
         ]
       },
       {
         "title": "Framework",
         "abilities": [
-          "VueJS",
+          "Vue",
           "FastAPI",
           "Flutter"
         ]
       },
       {
-        "title": "Cloud",
+        "title": "Operations",
         "abilities": [
           "Kubernetes",
           "AWS & Azure",
@@ -113,8 +111,8 @@
         "title": "Extra",
         "abilities": [
           "Team management",
-          "Agile method",
-          "TDD"
+          "Collaboration",
+          "Communication"
         ]
       }
     ]
@@ -129,32 +127,22 @@
         "type": "Permanent",
         "date": "March 2016 - Present",
         "localization": "Paris, France",
-        "description": "Creation of CRM tools in the format of a suite with the aim of making it as intuitive as possible.<br/>Adding monitoring and alerting to ensure the smooth running of our services 24h/24h.<br/>Solution allowing customers to use their own authentication system.<br/>Implementation of quality processes, management of technical choices at team level.",
-        "tags": [
-          "Python",
-          "Go",
-          "VueJS",
-          "MS SQL",
-          "MongoDB",
-          "Kubernetes",
-          "DevOps",
-          "Team lead"
+        "description": "Built a suite of apps to drive operational excellence and performance in omnichannel campaigns",
+        "details": [
+          "Develop multiple solutions using Python, Golang, Vue",
+          "Set and raise quality processes according to the team organization evolution",
+          "Manage authentication domain, collabor with clients to integrate their system",
+          "Provide, iterate and broadcast architecture solution"
         ]
       },
       {
         "job": "Software Developer Intern",
-        "company": "Capgemini Engineering",
-        "link": "https://capgemini-engineering.com/us/en/",
+        "company": "Altran",
+        "link": "https://altran.fr",
         "type": "Work-study",
         "date": "October 2015 - March 2016",
         "localization": "Lille, France",
-        "description": "Creation of an API and a web interface grouping the French crop plots, forecasting and suggesting countermeasures against fungicide risks according to various parameters.<br /> Creation of an automated and downloadable reporting for each farmer.",
-        "tags": [
-          "C#",
-          ".NET",
-          "AngularJS",
-          "MS SQL"
-        ]
+        "description": "Built a web application with AngularJS and ASP.NET to visualize crop plots, forecasting and suggesting countermeasures against fungicide risks according to various parameters and provide automated reporting to each user."
       },
       {
         "job": "Software Developer Intern",
@@ -162,34 +150,27 @@
         "link": "https://www.libertrip.com/",
         "date": "April 2014 - August 2014",
         "localization": "Lille, France",
-        "description": "Integration of different functionalities on the main application.<br /> Creation of a single service gathering a large inventory of hotels, populated via different external services.<br /> Implementation of a new web interface to visualize and manipulate these data.",
-        "tags": [
-          "Ruby on rails",
-          "Backbone",
-          "AngularJS",
-          "PostgreSQL",
-          "MongoDB"
-        ]
+        "description": "Support dev team on the main application written in Ruby on Rail. Gather a large inventory of hotels through multiple providers and provide an interface in AngularJS to interact with the inventory."
       }
     ]
   },
   "languages": {
-    "title": "Langues",
+    "title": "Languages",
     "data": [
-      {
-        "lang": "English",
-        "level": "Fluent",
-        "comment": "Lived 6 months in Edinburgh"
-      },
-      {
-        "lang": "Chinese",
-        "level": "Intermediate - HSK3",
-        "comment": "Lived 1 year in Beijing"
-      },
       {
         "lang": "French",
         "level": "Native speaker",
         "comment": ""
+      },
+      {
+        "lang": "English",
+        "level": "Fluent",
+        "comment": "lived six months in UK"
+      },
+      {
+        "lang": "Chinese",
+        "level": "Intermediate",
+        "comment": "lived a year in Beijing"
       }
     ]
   },
@@ -197,41 +178,19 @@
     "title": "Projects",
     "data": [
       {
-        "title": "Ore",
-        "subtitle": "Mobile application to maintain habit",
-        "describe": "Small mobile application that allows to record tasks to be performed regularly and encourages the user to maintain their achievements via a gamified interface.<br/>Ore is a personal project under development.",
-        "tags": [
-          "Golang",
-          "gRPC",
-          "Flutter",
-          "Dart",
-          "PostgreSQL",
-          "UI/UX"
-        ]
+        "title": "Narset",
+        "subtitle": "Web application",
+        "describe": "Solution to handle company documentation, organization and ensure a high quality by detecting outdated document, provide a rich and intuitive editor developed with Vue, Websocket, gRPC."
       },
       {
-        "title": "Memine",
-        "subtitle": "Mobile application facilitating memorization",
-        "describe": "MemoryCard is a tool that allows the creation of a deck, a set of cards, in order to memorize them. This kind of tool is very useful to learn large lists of information and to help memorize them on the long term.<br/>MemoryCard is a personal project allowing me to discover mobile application development with Flutter and to think about UI/UX issues.",
-        "tags": [
-          "Flutter",
-          "Dart",
-          "Algorithms",
-          "UI/UX"
-        ]
+        "title": "Ore",
+        "subtitle": "Mobile application",
+        "describe": "Small utility application that allows to record tasks to be performed regularly and encourages the user to maintain their achievements via a gamified interface built with Flutter."
       },
       {
         "title": "Hexatyla",
-        "subtitle": "3D strategy game on Linux",
-        "describe": "Hexatyla is a strategy game made by a team of 5 people as part of the end of our bachelor's degree project at Epitech.<br/> This project was completed in only 3 months using only a 3d engine. The project was divided into 3 parts, a game server, a graphical client and a web back office allowing the configuration of the units, the game maps and the technology tree.<br/> We were highly congratulated for the work accomplished.",
-        "tags": [
-          "C++",
-          "Mathematics",
-          "Algorithms",
-          "Ogre3D",
-          "Javascript",
-          "Team Leader"
-        ]
+        "subtitle": "Linux strategy game",
+        "describe": "Strategy game built by a small team as part of the end of our bachelor's degree completed in three months using a 3D engine and developed in C++. We were highly congratulated for the work made."
       }
     ]
   }
