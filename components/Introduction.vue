@@ -1,11 +1,10 @@
 <script lang="ts" setup>
-import LinkedinIcon from 'assets/icons/linkedin.svg?raw'
-import GithubIcon from 'assets/icons/github.svg?raw'
-import PdfIcon from 'assets/icons/pdf.svg?raw'
+import LinkedinIcon from 'assets/icons/linkedin.svg'
+import GithubIcon from 'assets/icons/github.svg'
+import MailIcon from 'assets/icons/mail.svg'
 
 interface Props {
   resume: any
-  locale: string
 }
 
 const props = withDefaults(defineProps<Props>(), {})
@@ -13,7 +12,7 @@ const props = withDefaults(defineProps<Props>(), {})
 
 <template>
   <div>
-    <div class="relative">
+    <div class="relative" style="position: relative">
       <h1 id="title">
         <div>
           Clovis Kyndt
@@ -23,30 +22,34 @@ const props = withDefaults(defineProps<Props>(), {})
         </div>
       </h1>
 
-      <!-- <div id="social">
-        <a
-          target="_blank"
-          class="social linkedin"
-          href="https://www.linkedin.com/in/cloviskyndt"
-          v-html="LinkedinIcon"
-        />
-        <a
-          target="_blank"
-          class="social github"
-          href="https://github.com/Manawasp"
-          v-html="GithubIcon"
-        />
-        <a
-          target="_blank"
-          class="social download"
-          :href="`/static/clovis-kyndt-cv-${props.locale}.pdf`"
-          download
-          v-html="PdfIcon"
-        />
-      </div> -->
+      <div class="mt-small" style="position:absolute;right:0;top:0px;text-align: right;">
+        <div>
+          <a
+            target="_blank"
+            class="icon"
+            href="https://www.linkedin.com/in/cloviskyndt/"
+          >
+            <LinkedinIcon />
+          </a>
+          <a
+            target="_blank"
+            class="icon"
+            href="https://github.com/Manawasp/"
+          >
+            <GithubIcon />
+          </a>
+          <a
+            target="_blank"
+            class="icon"
+            href="mailto:clovis.kyndt+pro@gmail.com"
+          >
+            <MailIcon />
+          </a>
+        </div>
+      </div>
     </div>
     <h2><span>About</span></h2>
-    <div class="paper-limit description-txt">
+    <div class="text-justify">
       <p class="block" v-html="props.resume.short" />
       <p class="block" v-html="props.resume.detail" />
     </div>
@@ -54,69 +57,6 @@ const props = withDefaults(defineProps<Props>(), {})
 </template>
 
 <style lang="scss">
-#social {
-  text-align:right;
-  margin-top:40px;
-  margin-right: 15px;
-  position: absolute;
-  top: 20px;
-  right:0;
-}
-
-a.social {
-  overflow: hidden;
-  display: inline-block;
-  width: 1.8rem;
-  height: 1.8rem;
-  line-height:1.8rem;
-  cursor: pointer;
-  border-radius: 50%;
-  background-color:#ddd;
-  color:#444;
-  text-align:center;
-  font-size:0.7rem;
-  border: 3px solid white;
-  transition: background 0.3s, color 0.3s, border-color 0.3s linear;
-  margin-left: 6px;
-  margin-right: 6px;
-
-  svg {
-    width: 14px;
-    height: 14px;
-    margin-top: 7px;
-  }
-
-  &.little {
-    width: 26px;
-    height: 26px;
-    border-radius:13px;
-  }
-
-  i {
-    vertical-align:middle;
-  }
-
-  &.linkedin {
-    background-color:#006699;
-    color:white !important;
-    &:hover { border-color:#a0c6ff; }
-  }
-
-  &.github {
-    background-color:#171515;
-    color:white !important;
-
-    svg {margin-top: 8px;}
-    &:hover { border-color:#ccc; }
-  }
-
-  &.download {
-    background-color:#E11218;
-    color:white !important;
-    &:hover { border-color:#ecb19f; }
-  }
-}
-
 // Tablet
 @media only screen and (max-width: 1175px) {
   #social {

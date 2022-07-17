@@ -21,7 +21,7 @@ import { renderToString } from 'file:///home/manawasp/projects/clovis-kyndt-cv/n
 import { snakeCase } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/scule@0.2.1/node_modules/scule/dist/index.mjs';
 import htmlTemplate from '/home/manawasp/projects/clovis-kyndt-cv/.nuxt/views/document.template.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"public":{}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"BUILD_TIME":"July 17, 2022","public":{"BUILD_TIME":"July 17, 2022"}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {

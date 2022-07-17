@@ -180,7 +180,7 @@
       {
         "title": "Narset",
         "subtitle": "Web application",
-        "describe": "Solution to handle company documentation, organization and ensure a high quality by detecting outdated document, provide a rich and intuitive editor developed with Vue, Websocket, gRPC."
+        "describe": "Solution to handle company documentation, organization and ensure a high quality by detecting outdated documents, provide a rich and intuitive editor developed with Vue, Websocket, gRPC."
       },
       {
         "title": "Ore",

@@ -1,51 +1,30 @@
 <script lang="ts" setup>
-import cn from '../locales/cn.json'
-import fr from '../locales/fr.json'
-import en from '../locales/en.json'
-
-const props = withDefaults(defineProps<Props>(), { locale: 'fr' })
-
-const mapLanguages: { [key: string]: any } = {
-  cn,
-  fr,
-  en,
-}
-
-function getLanguage(lang: string): any {
-  return mapLanguages[mapLanguages[lang] ? lang : 'en']
-}
-
-interface Props {
-  locale: string
-}
-
-const translation = getLanguage(props.locale)
+import * as data from '../locales/en.json'
 </script>
 
 <template>
-  <Header :locale="props.locale" />
+  <Header />
   <div id="content">
     <Introduction
-      :locale="props.locale"
-      :resume="translation.resume"
+      :resume="data.resume"
     />
     <Knowledge
-      :knowledges="translation.knowledges"
+      :knowledges="data.knowledges"
     />
     <Work
-      :works="translation.works"
+      :works="data.works"
     />
     <Education
-      :educations="translation.educations"
+      :educations="data.educations"
     />
     <Project
-      :projects="translation.projects"
+      :projects="data.projects"
     />
     <Language
-      :languages="translation.languages"
+      :languages="data.languages"
     />
     <Extra
-      :interests="translation.interests"
+      :interests="data.interests"
     />
   </div>
   <Footer />

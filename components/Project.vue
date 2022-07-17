@@ -22,17 +22,8 @@ const props = withDefaults(defineProps<Props>(), {})
             {{ project.subtitle }}
           </span>
         </h3>
-        <div>
+        <div class="text-justify">
           <p v-html="project.describe" />
-        </div>
-        <div>
-          <span
-            v-for="(tag, idt) in project.tags"
-            :key="idt"
-            class="label label-primary"
-          >
-            {{ tag }}
-          </span>
         </div>
       </div>
     </div>

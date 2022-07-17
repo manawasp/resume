@@ -27,14 +27,13 @@ const props = withDefaults(defineProps<Props>(), {})
           <small>{{ work.date }} | {{ work.localization }}</small>
         </p>
         <p
-          class="mt-small mb-0 text-justify read-block"
+          class="mt-small mb-0 text-justify"
           v-html="work.description"
         />
         <div class="mt-small ml-small">
           <div
             v-for="(detail, idj) in work.details"
             :key="idj"
-            class="padding-top-"
           >
             &ndash; {{ detail }}
           </div>
