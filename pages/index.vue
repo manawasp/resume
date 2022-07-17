@@ -1,5 +1,17 @@
+<script lang="ts" setup>
+import * as data from '../locales/en.json'
+</script>
+
 <template>
-  <div>
-    <Cv locale="en" />
-  </div>
+  <Header />
+  <main>
+    <Introduction :resume="data.resume" />
+    <Knowledge :knowledges="data.knowledges" />
+    <Work :works="data.works" />
+    <Education :educations="data.educations" />
+    <Project :projects="data.projects" />
+    <Language :languages="data.languages" />
+    <Extra :interests="data.interests" />
+  </main>
+  <Footer />
 </template>

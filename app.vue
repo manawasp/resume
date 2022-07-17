@@ -159,7 +159,7 @@ ul {
   }
 }
 
-#content {
+main {
   padding-left: 50px;
   padding-right: 50px;
 }
