@@ -8,20 +8,20 @@ const props = withDefaults(defineProps<Props>(), {})
 
 <template>
   <div>
-    <h3><span>{{ props.educations.title }}</span></h3>
+    <h2><span>{{ props.educations.title }}</span></h2>
     <div>
       <div
         v-for="(education, idx) in props.educations.data"
         :key="idx"
         class="block"
       >
-        <p class="clear-margin">
+        <h3 class="clear-margin">
           <strong>
             {{ education.title }}
-          </strong>, <span>
+          </strong> <span class="text-muted info">
             {{ education.school }}
           </span>
-        </p>
+        </h3>
         <p class="clear-margin text-muted">
           <small>{{ education.date }} | {{ education.localization }}</small>
         </p>

@@ -45,10 +45,10 @@ const props = withDefaults(defineProps<Props>(), {})
         />
       </div> -->
     </div>
-    <h3><span>About</span></h3>
+    <h2><span>About</span></h2>
     <div class="paper-limit description-txt">
-      <p class="margin-bottom-30 mt-0" v-html="props.resume.short" />
-      <p class="clear-margin" v-html="props.resume.detail" />
+      <p class="block" v-html="props.resume.short" />
+      <p class="block" v-html="props.resume.detail" />
     </div>
   </div>
 </template>

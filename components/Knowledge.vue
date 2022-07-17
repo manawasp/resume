@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<Props>(), {})
 
 <template>
   <div>
-    <h3><span>{{ props.knowledges.title }}</span></h3>
+    <h2><span>{{ props.knowledges.title }}</span></h2>
     <div style="display:block">
       <div
         v-for="(knowledge, key) in props.knowledges.data"

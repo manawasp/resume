@@ -24,9 +24,13 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
   color: #333;
   font-size: 1rem;
+}
+
+h1, h3, h4, h5, .knowledges li {
+  font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
 }
 
 a {
@@ -103,13 +107,13 @@ h1 .sub {
 .mt-small { margin-top: 0.8rem; }
 .ml-small { margin-left: 0.8rem; }
 
-.block:not(:last-child) {
-  margin-bottom: 2rem;
-}
+p.block {
+  margin-top: 0;
+  margin-bottom: 0;
 
-h1, h3, h4, h5, .knowledges li {
-  font-family: 'Nunito Sans', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
+  &:not(:last-child) { margin-bottom: 1.5rem;}
 }
+div.block:not(:last-child) { margin-bottom: 2.5rem;}
 
 .knowledges ul {
   padding: 0;
@@ -120,12 +124,12 @@ ul.knowledges li {
   font-size:.975rem;
 }
 
-h3 {
-  font-size:1.1rem;
+h2 {
+  font-size: 1.1rem;
   color: #333;
   font-weight: bold;
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   border-bottom: 2px solid #333;
   // -webkit-background-clip: text;
   // background-clip: text;
@@ -133,8 +137,17 @@ h3 {
   // color: transparent;
   display: inline-block;
 }
-h3 .space{
+h2 .space{
   padding: 5px 20px 5px 40px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: normal;
+
+  .info {
+    margin-left: .3rem;
+  }
 }
 
 h4 {
@@ -262,18 +275,18 @@ ul {
 }
 
 @font-face {
-  font-family: 'Nunito Sans';
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(assets/fonts/NunitoSans-Regular.woff2) format('woff2');
+  src: url(assets/fonts/SourceSansPro-Regular.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Nunito Sans';
+  font-family: 'Source Sans Pro';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(assets/fonts/NunitoSans-Bold.woff2) format('woff2');
+  src: url(assets/fonts/SourceSansPro-SemiBold.woff2) format('woff2');
 }
 </style>

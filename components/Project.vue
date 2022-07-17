@@ -8,20 +8,20 @@ const props = withDefaults(defineProps<Props>(), {})
 
 <template>
   <div>
-    <h3><span>{{ props.projects.title }}</span></h3>
+    <h2><span>{{ props.projects.title }}</span></h2>
     <div>
       <div
         v-for="(project, idx) in props.projects.data"
         :key="idx"
         class="project block"
       >
-        <p class="clear-margin">
+        <h3 class="clear-margin">
           <strong>
             {{ project.title }}
-          </strong> <span class="text-muted" style="margin-left:.3rem">
+          </strong> <span class="text-muted info">
             {{ project.subtitle }}
           </span>
-        </p>
+        </h3>
         <div>
           <p v-html="project.describe" />
         </div>
