@@ -11,11 +11,11 @@ const props = withDefaults(defineProps<Props>(), {})
     <div
       v-for="(col, key) in props.value"
       :key="key"
-      class="knowledges"
+      class="table"
     >
-      <ul class="font-sm">
+      <ul>
         <div style="margin:0 30px 40px 0">
-          <li class="title">
+          <li>
             {{ col.header }}
           </li>
           <li
@@ -29,3 +29,37 @@ const props = withDefaults(defineProps<Props>(), {})
     </div>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.table {
+  width: 33%;
+  display:inline-block;
+}
+
+.table ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul.table li {
+  font-size:.975rem;
+}
+
+// Mobile
+@media only screen and (max-width: 720px) {
+  #app {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  .table {
+    width: 50%;
+  }
+}
+
+// Small mobile
+@media only screen and (max-width: 420px) {
+  .table {
+    width: 100%;
+  }
+}
+</style>

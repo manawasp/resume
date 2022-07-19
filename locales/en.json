@@ -108,11 +108,13 @@
         {
           "title": "MSc Computer Science",
           "suffix": "Epitech",
+          "class": "strong",
           "extra": "September 2011 - September 2016 | Paris, France"
         },
         {
           "title": "MSc Computer Science (Exchange)",
           "suffix": "Beijing JiaoTong University",
+          "class": "strong",
           "extra": "September 2014 - July 2015 | Beijing, China"
         }
       ]
@@ -124,16 +126,19 @@
         {
           "title": "Narset",
           "suffix": "Web application",
+          "class": "strong",
           "description": "Solution to handle company documentation, organization and ensure a high quality by detecting outdated documents, provide a rich and intuitive editor developed with Vue, Websocket, gRPC."
         },
         {
           "title": "Ore",
           "suffix": "Mobile application",
+          "class": "strong",
           "description": "Small utility application that allows to record tasks to be performed regularly and encourages the user to maintain their achievements via a gamified interface built with Flutter."
         },
         {
           "title": "Hexatyla",
           "suffix": "Linux strategy game",
+          "class": "strong",
           "description": "Strategy game built by a small team as part of the end of our bachelor's degree completed in three months using a 3D engine and developed in C++. We were highly congratulated for the work made."
         }
       ]

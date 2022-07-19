@@ -21,18 +21,47 @@ useHead({
 </template>
 
 <style lang="scss">
+:root {
+  --text-color: #333;
+  --text-secondary-color: #888;
+  --font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
+  --hover-color: #c63156;
+  --hover-gradient-1: #b12952;
+  --hover-gradient-2: #c63156;
+  --hover-gradient-3: #da385b;
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
-  color: #333;
+  color: var(--text-color);
   font-size: 1rem;
 }
 
-h1, h3, h4, h5, .knowledges li {
+h1, h2, h3 {
+  color: var(--text-color);
+  font-weight: bold;
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
+}
+
+h2 {
+  font-size: 1.1rem;
+  margin: 3rem 0 2.5rem;
+  border-bottom: 2px solid var(--text-color);
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 1.2rem;
 }
 
 .content {
@@ -45,52 +74,43 @@ footer {
 }
 
 a {
-  color: #333;
+  color: var(--text-color);
   text-decoration: none;
 
   &:not(.icon) {
-    border-bottom: 1px dashed #0005;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.333);
   }
 
   &:hover {
     transition: all .3s;
     background-clip: text;
-    background-image: linear-gradient(to right, #b12952 0%, #c63156 55%, #da385b 90%);
+    background-image: linear-gradient(to right, var(--hover-gradient-1) 0%, var(--hover-gradient-2) 55%, var(--hover-gradient-3) 90%);
     color: transparent;
   }
 
   &.icon {
-    fill: #777;
+    fill: var(--text-secondary-color);
     padding: 9px;
   }
   &.icon:hover {
-    fill: #c63156;
+    fill: var(--hover-color);
   }
 }
 
 #app {
   box-sizing: border-box;
-  width: 840px;
+  max-width: 840px;
   padding: 2rem 3.5rem 4rem 3.5rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h1 .sub {
-  font-weight: normal;
-  font-size: 1.2rem;
-  color: #75767a;
+  margin: 0 auto;
 }
 
 .text-justify { text-align: justify; }
-.text-muted{color:#888;}
+.text-muted{color: var(--text-secondary-color);}
 
 .font-small {font-size: 85%;}
 
-.pl-0 { padding-left: 0; }
-.mt-0 { margin-top: 0; }
-.mb-0 { margin-bottom: 0; }
-.mt-xsmall { margin-top: 0.4rem; }
+.ml-xsmall { margin-left: 0.3rem; }
+.mt-xsmall { margin-top: 0.3rem; }
 .mt-small { margin-top: 0.8rem; }
 .ml-small { margin-left: 0.8rem; }
 
@@ -102,87 +122,58 @@ p.block {
 }
 div.block:not(:last-child) { margin-bottom: 2.5rem;}
 
-.knowledges ul {
-  padding: 0;
-  margin: 0;
-}
-
-ul.knowledges li {
-  font-size:.975rem;
-}
-
-h2 {
-  font-size: 1.1rem;
-  color: #333;
-  font-weight: bold;
-  margin-top: 3rem;
-  margin-bottom: 2.5rem;
-  border-bottom: 2px solid #333;
-  display: inline-block;
-}
-h2 .space{
-  padding: 5px 20px 5px 40px;
-}
-
-h3 {
-  font-size: 1rem;
-  font-weight: normal;
-
-  .info {
-    margin-left: .3rem;
-  }
-}
-
-.clear-margin {
-  margin: 0;
-}
-
-small, .small {
-  font-size: 85%;
-}
+small, .small { font-size: 85%; }
+.strong { font-weight: bold; }
+.clear-margin { margin: 0; }
 
 ul {
   list-style-type: none;
-  li {
-    border-bottom:1px dashed #ddd;
-    padding-right:10px;
-    line-height:1.9rem;
+  font-size:.925rem;
 
-    &.title {
-      font-weight:500;
+  li {
+    border-bottom: 1px dashed #ddd;
+    padding-right: 0.8rem;
+    line-height: 2rem;
+
+    &:first-child {
+      color: var(--text-secondary-color);
       border-bottom:0;
-      color: #777;
-      font-weight: 300;
-      padding-bottom: 10px;
+      padding-bottom: 0.8rem;
     }
   }
-
-  &.no-border li {
-    border: 0;
-  }
-  &.font-sm {
-    font-size:.925rem;
-  }
-}
-
-.experience+.experience {
-  margin-top: 36px;
 }
 
 #footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #888;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--text-secondary-color);
   text-align:center;
 }
 
-.knowledges {
-  width: 33%;
-  display:inline-block;
+.social-menu {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 // Mobile
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 720px) {
+  #app {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+  }
+
+  #title {
+    margin-top: 0;
+  }
+
+  #title, .social-menu {
+    text-align: center;
+  }
+
+  .social-menu {
+    position: initial;
+  }
 }
 
 @font-face {

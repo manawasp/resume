@@ -18,9 +18,9 @@ const props = withDefaults(defineProps<Props>(), {})
           {{ block.title }}
         </strong>
       </a>
-      <span v-else>
-        <strong>{{ block.title }}</strong>
-      </span> <span class="text-muted info">
+      <span v-else :class="block.class">
+        {{ block.title }}
+      </span> <span class="text-muted ml-xsmall">
         {{ block.suffix }}
       </span>
     </h3>

@@ -10,12 +10,12 @@ import MailIcon from 'assets/icons/mail.svg'
       <div>
         Clovis Kyndt
       </div>
-      <div class="sub">
+      <div class="subtitle text-muted">
         Software Developer
       </div>
     </h1>
 
-    <div class="mt-small" style="position:absolute;right:0;top:0px;text-align: right;">
+    <div class="social-menu mt-small">
       <div>
         <a
           target="_blank"
