@@ -1,0 +1,3 @@
+- [ ] PDF
+- [ ] About description
+- [ ] Deploy on intlify
