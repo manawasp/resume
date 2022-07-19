@@ -14,7 +14,9 @@ useHead({
 
 <template>
   <div id="app">
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 
@@ -31,6 +33,10 @@ body {
 
 h1, h3, h4, h5, .knowledges li {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
+}
+
+.content {
+  line-height: 1.5;
 }
 
 footer {
@@ -64,7 +70,7 @@ a {
 
 #app {
   box-sizing: border-box;
-  width: 940px;
+  width: 840px;
   padding: 2rem 3.5rem 4rem 3.5rem;
   margin-left: auto;
   margin-right: auto;
@@ -157,11 +163,6 @@ ul {
   &.font-sm {
     font-size:.925rem;
   }
-}
-
-main {
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .experience+.experience {

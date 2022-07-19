@@ -53,19 +53,19 @@
         "public/*"
       ],
       "#app": [
-        "node_modules/.pnpm/nuxt@3.0.0-rc.5_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/app"
+        "node_modules/.pnpm/nuxt@3.0.0-rc.6_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "node_modules/.pnpm/nuxt@3.0.0-rc.5_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/app/*"
+        "node_modules/.pnpm/nuxt@3.0.0-rc.6_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "node_modules/.pnpm/nuxt@3.0.0-rc.5_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/app/compat/vue-demi"
+        "node_modules/.pnpm/nuxt@3.0.0-rc.6_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#head": [
-        "node_modules/.pnpm/nuxt@3.0.0-rc.5_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/head/runtime"
+        "node_modules/.pnpm/nuxt@3.0.0-rc.6_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/head/runtime"
       ],
       "#head/*": [
-        "node_modules/.pnpm/nuxt@3.0.0-rc.5_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/head/runtime/*"
+        "node_modules/.pnpm/nuxt@3.0.0-rc.6_sass@1.53.0+webpack@5.73.0/node_modules/nuxt/dist/head/runtime/*"
       ],
       "#components": [
         ".nuxt/components"

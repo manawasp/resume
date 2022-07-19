@@ -3,15 +3,23 @@ import * as data from '../locales/en.json'
 </script>
 
 <template>
-  <Header />
   <main>
-    <Introduction :resume="data.resume" />
-    <Knowledge :knowledges="data.knowledges" />
-    <Work :works="data.works" />
-    <Education :educations="data.educations" />
-    <Project :projects="data.projects" />
-    <Language :languages="data.languages" />
-    <Extra :interests="data.interests" />
+    <div
+      v-for="(el, idx) in data.resume"
+      :key="idx"
+      :class="`el-${el.type}`"
+    >
+      <h2>{{ el.title }}</h2>
+      <!-- NOTE(@manawasp): component solution doesn't work, don't know why -->
+      <Text v-if="el.type === 'text'" :value="el.value" />
+      <Table v-if="el.type === 'table'" :value="el.value" />
+      <Block v-if="el.type === 'block'" :value="el.value" />
+    </div>
   </main>
-  <Footer />
 </template>
+
+<style lang="scss">
+.el-table+div > h2 {
+  margin-top: .6rem;
+}
+</style>
