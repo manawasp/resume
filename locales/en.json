@@ -1,0 +1,207 @@
+{
+  "resume": [
+    {
+      "title": "About",
+      "type": "text",
+      "value": [
+        "I'm Clovis, a senior software developer who craft products and make nice things to automate process. I'm curious of all technologies related to web, mobile and data, user interaction and experience.",
+        "Apart from hi-tech field, I like running, swimming, hiking, and traveling. During my master study, I have had one year exchange experience in China, which finally interests me to explore more in the culture and learn Chinese."
+      ]
+    },
+    {
+      "title": "Stack",
+      "type": "table",
+      "value": [
+        {
+          "header": "Langages",
+          "rows": [
+            "Python",
+            "Golang",
+            "Typescript",
+            "Rust"
+          ]
+        },
+        {
+          "header": "Data",
+          "rows": [
+            "PostgreSQL",
+            "MongoDB",
+            "Kafka",
+            "MS SQL"
+          ]
+        },
+        {
+          "header": "Interests",
+          "rows": [
+            "Product development",
+            "Code quality",
+            "Architecture",
+            "Data visualization"
+          ]
+        },
+        {
+          "header": "Framework",
+          "rows": [
+            "Vue",
+            "FastAPI",
+            "Flutter"
+          ]
+        },
+        {
+          "header": "Operations",
+          "rows": [
+            "Kubernetes",
+            "AWS & Azure",
+            "Terraform"
+          ]
+        },
+        {
+          "header": "Extra",
+          "rows": [
+            "Team management",
+            "Collaboration",
+            "Communication"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Work Experience",
+      "type": "block",
+      "value": [
+        {
+          "title": "Numberly",
+          "url": "https://numberly.com/en/",
+          "suffix": "Software Developer",
+          "extra": "March 2016 - Present | Paris, France",
+          "class": "content",
+          "description": "Built a suite of apps to drive operational excellence and performance in omnichannel campaigns.",
+          "details": [
+            "Worked on solutions using Python, Golang, Vue, SQL, Kafka",
+            "Defined and developed quality processes according to the growth of the team's organization",
+            "Manage authentication domain accountability, collabor with clients to integrate their system",
+            "Collaborate, deliver and communicate architecture solutions"
+          ]
+        },
+        {
+          "title": "Altran",
+          "url": "https://altran.fr",
+          "suffix": "Software Developer Intern",
+          "extra": "October 2015 - March 2016 | Lille, France",
+          "class": "content",
+          "description": "Built a web application with AngularJS and ASP.NET to visualize crop plots, forecasting and suggesting countermeasures against fungicide risks according to various parameters and provide automated reporting to each user."
+        },
+        {
+          "title": "Libertrip",
+          "url": "https://www.libertrip.com/",
+          "suffix": "Software Developer Intern",
+          "extra": "April 2014 - August 2014 | Lille, France",
+          "class": "content",
+          "description": "Support dev team on the main application written in Ruby on Rail. Gather a large inventory of hotels through multiple providers and provide an interface in AngularJS to interact with the inventory."
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "type": "block",
+      "value": [
+        {
+          "title": "MSc Computer Science",
+          "suffix": "Epitech",
+          "class": "strong",
+          "extra": "September 2011 - September 2016 | Paris, France"
+        },
+        {
+          "title": "MSc Computer Science (Exchange)",
+          "suffix": "Beijing JiaoTong University",
+          "class": "strong",
+          "extra": "September 2014 - July 2015 | Beijing, China"
+        }
+      ]
+    },
+    {
+      "title": "Education",
+      "type": "block",
+      "value": [
+        {
+          "title": "Narset",
+          "suffix": "Web application",
+          "class": "strong",
+          "description": "Solution to handle company documentation, organization and ensure a high quality by detecting outdated documents, provide a rich and intuitive editor developed with Vue, Websocket, gRPC."
+        },
+        {
+          "title": "Ore",
+          "suffix": "Mobile application",
+          "class": "strong",
+          "description": "Small utility application that allows to record tasks to be performed regularly and encourages the user to maintain their achievements via a gamified interface built with Flutter."
+        },
+        {
+          "title": "Hexatyla",
+          "suffix": "Linux strategy game",
+          "class": "strong",
+          "description": "Strategy game built by a small team as part of the end of our bachelor's degree completed in three months using a 3D engine and developed in C++. We were highly congratulated for the work made."
+        }
+      ]
+    },
+    {
+      "title": "Languages",
+      "type": "block",
+      "value": [
+        {
+          "title": "French",
+          "extra": "Native speaker"
+        },
+        {
+          "title": "English",
+          "extra": "Fluent, lived six months in UK"
+        },
+        {
+          "title": "Chinese",
+          "extra": "intermediate, lived a year in Beijing"
+        }
+      ]
+    },
+    {
+      "title": "Inspiring books",
+      "type": "block",
+      "value": [
+        {
+          "title": "The Software Craftsman",
+          "extra": "by Sandro Mancuso"
+        },
+        {
+          "title": "Clean Architecture",
+          "extra": "by Robert C. Martin"
+        },
+        {
+          "title": "The Staff Engineer's Path",
+          "extra": "by Tanya Reilly"
+        },
+        {
+          "title": "Team Topologies",
+          "extra": "by Matthew Skelton"
+        },
+        {
+          "title": "Extreme Programming Explained",
+          "extra": "by Kent Beck"
+        },
+        {
+          "title": "Building Event-Driven Microservices",
+          "extra": "by Adam Bellemare"
+        },
+        {
+          "title": "Software Architecture: the Hard Parts",
+          "extra": "by Neal Ford, Mark Richars, Zhamak Dehghani"
+        },
+        {
+          "title": "100 Things Every Designer Needs to Know About People",
+          "extra": "by Susan M. Weinschenk"
+        },
+        {
+          "title": "The Phoenix Project",
+          "extra": "by Gene Kim, Kevin Behr George Spafford"
+        }
+      ]
+    }
+  ]
+}

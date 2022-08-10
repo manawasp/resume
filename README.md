@@ -1,21 +1,29 @@
-# My CV
+# Nuxt 3 Minimal Starter
 
-> Clovis Kyndt CV written with VueJs
+We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
-## Build Setup
+## Setup
 
-``` bash
-# install dependencies
-npm install
+Make sure to install the dependencies
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+```bash
+yarn install
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Development
+
+Start the development server on http://localhost:3000
+
+```bash
+yarn dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+yarn build
+```
+
+Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
