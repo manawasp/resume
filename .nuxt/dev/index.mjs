@@ -1,27 +1,27 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/node-fetch-native@0.1.4/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///home/cky/perso/resume/node_modules/.pnpm/node-fetch-native@0.1.4/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'http';
 import { tmpdir } from 'os';
 import { join } from 'path';
 import { mkdirSync } from 'fs';
 import { parentPort, threadId } from 'worker_threads';
-import { provider, isWindows } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/std-env@3.1.1/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, createApp, createRouter, lazyEventHandler, eventHandler, useQuery } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/h3@0.7.10/node_modules/h3/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/ohmyfetch@0.4.18/node_modules/ohmyfetch/dist/node.mjs';
-import destr from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/destr@1.1.1/node_modules/destr/dist/index.mjs';
-import { createRouter as createRouter$1 } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/radix3@0.1.2/node_modules/radix3/dist/index.mjs';
-import { createCall, createFetch } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/unenv@0.5.2/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/hookable@5.1.1/node_modules/hookable/dist/index.mjs';
-import { hash } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/ohash@0.1.4/node_modules/ohash/dist/index.mjs';
-import { parseURL, withQuery, joinURL } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/ufo@0.8.5/node_modules/ufo/dist/index.mjs';
-import { createStorage } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/unstorage@0.5.5/node_modules/unstorage/dist/index.mjs';
-import _unstorage_drivers_fs from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/unstorage@0.5.5/node_modules/unstorage/dist/drivers/fs.mjs';
-import { createRenderer } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/vue-bundle-renderer@0.3.9/node_modules/vue-bundle-renderer/dist/index.mjs';
-import devalue from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/@nuxt+devalue@2.0.0/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/vue@3.2.37/node_modules/vue/server-renderer/index.mjs';
-import { snakeCase } from 'file:///home/manawasp/projects/clovis-kyndt-cv/node_modules/.pnpm/scule@0.2.1/node_modules/scule/dist/index.mjs';
-import htmlTemplate from '/home/manawasp/projects/clovis-kyndt-cv/.nuxt/views/document.template.mjs';
+import { provider, isWindows } from 'file:///home/cky/perso/resume/node_modules/.pnpm/std-env@3.1.1/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, createApp, createRouter, lazyEventHandler, eventHandler, useQuery } from 'file:///home/cky/perso/resume/node_modules/.pnpm/h3@0.7.15/node_modules/h3/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///home/cky/perso/resume/node_modules/.pnpm/ohmyfetch@0.4.18/node_modules/ohmyfetch/dist/node.mjs';
+import destr from 'file:///home/cky/perso/resume/node_modules/.pnpm/destr@1.1.1/node_modules/destr/dist/index.mjs';
+import { createRouter as createRouter$1 } from 'file:///home/cky/perso/resume/node_modules/.pnpm/radix3@0.1.2/node_modules/radix3/dist/index.mjs';
+import { createCall, createFetch } from 'file:///home/cky/perso/resume/node_modules/.pnpm/unenv@0.5.3/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///home/cky/perso/resume/node_modules/.pnpm/hookable@5.1.1/node_modules/hookable/dist/index.mjs';
+import { hash } from 'file:///home/cky/perso/resume/node_modules/.pnpm/ohash@0.1.5/node_modules/ohash/dist/index.mjs';
+import { parseURL, withQuery, joinURL } from 'file:///home/cky/perso/resume/node_modules/.pnpm/ufo@0.8.5/node_modules/ufo/dist/index.mjs';
+import { createStorage } from 'file:///home/cky/perso/resume/node_modules/.pnpm/unstorage@0.5.6/node_modules/unstorage/dist/index.mjs';
+import _unstorage_drivers_fs from 'file:///home/cky/perso/resume/node_modules/.pnpm/unstorage@0.5.6/node_modules/unstorage/dist/drivers/fs.mjs';
+import { createRenderer } from 'file:///home/cky/perso/resume/node_modules/.pnpm/vue-bundle-renderer@0.3.9/node_modules/vue-bundle-renderer/dist/index.mjs';
+import devalue from 'file:///home/cky/perso/resume/node_modules/.pnpm/@nuxt+devalue@2.0.0/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file:///home/cky/perso/resume/node_modules/.pnpm/vue@3.2.37/node_modules/vue/server-renderer/index.mjs';
+import { snakeCase } from 'file:///home/cky/perso/resume/node_modules/.pnpm/scule@0.2.1/node_modules/scule/dist/index.mjs';
+import htmlTemplate from '/home/cky/perso/resume/.nuxt/views/document.template.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"BUILD_TIME":"July 19, 2022","public":{"BUILD_TIME":"July 19, 2022"}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"routes":{},"envPrefix":"NUXT_"},"BUILD_TIME":"August 10, 2022","public":{"BUILD_TIME":"August 10, 2022"}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -78,7 +78,7 @@ function timingMiddleware(_req, res, next) {
   next();
 }
 
-const serverAssets = [{"baseName":"server","dir":"/home/manawasp/projects/clovis-kyndt-cv/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"/home/cky/perso/resume/server/assets"}];
 
 const assets = createStorage();
 
@@ -92,10 +92,10 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/home/manawasp/projects/clovis-kyndt-cv","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/home/manawasp/projects/clovis-kyndt-cv/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/home/manawasp/projects/clovis-kyndt-cv/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/home/manawasp/projects/clovis-kyndt-cv/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', _unstorage_drivers_fs({"driver":"fs","base":"/home/cky/perso/resume","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', _unstorage_drivers_fs({"driver":"fs","base":"/home/cky/perso/resume/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', _unstorage_drivers_fs({"driver":"fs","base":"/home/cky/perso/resume/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', _unstorage_drivers_fs({"driver":"fs","base":"/home/cky/perso/resume/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 const defaultCacheOptions = {
   name: "_",
@@ -156,7 +156,10 @@ function defineCachedEventHandler(handler, opts = defaultCacheOptions) {
   const _opts = {
     ...opts,
     getKey: (event) => {
-      return decodeURI(parseURL(event.req.originalUrl || event.req.url).pathname).replace(/\/$/, "/index");
+      const url = event.req.originalUrl || event.req.url;
+      const friendlyName = decodeURI(parseURL(url).pathname).replace(/[^a-zA-Z0-9]/g, "").substring(0, 16);
+      const urlHash = hash(url);
+      return `${friendlyName}.${urlHash}`;
     },
     group: opts.group || "nitro/handlers",
     integrity: [
@@ -316,11 +319,11 @@ const errorHandler = (async function errorhandler(_error, event) {
   event.res.end(html);
 });
 
-const _lazy_kgH8zo = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_HAExtG = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_kgH8zo, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_kgH8zo, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_HAExtG, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_HAExtG, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -403,8 +406,8 @@ function publicAssetsURL(...path) {
   return path.length ? joinURL(publicBase, ...path) : publicBase;
 }
 
-const getClientManifest = () => import('/home/manawasp/projects/clovis-kyndt-cv/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('/home/manawasp/projects/clovis-kyndt-cv/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('/home/cky/perso/resume/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('/home/cky/perso/resume/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const clientManifest = await getClientManifest();
   if (!clientManifest) {
