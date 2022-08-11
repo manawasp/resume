@@ -13,22 +13,20 @@ useHead({
 </script>
 
 <template>
-  <div id="app">
-    <NuxtLayout>
-      <NuxtPage />
-    </NuxtLayout>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <style lang="scss">
 :root {
-  --text-color: #333;
+  --body-bg: #F6F8FC;
+  --app-bg: #fff;
+  --h2-border-color: #5a89de;
+  --text-color: #0a2540;
   --text-secondary-color: #888;
   --font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
-  --hover-color: #c63156;
-  --hover-gradient-1: #b12952;
-  --hover-gradient-2: #c63156;
-  --hover-gradient-3: #da385b;
+  --hover-color: #6574ff;
 }
 
 body {
@@ -38,7 +36,8 @@ body {
   width: 100%;
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
   color: var(--text-color);
-  font-size: 1rem;
+  background: var(--body-bg);
+  font-size: 17px;
 }
 
 h1, h2, h3 {
@@ -47,15 +46,19 @@ h1, h2, h3 {
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
 }
 
+h1 {
+  margin-top: 0;
+}
+
 h2 {
-  font-size: 1.1rem;
+  font-size: 20px;
   margin: 3rem 0 2.5rem;
-  border-bottom: 2px solid var(--text-color);
+  border-bottom: 2px solid var(--h2-border-color);
   display: inline-block;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 17px;
   font-weight: normal;
 }
 
@@ -69,7 +72,9 @@ h3 {
 }
 
 footer {
-  margin-top: 4rem;
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
@@ -83,9 +88,7 @@ a {
 
   &:hover {
     transition: all .3s;
-    background-clip: text;
-    background-image: linear-gradient(to right, var(--hover-gradient-1) 0%, var(--hover-gradient-2) 55%, var(--hover-gradient-3) 90%);
-    color: transparent;
+    color: var(--hover-color);
   }
 
   &.icon {
@@ -98,16 +101,17 @@ a {
 }
 
 #app {
+  background: var(--app-bg);
   box-sizing: border-box;
   max-width: 840px;
-  padding: 2rem 3.5rem 4rem 3.5rem;
-  margin: 0 auto;
+  padding: 2rem 3.5rem;
+  margin: 2rem auto;
 }
 
 .text-justify { text-align: justify; }
 .text-muted{color: var(--text-secondary-color);}
 
-.font-small {font-size: 85%;}
+.font-small {font-size: 90%;}
 
 .ml-xsmall { margin-left: 0.3rem; }
 .mt-xsmall { margin-top: 0.3rem; }
@@ -122,7 +126,7 @@ p.block {
 }
 div.block:not(:last-child) { margin-bottom: 2.5rem;}
 
-small, .small { font-size: 85%; }
+small, .small { font-size: 90%; }
 .strong { font-weight: bold; }
 .clear-margin { margin: 0; }
 
@@ -143,18 +147,17 @@ ul {
   }
 }
 
-#footer {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  color: var(--text-secondary-color);
-  text-align:center;
-}
-
 .social-menu {
   text-align: right;
   position: absolute;
   right: 0;
   top: 0;
+}
+
+h1 span.main {
+  background-image: linear-gradient(to right, #656cc3 0%, #5687cf 40%, #5598d3 75%, #5ea4cd 60%);
+  background-clip: text;
+  color: transparent;
 }
 
 // Mobile

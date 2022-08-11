@@ -8,7 +8,7 @@ import MailIcon from 'assets/icons/mail.svg'
   <div class="relative" style="position: relative">
     <h1 id="title">
       <div>
-        Clovis Kyndt
+        <span class="main">Clovis Kyndt</span>
       </div>
       <div class="subtitle text-muted">
         Software Developer
