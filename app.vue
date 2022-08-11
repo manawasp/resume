@@ -1,13 +1,13 @@
 <script lang="ts" setup>
 useHead({
-  title: 'Clovis Kyndt - Résumé',
+  title: 'Clovis Kyndt - Resume',
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
   ],
   viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
   charset: 'utf-8',
   meta: [
-    { name: 'description', content: 'Résumé of me, Clovis Kyndt, software developer' },
+    { name: 'description', content: 'Clovis Kyndt, software developer, resume' },
   ],
 })
 </script>

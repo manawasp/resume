@@ -1,29 +1,14 @@
-# Nuxt 3 Minimal Starter
+# manawasp's resume
 
-We recommend to look at the [documentation](https://v3.nuxtjs.org).
+This is the source code behind the website [cloviskyndt.com](https://cloviskyndt.com). I update this resume from time to time and try new technologies.
 
-## Setup
+Built history:
 
-Make sure to install the dependencies
+- [Hugo](https://gohugo.io/)
+- Vanilla JS with [webpack](https://webpack.js.org/)
+- [Nuxt3](https://v3.nuxtjs.org/) - current
 
-```bash
-yarn install
-```
+## Details
 
-## Development
-
-Start the development server on http://localhost:3000
-
-```bash
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-yarn build
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+- The app is based on 3 generics components (Block, Table, Text), the drawing is determined by the locale en.json file and wrapped with a layout.
+- The website is hosted by [Netlify](https://www.netlify.com/) via CI/CD
