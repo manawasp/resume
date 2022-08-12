@@ -40,7 +40,9 @@ body {
   font-size: 17px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--text-color);
   font-weight: bold;
   font-family: 'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
@@ -95,6 +97,7 @@ a {
     fill: var(--text-secondary-color);
     padding: 9px;
   }
+
   &.icon:hover {
     fill: var(--hover-color);
   }
@@ -108,31 +111,63 @@ a {
   margin: 2rem auto;
 }
 
-.text-justify { text-align: justify; }
-.text-muted{color: var(--text-secondary-color);}
+.text-justify {
+  text-align: justify;
+}
 
-.font-small {font-size: 90%;}
+.text-muted {
+  color: var(--text-secondary-color);
+}
 
-.ml-xsmall { margin-left: 0.3rem; }
-.mt-xsmall { margin-top: 0.3rem; }
-.mt-small { margin-top: 0.8rem; }
-.ml-small { margin-left: 0.8rem; }
+.font-small {
+  font-size: 90%;
+}
+
+.ml-xsmall {
+  margin-left: 0.3rem;
+}
+
+.mt-xsmall {
+  margin-top: 0.3rem;
+}
+
+.mt-small {
+  margin-top: 0.8rem;
+}
+
+.ml-small {
+  margin-left: 0.8rem;
+}
 
 p.block {
   margin-top: 0;
   margin-bottom: 0;
 
-  &:not(:last-child) { margin-bottom: 1.5rem;}
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
 }
-div.block:not(:last-child) { margin-bottom: 2.5rem;}
 
-small, .small { font-size: 90%; }
-.strong { font-weight: bold; }
-.clear-margin { margin: 0; }
+div.block:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+small,
+.small {
+  font-size: 90%;
+}
+
+.strong {
+  font-weight: bold;
+}
+
+.clear-margin {
+  margin: 0;
+}
 
 ul {
   list-style-type: none;
-  font-size:.925rem;
+  font-size: .925rem;
 
   li {
     border-bottom: 1px dashed #ddd;
@@ -141,7 +176,7 @@ ul {
 
     &:first-child {
       color: var(--text-secondary-color);
-      border-bottom:0;
+      border-bottom: 0;
       padding-bottom: 0.8rem;
     }
   }
@@ -160,6 +195,13 @@ h1 span.main {
   color: transparent;
 }
 
+// Table
+@media only screen and (max-width: 920px) {
+  body {
+    background: var(--app-bg)
+  }
+}
+
 // Mobile
 @media only screen and (max-width: 720px) {
   #app {
@@ -170,7 +212,8 @@ h1 span.main {
     margin-top: 0;
   }
 
-  #title, .social-menu {
+  #title,
+  .social-menu {
     text-align: center;
   }
 
