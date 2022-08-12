@@ -8,7 +8,7 @@ import MailIcon from 'assets/icons/mail.svg'
   <div class="relative" style="position: relative">
     <h1 id="title">
       <div>
-        Clovis Kyndt
+        <span class="main">Clovis Kyndt</span>
       </div>
       <div class="subtitle text-muted">
         Software Developer
@@ -17,25 +17,13 @@ import MailIcon from 'assets/icons/mail.svg'
 
     <div class="social-menu mt-small">
       <div>
-        <a
-          target="_blank"
-          class="icon"
-          href="https://www.linkedin.com/in/cloviskyndt/"
-        >
+        <a target="_blank" class="icon" href="https://www.linkedin.com/in/cloviskyndt/">
           <LinkedinIcon />
         </a>
-        <a
-          target="_blank"
-          class="icon"
-          href="https://github.com/Manawasp/"
-        >
+        <a target="_blank" class="icon" href="https://github.com/Manawasp/">
           <GithubIcon />
         </a>
-        <a
-          target="_blank"
-          class="icon"
-          href="mailto:clovis.kyndt+pro@gmail.com"
-        >
+        <a target="_blank" class="icon" href="mailto:clovis.kyndt+pro@gmail.com">
           <MailIcon />
         </a>
       </div>

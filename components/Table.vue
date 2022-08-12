@@ -8,20 +8,13 @@ const props = withDefaults(defineProps<Props>(), {})
 
 <template>
   <div style="display:block">
-    <div
-      v-for="(col, key) in props.value"
-      :key="key"
-      class="table"
-    >
+    <div v-for="(col, key) in props.value" :key="key" class="table">
       <ul>
         <div style="margin:0 30px 40px 0">
           <li>
             {{ col.header }}
           </li>
-          <li
-            v-for="(row, j) in col.rows"
-            :key="j"
-          >
+          <li v-for="(row, j) in col.rows" :key="j">
             {{ row }}
           </li>
         </div>
@@ -33,7 +26,7 @@ const props = withDefaults(defineProps<Props>(), {})
 <style lang="scss" scoped>
 .table {
   width: 33%;
-  display:inline-block;
+  display: inline-block;
 }
 
 .table ul {
@@ -42,7 +35,7 @@ const props = withDefaults(defineProps<Props>(), {})
 }
 
 ul.table li {
-  font-size:.975rem;
+  font-size: .975rem;
 }
 
 // Mobile

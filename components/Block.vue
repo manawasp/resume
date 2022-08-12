@@ -7,11 +7,7 @@ const props = withDefaults(defineProps<Props>(), {})
 </script>
 
 <template>
-  <div
-    v-for="(block, idx) in props.value"
-    :key="idx"
-    class="block"
-  >
+  <div v-for="(block, idx) in props.value" :key="idx" class="block">
     <h3 class="clear-margin">
       <a v-if="block.url" :href="block.url" target="_blank">
         <strong>
@@ -31,10 +27,7 @@ const props = withDefaults(defineProps<Props>(), {})
       {{ block.description }}
     </p>
     <div class="mt-small ml-small content">
-      <div
-        v-for="(detail, idj) in block.details"
-        :key="idj"
-      >
+      <div v-for="(detail, idj) in block.details" :key="idj">
         &ndash; {{ detail }}
       </div>
     </div>

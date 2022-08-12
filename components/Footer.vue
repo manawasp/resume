@@ -4,7 +4,7 @@
 <template>
   <footer>
     <div>
-      <a href="`/static/clovis-kyndt-cv-en.pdf`" download class="no-underline">
+      <a href="/clovis-kyndt-cv-en.pdf" download class="no-underline">
         Download PDF
       </a>
     </div>
