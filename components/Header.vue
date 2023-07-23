@@ -11,7 +11,7 @@ import MailIcon from 'assets/icons/mail.svg'
         <span class="main">Clovis Kyndt</span>
       </div>
       <div class="subtitle text-muted">
-        Software Developer
+        Software Engineer
       </div>
     </h1>
 
