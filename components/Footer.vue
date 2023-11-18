@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+const runtimeConfig = useRuntimeConfig()
 </script>
 
 <template>
@@ -9,7 +10,7 @@
       </a>
     </div>
     <div class="mt-xsmall text-muted">
-      <small>Last updated at {{ $config.BUILD_TIME }}</small>
+      <small>Last updated on {{ runtimeConfig.public.BUILD_TIME }}</small>
     </div>
   </footer>
 </template>
