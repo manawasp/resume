@@ -4,8 +4,6 @@ useHead({
   link: [
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
   ],
-  viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
-  charset: 'utf-8',
   meta: [
     { name: 'description', content: 'Clovis Kyndt, software developer, resume' },
   ],

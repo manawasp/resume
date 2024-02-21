@@ -13,17 +13,14 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: pnpm/action-setup@v2
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+      - uses: actions/setup-node@v4
         with:
-          version: 7.x
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 19.x
           cache: pnpm
 
       - name: Install
-        run: pnpm install --no-frozen-lockfile # fix issues with pnpm-lock
+        run: pnpm i --no-frozen-lockfile # fix issues with pnpm-lock
 
       - name: Lint
         run: pnpm run lint
