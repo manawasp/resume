@@ -1,7 +1,7 @@
 {
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@8.10.5",
+  "packageManager": "pnpm@8.15.3",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -10,21 +10,17 @@
     "postinstall": "nuxt prepare",
     "test": "eslint .",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "prepare": "husky install"
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^1.2.1",
-    "@commitlint/cli": "^18.4.2",
-    "@commitlint/config-conventional": "^18.4.2",
+    "@antfu/eslint-config": "^2.6.4",
     "dayjs": "^1.11.10",
-    "eslint": "^8.54.0",
-    "husky": "^8.0.3",
-    "nuxt": "3.8.1",
-    "sass": "^1.69.5",
-    "sass-loader": "^13.3.2",
-    "typescript": "^5.2.2",
-    "vite-svg-loader": "^5.0.1",
-    "webpack": "^5.89.0"
+    "eslint": "^8.56.0",
+    "nuxt": "^3.10.2",
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
+    "typescript": "^5.3.3",
+    "vite-svg-loader": "^5.1.0",
+    "webpack": "^5.90.3"
   }
 }
