@@ -235,4 +235,10 @@ h1 span.main {
   font-display: swap;
   src: url(assets/fonts/SourceSansPro-SemiBold.woff2) format('woff2');
 }
+
+.print-show { display: hidden; }
+@media print {
+  .print-hide { display: none; }
+  .print-show { display: block; }
+}
 </style>

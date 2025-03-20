@@ -4,7 +4,7 @@ import * as data from '../locales/en.json'
 
 <template>
   <main>
-    <div v-for="(el, idx) in data.default.resume" :key="idx" :class="`el-${el.type}`">
+    <div v-for="(el, idx) in data.default.resume" :key="idx" :class="`el-${el.type} ${el.class || ''}`">
       <h2>{{ el.title }}</h2>
       <Text v-if="el.type === 'text'" :value="el.value" />
       <Table v-if="el.type === 'table'" :value="el.value" />

@@ -15,7 +15,7 @@ import MailIcon from 'assets/icons/mail.svg'
       </div>
     </h1>
 
-    <div class="social-menu mt-small">
+    <div class="social-menu mt-small print-hide">
       <div>
         <a target="_blank" class="icon" href="https://www.linkedin.com/in/cloviskyndt/">
           <LinkedinIcon />

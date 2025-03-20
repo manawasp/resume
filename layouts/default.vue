@@ -3,5 +3,5 @@
     <Header />
     <slot />
   </div>
-  <Footer />
+  <Footer class="print-hide" />
 </template>
